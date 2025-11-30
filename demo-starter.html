@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Main Street Barber Co. — Starter Demo | Love Crafted Digital</title>
+  <title>Mason's Barbershop — Demo Starter Site | Love Crafted Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="theme-barber">
+<body class="theme-masons">
 <header>
   <div class="container nav">
     <div class="nav-logo">
-      <div class="nav-logo-badge">MS</div>
-      <span>Main Street Barber Co.</span>
+      <div class="nav-logo-badge">MB</div>
+      <span>Mason's Barbershop</span>
     </div>
     <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#hours">Hours</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#contact">Book</a>
       <a href="index.html">Back to Love Crafted</a>
     </nav>
   </div>
@@ -24,79 +25,68 @@
 
 <main>
   <!-- HERO -->
-  <section class="hero hero--split">
-    <div class="container hero-grid">
+  <section class="masons-hero">
+    <div class="container masons-hero-grid">
       <div>
-        <div class="hero-kicker">Neighborhood barbershop • Burleson, TX</div>
+        <div class="hero-kicker">Classic cuts • Modern fades • Burleson, TX</div>
         <h1 class="hero-title">
-          Clean fades. Sharp lines. <span>Zero fluff.</span>
+          A barbershop where your dog <span>might be the mascot.</span>
         </h1>
         <p class="hero-subtitle">
-          Main Street Barber Co. is your go-to shop for fresh fades, beard work, and that
-          “feel like yourself again” cut. Walk-ins welcome, text-ahead recommended.
+          Mason's Barbershop is a small, laid-back shop focused on sharp cuts, clean shaves,
+          and a good laugh on your way out the door. No rush, no fluff—just real barber work.
         </p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Book a chair</a>
-          <a href="#services" class="btn btn-outline">See prices</a>
+          <a href="#contact" class="btn btn-primary">Book an appointment</a>
+          <a href="#services" class="btn btn-outline">View the chair menu</a>
         </div>
-        <div class="hero-chip-row">
-          <div class="hero-chip">Skin fades</div>
-          <div class="hero-chip">Beard trims</div>
-          <div class="hero-chip">Kids cuts</div>
-          <div class="hero-chip">Walk-ins welcome</div>
-        </div>
+        <p class="hero-tagline">
+          Walk-ins welcome • Cash & card • Kid-friendly • Dog-approved
+        </p>
       </div>
 
-      <aside class="hero-card hero-card--framed">
-        <div class="hero-card-tag">Today’s status</div>
-        <h2 class="hero-card-title">Chairs are open.</h2>
-        <p>
-          214 Main Street<br />
-          Suite B<br />
-          Burleson, TX 76028
-        </p>
-        <p style="margin-top: 0.9rem; font-size: 0.9rem;">
-          Call / Text: <strong>(555) 123-0199</strong><br />
-          Instagram: <strong>@mainstreetbarberco</strong>
-        </p>
-        <div class="hero-chip-row" style="margin-top: 1rem;">
-          <div class="hero-chip">Walk-ins</div>
-          <div class="hero-chip">Cash & card</div>
-          <div class="hero-chip">Free parking</div>
-        </div>
-      </aside>
+      <div class="masons-logo-wrapper">
+        <img
+          src="images/masons-barbershop-logo.png"
+          alt="Mason's Barbershop logo"
+          class="masons-logo"
+        />
+      </div>
     </div>
   </section>
+
+  <div class="section-divider"></div>
 
   <!-- SERVICES -->
   <section id="services" class="section">
     <div class="container">
       <div class="section-kicker">Services</div>
-      <h2 class="section-heading">Cuts & trims with straight-up pricing.</h2>
+      <h2 class="section-heading">What’s on the chair menu.</h2>
       <p class="section-subtitle">
-        No packages, no upsell scripts—just solid work. Pay for what you need, tip if we earned it.
+        Straight-forward pricing so you know exactly what you’re getting before you sit down.
+        No add-on surprise charges at the end.
       </p>
 
       <div class="pricing-grid">
         <article class="pricing-card">
           <div class="pricing-name">Everyday</div>
-          <h3 class="pricing-title">Standard Cut</h3>
-          <p class="pricing-price">$25 <span>30 minutes</span></p>
+          <h3 class="pricing-title">Classic Cut</h3>
+          <p class="pricing-price">$25 <span>about 30 minutes</span></p>
           <ul class="pricing-list">
             <li>Scissor or clipper cut</li>
-            <li>Neck shave & styling</li>
-            <li>Hot towel finish on request</li>
+            <li>Neck shave & warm lather finish</li>
+            <li>Styled how you actually wear it</li>
           </ul>
         </article>
 
         <article class="pricing-card pricing-card--highlight">
-          <div class="pricing-badge">Most booked</div>
+          <div class="pricing-badge">Most popular</div>
           <div class="pricing-name">Fade</div>
           <h3 class="pricing-title">Skin / Taper Fade</h3>
-          <p class="pricing-price">$30 <span>40 minutes</span></p>
+          <p class="pricing-price">$30 <span>about 40 minutes</span></p>
           <ul class="pricing-list">
             <li>Low, mid, or high fade</li>
-            <li>Blend tailored to your style</li>
+            <li>Blended to your hair & head shape</li>
             <li>Razor clean-up included</li>
           </ul>
         </article>
@@ -104,58 +94,81 @@
         <article class="pricing-card">
           <div class="pricing-name">Beard</div>
           <h3 class="pricing-title">Beard Trim & Line-Up</h3>
-          <p class="pricing-price">$18 <span>standalone</span></p>
+          <p class="pricing-price">$18 <span>stand-alone</span></p>
           <ul class="pricing-list">
-            <li>Shape & sculpt</li>
-            <li>Cheek & neck line</li>
-            <li>Can be added to any cut</li>
+            <li>Shape, trim, and soften</li>
+            <li>Cheek & neck line defined</li>
+            <li>Add to any cut for $15</li>
           </ul>
         </article>
       </div>
+
+      <p style="font-size:0.85rem; color:#6b5140; margin-top:1.2rem;">
+        <span class="badge-soft">Note</span>
+        Kids cuts and senior pricing available—just ask when you book.
+      </p>
     </div>
   </section>
 
-  <!-- HOURS & LOCATION -->
+  <!-- HOURS & ABOUT -->
   <section id="hours" class="section">
     <div class="container">
       <div class="section-kicker">Visit</div>
-      <h2 class="section-heading">Shop hours & directions.</h2>
+      <h2 class="section-heading">Hours, location & shop vibe.</h2>
 
       <div class="portfolio-grid">
         <article class="portfolio-card">
           <div class="portfolio-label">Hours</div>
-          <h3>When we’re cutting</h3>
+          <h3>When Mason’s open</h3>
           <p>
             Mon–Thu: 9:00am – 6:00pm<br />
             Friday: 9:00am – 7:00pm<br />
             Saturday: 9:00am – 3:00pm<br />
-            Sunday: Closed
+            Sunday: Closed (dog’s day off)
+          </p>
+          <p style="margin-top:0.7rem;">
+            Call / Text: <strong>(555) 123-0199</strong>
+          </p>
+        </article>
+
+        <article class="portfolio-card" id="about">
+          <div class="portfolio-label">The shop</div>
+          <h3>Old-school feel, not old-school haircuts.</h3>
+          <p>
+            Mason’s is named after the shop dog and unofficial greeter. We keep the playlists
+            good, the talk easy, and the cuts dialed in—with a mix of classic barber skills
+            and modern fades.
+          </p>
+          <p style="margin-top:0.7rem;">
+            Grab a drink from the cooler, say hi to Mason, and leave looking like you meant to
+            leave the house today.
           </p>
         </article>
 
         <article class="portfolio-card">
           <div class="portfolio-label">Location</div>
-          <h3>Pull up</h3>
+          <h3>Where to find us</h3>
           <p>
             214 Main Street, Suite B<br />
             Burleson, TX 76028<br />
             Free parking behind the building.
           </p>
-          <p style="margin-top: 0.8rem;">
-            Tap-to-call: <strong>(555) 123-0199</strong>
+          <p style="margin-top:0.7rem; font-size:0.85rem;">
+            Drop a pin in Maps and look for the dog in a bow tie on the window.
           </p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT / BOOKING -->
   <section id="contact" class="section">
     <div class="container">
       <div class="section-kicker">Book</div>
-      <h2 class="section-heading">Grab a spot in the chair.</h2>
+      <h2 class="section-heading">Ready to grab a spot in the chair?</h2>
       <p class="section-subtitle">
-        Drop your info and what you’re looking for. We’ll text back to confirm a time.
+        Send a quick request below and we’ll text you back with a confirmed time. Walk-ins are
+        always welcome—this just saves your seat.
       </p>
 
       <form>
@@ -168,22 +181,31 @@
           <input id="c-phone" type="tel" placeholder="Best number to text" />
         </div>
         <div>
+          <label for="c-service">What are you booking?</label>
+          <input id="c-service" type="text" placeholder="Example: Skin fade + beard trim" />
+        </div>
+        <div>
           <label for="c-time">Preferred day & time</label>
           <input id="c-time" type="text" placeholder="Example: Friday after 4pm" />
         </div>
         <div>
-          <label for="c-msg">What are you coming in for?</label>
-          <textarea id="c-msg" placeholder="Example: Skin fade + beard trim."></textarea>
+          <label for="c-notes">Anything we should know?</label>
+          <textarea id="c-notes" placeholder="Bring a photo, tell us how you usually wear it, etc."></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Request appointment</button>
       </form>
+
+      <p style="margin-top:1rem; font-size:0.85rem; color:#6b5140;">
+        Prefer booking apps? We can connect this button to your <strong>Booksy</strong> or
+        other booking link when we build your real site.
+      </p>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="container">
-    Starter demo site designed by Love Crafted Digital for demonstration purposes.
+    Demo Starter site designed by Love Crafted Digital to showcase a real-world barbershop layout.
   </div>
 </footer>
 </body>
