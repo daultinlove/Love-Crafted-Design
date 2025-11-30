@@ -28,6 +28,93 @@ body {
 
 /* Default theme is already defined by :root.
    These override colors & background per demo. */
+/* ====== MASON'S BARBERSHOP THEME (warm vintage) ====== */
+
+body.theme-masons {
+  --brand-blue: #b45309;      /* warm burnt orange accent */
+  --brand-blue-dark: #7c2d12;
+  --brand-cream: #fef3e2;
+  --brand-brown: #3b2f2a;
+  --accent-gold: #eab308;
+  --bg-dark: #f3e4cf;
+  --bg-panel: #fff8ed;
+  background-color: #f3e4cf;
+  color: #2b211c;
+}
+
+body.theme-masons header {
+  background: #fff8ed;
+  border-bottom-color: #e2d1bb;
+}
+
+body.theme-masons .nav-logo-badge {
+  border-color: #b45309;
+}
+
+body.theme-masons .pricing-card,
+body.theme-masons .portfolio-card {
+  background: #fff8ed;
+  border-color: #e2d1bb;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+body.theme-masons .btn-primary {
+  background: linear-gradient(135deg, #b45309, #eab308);
+  color: #2b211c;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+body.theme-masons .btn-outline {
+  border-color: #d0bfa7;
+  color: #3b2f2a;
+  background: transparent;
+}
+
+body.theme-masons .hero-title span {
+  color: #b45309;
+}
+
+.masons-hero {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.masons-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.1fr) minmax(0, 2.2fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.masons-logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.masons-logo {
+  max-width: 260px;
+  width: 100%;
+  border-radius: 999px;
+  background: #fef6e9;
+  border: 3px solid #e2d1bb;
+  padding: 1.5rem;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+.section-divider {
+  border-top: 1px dashed rgba(107,70,36,0.35);
+  margin: 2.5rem 0 2rem;
+}
+
+.badge-soft {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(180,83,9,0.08);
+  color: #7c2d12;
+}
 
 body.theme-barber {
   --brand-blue: #4f46e5;
