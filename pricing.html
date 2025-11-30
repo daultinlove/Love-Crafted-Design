@@ -4,6 +4,21 @@
   <meta charset="UTF-8" />
   <title>Pricing & Packages — Love Crafted Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO META -->
+  <meta name="description"
+        content="Compare Starter, Standard, and Premium website & branding packages from Love Crafted Digital, built for real small businesses." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Pricing & Packages — Love Crafted Digital" />
+  <meta property="og:description"
+        content="Simple, transparent web design & branding packages for small businesses, BBQ trucks, barbers, and service pros." />
+  <meta property="og:url" content="https://daultinlove.github.io/test/pricing.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -82,7 +97,7 @@
             <li>Basic SEO (titles, descriptions, headings)</li>
             <li>Google Business Profile setup</li>
             <li>Contact form or click-to-call</li>
-            <li>1 round of revisions</li>
+            <li>1 revision round included</li>
             <li>Handoff training video</li>
           </ul>
           <p class="pricing-meta">
@@ -102,14 +117,14 @@
           </p>
           <ul class="pricing-list">
             <li>Everything in Starter</li>
-            <li>Up to 7 pages (menu, gallery, FAQ, etc.)</li>
+            <li>Up to 7 custom pages (menu/services, gallery, FAQ, etc.)</li>
             <li>Simple logo suite (primary + alternate)</li>
-            <li>Color palette &amp; typography system</li>
+            <li>Brand colors &amp; typography</li>
             <li>Brand guidelines PDF</li>
             <li>Business card design</li>
             <li>Social media templates</li>
             <li>Booking system OR menu setup</li>
-            <li>2 rounds of revisions</li>
+            <li>2 revision rounds</li>
           </ul>
           <p class="pricing-meta">
             Typical timeline: <strong>7–10 business days</strong> after content collection + kickoff.
@@ -131,7 +146,7 @@
             <li>Smooth animations &amp; premium layout</li>
             <li>Online ordering or booking system</li>
             <li>Stripe payment integration</li>
-            <li>Advanced SEO + optional blog setup</li>
+            <li>Advanced SEO + content structure</li>
             <li>Full brand identity system</li>
             <li>Social templates &amp; business cards</li>
             <li>Digital merch mockups (shirts, hats, stickers, signage)</li>
@@ -318,22 +333,25 @@
         your website to do. I’ll reply with a simple game plan—no pressure, no hard sell.
       </p>
 
-      <form>
+      <!-- CONTACT FORM (FORMSPREE) -->
+      <!-- Use same Formspree endpoint as index.html -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
         <div>
-          <label for="c-name">Name</label>
-          <input id="c-name" type="text" placeholder="Your name" />
+          <label for="pc-name">Name</label>
+          <input id="pc-name" name="name" type="text" placeholder="Your name" required />
         </div>
         <div>
-          <label for="c-email">Email</label>
-          <input id="c-email" type="email" placeholder="you@example.com" />
+          <label for="pc-email">Email</label>
+          <input id="pc-email" name="email" type="email" placeholder="you@example.com" required />
         </div>
         <div>
-          <label for="c-business">Business name &amp; type</label>
-          <input id="c-business" type="text" placeholder="Example: Jay’s KickAsh BBQ — food truck" />
+          <label for="pc-business">Business name &amp; type</label>
+          <input id="pc-business" name="business" type="text"
+                 placeholder="Example: Jay’s KickAsh BBQ — food truck" />
         </div>
         <div>
-          <label for="c-package">Interested package</label>
-          <select id="c-package">
+          <label for="pc-package">Interested package</label>
+          <select id="pc-package" name="package">
             <option>Not sure yet</option>
             <option>Starter — $750</option>
             <option>Standard — $1,650</option>
@@ -341,8 +359,9 @@
           </select>
         </div>
         <div>
-          <label for="c-message">Anything else I should know?</label>
-          <textarea id="c-message" placeholder="Example: need online ordering, want to launch before a certain date, etc."></textarea>
+          <label for="pc-message">Anything else I should know?</label>
+          <textarea id="pc-message" name="message"
+                    placeholder="Example: need online ordering, want to launch before a certain date, etc."></textarea>
         </div>
         <button class="btn btn-primary" type="submit">Send message</button>
       </form>
@@ -415,10 +434,10 @@
       function calculateResult() {
         const data = new FormData(form);
 
-        const stage = data.get("stage");        // new | growing | established
-        const pages = data.get("pages");        // small | medium | large
-        const branding = data.get("branding");  // none | simple | full
-        const features = data.getAll("features"); // array
+        const stage = data.get("stage");
+        const pages = data.get("pages");
+        const branding = data.get("branding");
+        const features = data.getAll("features");
 
         let recommended = "Starter";
         let basePrice = 750;
@@ -436,7 +455,7 @@
 
         if (heavy || stage === "established") {
           recommended = "Premium";
-          basePrice = 3800; // midrange of 3,200–4,500
+          basePrice = 3800;
         } else if (pages === "medium" || branding === "simple" || stage === "growing") {
           recommended = "Standard";
           basePrice = 1650;
