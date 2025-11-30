@@ -828,4 +828,24 @@ footer {
     display: none; /* simple hide for now, can add mobile nav later */
   }
 }
+/* =========================
+   STANDARD DEMO BACKGROUND
+   (Moon Tim's theme)
+========================= */
+
+.theme-moon {
+  background: url("../Real-Moon.png") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* Optional dark overlay to improve text readability */
+.theme-moon::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.45);  /* adjust 0.3–0.6 for darkness */
+  z-index: -1;
+}
 
