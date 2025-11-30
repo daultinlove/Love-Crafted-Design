@@ -132,10 +132,30 @@
 
       <div class="pricing-grid">
         <!-- OFFER SUMMARY -->
-        <article class="pricing-card">
-          <div class="pricing-name">Offer suite</div>
-          <h3 class="pricing-title">Programs & checkouts</h3>
-          <p class="pricing-meta">
+    <form style="margin-top: 0.9rem;">
+  <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem;font-size:0.75rem;">
+    <span style="font-weight:600;">Powered by</span>
+    <span style="font-weight:700;letter-spacing:0.08em;">Stripe</span>
+  </div>
+
+  <label for="start">Start date</label>
+  <input id="start" type="date" />
+
+  <label for="email">Email</label>
+  <input id="email" type="email" placeholder="you@example.com" />
+
+  <label for="card">Card details</label>
+  <input id="card" type="text" placeholder="1234 1234 1234 1234" />
+
+  <button type="button" class="btn btn-primary" style="width: 100%; margin-top: 0.6rem;">
+    Pay $750 &amp; book
+  </button>
+
+  <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #9ca3b8;">
+    Demo only — in a real build, this connects to your live Stripe checkout and calendar.
+  </p>
+</form>
+
             Example layout for how we’d structure your paid offers.
           </p>
           <ul class="pricing-list">
