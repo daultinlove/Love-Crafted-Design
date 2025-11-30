@@ -13,7 +13,6 @@ body {
 }
 
 /* ====== BRAND COLORS ====== */
-/* Primary blue + earthy tones */
 :root {
   --brand-blue: #2f6cff;
   --brand-blue-dark: #1e3f99;
@@ -24,11 +23,10 @@ body {
   --bg-panel: #111318;
   --border-soft: #262a36;
 }
-/* ====== THEME VARIATIONS & DEMO FLAIR ====== */
 
-/* Default theme is already defined by :root.
-   These override colors & background per demo. */
-/* ====== MASON'S BARBERSHOP THEME (warm vintage) ====== */
+/* =========================
+   MASON'S BARBERSHOP THEME
+========================= */
 
 body.theme-masons {
   --brand-blue: #b45309;      /* warm burnt orange accent */
@@ -116,6 +114,7 @@ body.theme-masons .hero-title span {
   color: #7c2d12;
 }
 
+/* Barber demo extra theme (not used here but kept) */
 body.theme-barber {
   --brand-blue: #4f46e5;
   --brand-blue-dark: #312e81;
@@ -129,8 +128,14 @@ body.theme-barber {
     radial-gradient(circle at 100% 100%, rgba(249,115,22,0.24), transparent 55%),
     #020617;
 }
-/* ===== MOON TIM'S STEAK HOUSE THEME ===== */
+
+/* =========================
+   MOON TIM'S STEAK HOUSE THEME
+========================= */
+
+/* All Moon Tim pages use body.theme-moon */
 body.theme-moon {
+  /* theme variables */
   --moon-purple: #3a0ca3;
   --moon-purple-deep: #24005e;
   --moon-gold: #f4b942;
@@ -138,8 +143,24 @@ body.theme-moon {
   --moon-bg: #fff9ec;
   --moon-text: #231a12;
 
-  background: var(--moon-bg);
-  color: var(--moon-text);
+  /* background image */
+  background: url("../Real-Moon.png") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+body.theme-moon::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
 }
 
 /* Header */
@@ -160,6 +181,8 @@ body.theme-moon {
   position: relative;
   padding: 4.5rem 0 3.5rem;
   overflow: hidden;
+  background: transparent;
+  box-shadow: none;
 }
 
 .moon-hero-gradient {
@@ -376,10 +399,12 @@ body.theme-moon {
   margin-top: 3rem;
 }
 
+/* =========================
+   OTHER DEMO THEMES
+========================= */
 
-/* Warm, cozy restaurant theme */
 body.theme-restaurant {
-  --brand-blue: #ea580c;       /* becomes accent orange */
+  --brand-blue: #ea580c;
   --brand-blue-dark: #9a3412;
   --brand-cream: #fff7ed;
   --brand-brown: #3b2f2a;
@@ -392,7 +417,6 @@ body.theme-restaurant {
     #0b0710;
 }
 
-/* Clean teal / violet coach theme */
 body.theme-coach {
   --brand-blue: #22c55e;
   --brand-blue-dark: #15803d;
@@ -631,53 +655,6 @@ header {
   color: #9ca3b8;
 }
 
-/* Fake "card" as hero visual */
-.hero-card {
-  background: radial-gradient(circle at 10% 0, rgba(47, 108, 255, 0.18), transparent 55%),
-              radial-gradient(circle at 100% 100%, rgba(243, 201, 107, 0.16), transparent 55%),
-              var(--bg-panel);
-  border-radius: 1.5rem;
-  border: 1px solid var(--border-soft);
-  padding: 1.5rem;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75);
-}
-
-.hero-card-title {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-card-tag {
-  display: inline-flex;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  margin-bottom: 1rem;
-}
-
-/* ====== SECTION TITLES ====== */
-.section-heading {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-}
-
-.section-kicker {
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.7rem;
-  color: #9ca3b8;
-  margin-bottom: 0.3rem;
-}
-
-.section-subtitle {
-  color: #9ca3b8;
-  max-width: 32rem;
-  font-size: 0.9rem;
-}
-
 /* ====== PRICING CARDS ====== */
 .pricing-grid {
   margin-top: 2.5rem;
@@ -825,27 +802,6 @@ footer {
   }
 
   .nav-links {
-    display: none; /* simple hide for now, can add mobile nav later */
+    display: none; /* simple hide for now */
   }
 }
-/* =========================
-   STANDARD DEMO BACKGROUND
-   (Moon Tim's theme)
-========================= */
-
-.theme-moon {
-  background: url("../Real-Moon.png") no-repeat center center fixed;
-  background-size: cover;
-  position: relative;
-}
-
-/* Optional dark overlay to improve text readability */
-.theme-moon::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.45);  /* adjust 0.3–0.6 for darkness */
-  z-index: -1;
-}
-
