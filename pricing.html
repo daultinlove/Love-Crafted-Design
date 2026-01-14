@@ -13,7 +13,7 @@
   <meta property="og:title" content="Pricing & Packages — Love Crafted Digital" />
   <meta property="og:description"
         content="Simple, transparent web design & branding packages for small businesses, BBQ trucks, barbers, and service pros." />
-  <meta property="og:url" content="https://daultinlove.github.io/test/pricing.html" />
+  <meta property="og:url" content="https://daultinlove.github.io/Love-Crafted-Design/pricing.html" />
   <meta property="og:type" content="website" />
 
   <!-- Favicon -->
@@ -22,17 +22,22 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
 <header>
   <div class="container nav">
     <div class="nav-logo">
-      <div class="nav-logo-badge">LC</div>
-      <span>Love Crafted Digital</span>
+      <a href="index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;">
+        <img src="favicon.png" alt="Love Crafted Digital Logo" class="nav-logo-img" />
+        <span>Love Crafted Digital</span>
+      </a>
     </div>
+
     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="#pricing">Packages</a>
-      <a href="#calculator">Estimate</a>
-      <a href="#contact">Contact</a>
+      <a href="pricing.html">Packages</a>
+      <a href="package-details.html">What’s included</a>
+      <a href="samples.html">Samples</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -85,7 +90,7 @@
 
       <div class="pricing-grid">
         <!-- Starter -->
-        <article class="pricing-card">
+        <article class="pricing-card" id="starter">
           <div class="pricing-name">Starter</div>
           <h3 class="pricing-title">Launch</h3>
           <p class="pricing-price">$750 <span>one-time</span></p>
@@ -107,7 +112,7 @@
         </article>
 
         <!-- Standard -->
-        <article class="pricing-card pricing-card--highlight">
+        <article class="pricing-card pricing-card--highlight" id="standard">
           <div class="pricing-badge">Most popular</div>
           <div class="pricing-name">Standard</div>
           <h3 class="pricing-title">Stand Out</h3>
@@ -133,7 +138,7 @@
         </article>
 
         <!-- Premium -->
-        <article class="pricing-card">
+        <article class="pricing-card" id="premium">
           <div class="pricing-name">Premium</div>
           <h3 class="pricing-title">Full Brand Build</h3>
           <p class="pricing-price">$3,200–$4,500 <span>project-based</span></p>
@@ -159,6 +164,54 @@
           <a href="#contact" class="btn btn-outline">Talk Premium</a>
         </article>
       </div>
+
+      <!-- OPTIONAL ADDITIONAL SERVICES (Maintenance moved here) -->
+      <div class="section" style="padding-top:24px;">
+        <div class="section-kicker">Optional</div>
+        <h2 class="section-heading">Optional additional services</h2>
+        <p class="section-subtitle">
+          Add these anytime — before launch or after your site is live.
+        </p>
+
+        <div class="pricing-grid">
+          <!-- Maintenance -->
+          <article class="pricing-card">
+            <div class="pricing-name">Maintenance</div>
+            <h3 class="pricing-title">Website upkeep</h3>
+            <p class="pricing-price">$50 <span>/ month</span></p>
+            <p class="pricing-meta">
+              For businesses that want changes handled without worrying about it.
+            </p>
+            <ul class="pricing-list">
+              <li>Small text/photo updates (up to 30 mins/month)</li>
+              <li>Broken link fixes</li>
+              <li>Basic monthly site health check</li>
+              <li>Email support</li>
+            </ul>
+            <p class="pricing-meta">
+              Need more than 30 mins? I’ll quote it based on what you need.
+            </p>
+            <a href="#contact" class="btn btn-outline">Add maintenance</a>
+          </article>
+
+          <!-- Add-ons -->
+          <article class="pricing-card">
+            <div class="pricing-name">Add-ons</div>
+            <h3 class="pricing-title">Common extras</h3>
+            <p class="pricing-meta">Optional upgrades depending on your business.</p>
+            <ul class="pricing-list">
+              <li>Extra pages</li>
+              <li>Copywriting / rewriting</li>
+              <li>Local SEO pages</li>
+              <li>Ordering / booking setup</li>
+              <li>Stripe payments</li>
+              <li>Extra revision rounds</li>
+            </ul>
+            <a href="#calculator" class="btn btn-outline">Use estimate wizard</a>
+          </article>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -173,7 +226,6 @@
       </p>
 
       <div class="calc-wizard">
-        <!-- Step indicator -->
         <div class="calc-steps">
           <div class="calc-step-indicator calc-step-indicator--active" data-step="1">1. Your business</div>
           <div class="calc-step-indicator" data-step="2">2. Website size</div>
@@ -312,7 +364,6 @@
             </p>
           </div>
 
-          <!-- NAV BUTTONS -->
           <div class="calc-nav">
             <button type="button" class="btn btn-outline" id="calcPrev">Back</button>
             <button type="button" class="btn btn-primary" id="calcNext">Next</button>
@@ -323,7 +374,7 @@
     </div>
   </section>
 
-  <!-- CONTACT CTA -->
+  <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="container">
       <div class="section-kicker">Contact</div>
@@ -333,9 +384,8 @@
         your website to do. I’ll reply with a simple game plan—no pressure, no hard sell.
       </p>
 
-      <!-- CONTACT FORM (FORMSPREE) -->
-      <!-- Use same Formspree endpoint as index.html -->
-      <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
+      <!-- Uses SAME Formspree endpoint as index.html -->
+      <form action="https://formspree.io/f/4047d1c6a0419e0f64075d1761535bc1f396721b" method="POST">
         <div>
           <label for="pc-name">Name</label>
           <input id="pc-name" name="name" type="text" placeholder="Your name" required />
@@ -356,6 +406,7 @@
             <option>Starter — $750</option>
             <option>Standard — $1,650</option>
             <option>Premium — $3,200–$4,500</option>
+            <option>Maintenance — $50/month</option>
           </select>
         </div>
         <div>
@@ -371,11 +422,9 @@
 
 <footer>
   <div class="container">
-    © <span id="year">2025</span> Love Crafted Digital — Hand-built websites &amp; branding for real small businesses.
+    © <span id="year"></span> Love Crafted Digital
   </div>
-
   <script>
-    // Dynamic year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
@@ -397,20 +446,14 @@
 
       function showStep(step) {
         currentStep = step;
-        steps.forEach(s => {
-          s.classList.toggle("calc-step--active", Number(s.dataset.step) === step);
-        });
-        indicators.forEach(i => {
-          i.classList.toggle("calc-step-indicator--active", Number(i.dataset.step) === step);
-        });
+        steps.forEach(s => s.classList.toggle("calc-step--active", Number(s.dataset.step) === step));
+        indicators.forEach(i => i.classList.toggle("calc-step-indicator--active", Number(i.dataset.step) === step));
 
         prevBtn.style.display = step === 1 ? "none" : "inline-flex";
         nextBtn.style.display = step === steps.length ? "none" : "inline-flex";
         resetBtn.style.display = step === steps.length ? "inline-flex" : "none";
 
-        if (step === steps.length) {
-          calculateResult();
-        }
+        if (step === steps.length) calculateResult();
       }
 
       function validateStep(step) {
@@ -474,13 +517,12 @@
         }
 
         if (recommended === "Premium") {
-          let featureCount = features.length;
-          addons += featureCount * 75;
+          addons += features.length * 75;
         }
 
-        let estimated = basePrice + addons;
-        let note = "";
+        const estimated = basePrice + addons;
 
+        let note = "";
         if (recommended === "Starter") {
           note = "You’re in Starter territory: 1–3 pages, simple setup, and a clean online home. Exact quote will match the $750 Starter package, plus any custom add-ons.";
         } else if (recommended === "Standard") {
@@ -496,21 +538,16 @@
           recommended === "Premium"
             ? "$3,200–$4,500 (typical range)"
             : `$${estimated.toLocaleString()}`;
-
         noteEl.textContent = note;
       }
 
       nextBtn.addEventListener("click", () => {
         if (!validateStep(currentStep)) return;
-        if (currentStep < steps.length) {
-          showStep(currentStep + 1);
-        }
+        if (currentStep < steps.length) showStep(currentStep + 1);
       });
 
       prevBtn.addEventListener("click", () => {
-        if (currentStep > 1) {
-          showStep(currentStep - 1);
-        }
+        if (currentStep > 1) showStep(currentStep - 1);
       });
 
       resetBtn.addEventListener("click", () => {
