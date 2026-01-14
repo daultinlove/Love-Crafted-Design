@@ -11,8 +11,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Love Crafted Digital — Small Business Web Design & Branding" />
-  <meta property="og:description"
-        content="Fast, clean websites and branding for small businesses." />
+  <meta property="og:description" content="Fast, clean websites and branding for small businesses." />
   <meta property="og:type" content="website" />
 
   <link rel="icon" type="image/png" href="favicon.png" />
@@ -23,18 +22,22 @@
 <header>
   <div class="container nav">
     <div class="nav-logo">
-      <img src="favicon.png" alt="Love Crafted Digital Logo" class="nav-logo-img" />
-      <span>Love Crafted Digital</span>
+      <a href="index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;">
+        <img src="favicon.png" alt="Love Crafted Digital Logo" class="nav-logo-img" />
+        <span>Love Crafted Digital</span>
+      </a>
     </div>
-   <nav class="nav-links">
-  <a href="pricing.html">Packages</a>
-  <a href="package-details.html">What’s included</a>
-  <a href="samples.html">Samples</a>
-  <a href="services.html">Services</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-</nav>
 
+    <!-- NOTE: These pages must exist in your repo root or they'll 404:
+         pricing.html, samples.html, services.html, package-details.html -->
+    <nav class="nav-links">
+      <a href="pricing.html">Packages</a>
+      <a href="package-details.html">What’s included</a>
+      <a href="samples.html">Samples</a>
+      <a href="services.html">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
 </header>
 
@@ -48,8 +51,9 @@
           Professional websites for <span>any small business.</span>
         </h1>
         <p class="hero-subtitle">
-          I design and build fast, clean websites that help small businesses look professional
-          and get more customers—no templates, no agency pricing.
+          I design and build fast, clean websites that help small businesses look professional and get more customers—
+          service companies, shops, restaurants, barbers, coaches, contractors, and more.
+          No templates. No agency pricing.
         </p>
 
         <div class="hero-actions">
@@ -66,21 +70,22 @@
         <div class="hero-card-tag">Example project</div>
         <h2 class="hero-card-title">Jay’s KickAsh BBQ</h2>
         <p>
-          Full website and branding for a local BBQ truck—menu, schedule,
-          and a bold visual identity built to attract customers and events.
+          Full website + branding for a local BBQ truck—menu, schedule, and a bold visual identity built to attract customers and events.
+        </p>
+        <p style="margin-top:.75rem;font-size:.9rem;color:#cbd0df;">
+          Also built for contractors, shops, barbers, coaches, and local service businesses.
         </p>
       </aside>
     </div>
   </section>
 
-  <!-- WHO THIS IS FOR (moved up) -->
+  <!-- WHO THIS IS FOR -->
   <section class="section">
     <div class="container">
       <div class="section-kicker">Who this is for</div>
       <h2 class="section-heading">If you run a small business, this is for you.</h2>
       <p class="section-subtitle">
-        No matter your industry, the goal is the same: look professional,
-        earn trust, and turn visitors into customers.
+        No matter your industry, the goal is the same: look professional, earn trust, and turn visitors into customers.
       </p>
 
       <div class="portfolio-grid">
@@ -91,7 +96,7 @@
 
         <article class="portfolio-card">
           <h3>Food & hospitality</h3>
-          <p>Restaurants, food trucks, BBQ, cafés, catering, pop-ups.</p>
+          <p>Restaurants, food trucks, cafés, catering, pop-ups.</p>
         </article>
 
         <article class="portfolio-card">
@@ -104,6 +109,11 @@
           <p>Barbershops, salons, gyms, retail, brick-and-mortar businesses.</p>
         </article>
       </div>
+
+      <p style="margin-top: 1.25rem;">
+        <a href="samples.html" class="btn btn-outline">See sample sites</a>
+        <a href="services.html" class="btn btn-outline">View services</a>
+      </p>
     </div>
   </section>
 
@@ -137,7 +147,50 @@
     </div>
   </section>
 
-  <!-- PRICING -->
+  <!-- WHAT YOU’LL GET + WHAT I NEED -->
+  <section class="section">
+    <div class="container">
+      <div class="section-kicker">Expectations</div>
+      <h2 class="section-heading">Here’s what to expect</h2>
+      <p class="section-subtitle">
+        No tech headaches. No guessing. Just a clean site that makes your business look legit and easy to contact.
+      </p>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <h3>What you’ll get</h3>
+          <ul style="margin:.9rem 0 0; padding-left:1.1rem;">
+            <li>A professional website built for your business</li>
+            <li>Mobile-friendly design</li>
+            <li>Clear calls-to-action (calls, quotes, bookings, orders)</li>
+            <li>Launch support to make sure everything works</li>
+          </ul>
+        </article>
+
+        <article class="portfolio-card">
+          <h3>What I need from you</h3>
+          <ul style="margin:.9rem 0 0; padding-left:1.1rem;">
+            <li>Business name + services</li>
+            <li>Any photos you have (phone photos are fine)</li>
+            <li>Logo (optional)</li>
+            <li>Any example sites you like (optional)</li>
+          </ul>
+        </article>
+
+        <article class="portfolio-card">
+          <h3>Response time</h3>
+          <p style="margin-top:.25rem;">
+            I usually reply within <strong>24 hours</strong> with a simple game plan and timeline.
+          </p>
+          <p style="margin-top: 1rem;">
+            <a href="#contact" class="btn btn-primary">Get a game plan</a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING (TEASER) -->
   <section id="pricing" class="section">
     <div class="container">
       <div class="section-kicker">Packages</div>
@@ -147,7 +200,6 @@
       </p>
 
       <div class="pricing-grid">
-        <!-- Starter -->
         <article class="pricing-card">
           <h3>Starter — $750</h3>
           <ul>
@@ -156,22 +208,20 @@
             <li>Google visibility setup</li>
             <li>Live in ~1 week</li>
           </ul>
-          <a href="pricing.html" class="btn btn-outline">View details</a>
+          <a href="pricing.html#starter" class="btn btn-outline">View details</a>
         </article>
 
-        <!-- Standard -->
         <article class="pricing-card pricing-card--highlight">
           <h3>Standard — $1,650</h3>
           <ul>
             <li>Up to 7 pages</li>
-            <li>Branding & logo refresh</li>
+            <li>Branding refresh</li>
             <li>Booking or menu setup</li>
             <li>Most popular option</li>
           </ul>
-          <a href="pricing.html" class="btn btn-primary">View details</a>
+          <a href="pricing.html#standard" class="btn btn-primary">View details</a>
         </article>
 
-        <!-- Premium -->
         <article class="pricing-card">
           <h3>Premium — Project based</h3>
           <ul>
@@ -180,9 +230,13 @@
             <li>Full brand system</li>
             <li>Built to scale</li>
           </ul>
-          <a href="pricing.html" class="btn btn-outline">View details</a>
+          <a href="pricing.html#premium" class="btn btn-outline">View details</a>
         </article>
       </div>
+
+      <p style="margin-top: 1.25rem;">
+        <a href="package-details.html" class="btn btn-outline">See what’s included</a>
+      </p>
     </div>
   </section>
 
@@ -192,8 +246,7 @@
       <div class="section-kicker">About</div>
       <h2 class="section-heading">Built for real-world small business owners.</h2>
       <p class="section-subtitle">
-        I’m Daultin — I build practical, high-trust websites for small businesses
-        who want results, not fluff.
+        I’m Daultin — I build practical, high-trust websites for small businesses who want results, not fluff.
       </p>
     </div>
   </section>
@@ -203,12 +256,34 @@
     <div class="container">
       <div class="section-kicker">Contact</div>
       <h2 class="section-heading">Start your project</h2>
+      <p class="section-subtitle">
+        Tell me what you do and what you want your site to accomplish (more calls, more leads, booking, ordering).
+        I usually reply within <strong>24 hours</strong> with a quick game plan.
+      </p>
 
       <form action="https://formspree.io/f/4047d1c6a0419e0f64075d1761535bc1f396721b" method="POST">
-        <input name="name" placeholder="Your name" required />
-        <input name="email" type="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Tell me about your business"></textarea>
-        <button class="btn btn-primary">Send message</button>
+        <div>
+          <label for="c-name">Name</label>
+          <input id="c-name" name="name" type="text" placeholder="Your name" required />
+        </div>
+
+        <div>
+          <label for="c-email">Email</label>
+          <input id="c-email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+
+        <div>
+          <label for="c-business">Business name (optional)</label>
+          <input id="c-business" name="business" type="text" placeholder="Example: Smith Landscaping" />
+        </div>
+
+        <div>
+          <label for="c-message">What do you need your website to do?</label>
+          <textarea id="c-message" name="message"
+                    placeholder="Example: get more calls, collect quote requests, show services, booking, take payments, etc."></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Send message</button>
       </form>
     </div>
   </section>
