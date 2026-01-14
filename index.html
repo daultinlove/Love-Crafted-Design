@@ -81,7 +81,78 @@
         <p>
           Full website + branding for a local BBQ truck—menu, schedule, and a bold visual identity built to attract customers and events.
         </p>
+        <p style="margin-top:.75rem;font-size:.9rem;color:#cbd0df;">
+          Also built for contractors, shops, barbers, coaches, and local service businesses.
+        </p>
       </aside>
+    </div>
+  </section>
+
+  <!-- WHO THIS IS FOR -->
+  <section class="section">
+    <div class="container">
+      <div class="section-kicker">Who this is for</div>
+      <h2 class="section-heading">If you run a small business, this is for you.</h2>
+      <p class="section-subtitle">
+        No matter your industry, the goal is the same: look professional, earn trust, and turn visitors into customers.
+      </p>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <h3>Service businesses</h3>
+          <p>Contractors, pressure washing, HVAC, landscaping, mobile services.</p>
+        </article>
+
+        <article class="portfolio-card">
+          <h3>Food & hospitality</h3>
+          <p>Restaurants, food trucks, cafés, catering, pop-ups.</p>
+        </article>
+
+        <article class="portfolio-card">
+          <h3>Personal brands</h3>
+          <p>Coaches, consultants, trainers, freelancers, creators.</p>
+        </article>
+
+        <article class="portfolio-card">
+          <h3>Local shops</h3>
+          <p>Barbershops, salons, gyms, retail, brick-and-mortar businesses.</p>
+        </article>
+      </div>
+
+      <p style="margin-top: 1.25rem;">
+        <a href="samples.html" class="btn btn-outline">See sample sites</a>
+        <a href="pricing.html" class="btn btn-outline">View packages</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-kicker">How it works</div>
+      <h2 class="section-heading">Simple. Fast. No guesswork.</h2>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <h3>1. Pick a package</h3>
+          <p>Choose the package that fits your business.</p>
+        </article>
+
+        <article class="portfolio-card">
+          <h3>2. Send your info</h3>
+          <p>I’ll collect everything I need with a short form.</p>
+        </article>
+
+        <article class="portfolio-card">
+          <h3>3. I build everything</h3>
+          <p>You review and request revisions based on your package.</p>
+        </article>
+
+        <article class="portfolio-card">
+          <h3>4. Launch</h3>
+          <p>Your site goes live. Optional monthly support available.</p>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -92,23 +163,13 @@
       <h2 class="section-heading">Start your project</h2>
       <p class="section-subtitle">
         Tell me what you do and what you want your site to accomplish.
-        I usually reply within <strong>24 hours</strong>.
+        I usually reply within <strong>24 hours</strong> with a quick game plan.
       </p>
 
-      <form
-        action="https://formspree.io/f/xnjjnqea"
-        method="POST"
-        onsubmit="
-          gtag('event', 'lead_submit', {
-            event_category: 'Contact',
-            event_label: 'Main Contact Form'
-          });
-          setTimeout(() => window.location.href='https://daultinlove.github.io/Love-Crafted-Design/thank-you.html', 700);
-        "
-      >
-
-        <input type="hidden" name="_subject" value="New lead — Love Crafted Digital">
-        <input type="text" name="_gotcha" style="display:none">
+      <!-- NOTE: This form submits via JS (fetch) to avoid Formspree redirect page -->
+      <form id="contact-form">
+        <input type="hidden" name="_subject" value="New lead — Love Crafted Digital" />
+        <input type="text" name="_gotcha" style="display:none" />
 
         <div>
           <label for="c-name">Name</label>
@@ -131,6 +192,9 @@
         </div>
 
         <button class="btn btn-primary" type="submit">Send message</button>
+
+        <!-- Optional tiny status text (won't break styling if you ignore it) -->
+        <p id="form-status" style="margin-top:.75rem;display:none;"></p>
       </form>
     </div>
   </section>
@@ -145,6 +209,55 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Contact form handler (Formspree + GA4 + reliable redirect)
+  (function () {
+    const form = document.getElementById('contact-form');
+    const statusEl = document.getElementById('form-status');
+
+    if (!form) return;
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      // optional UI feedback
+      if (statusEl) {
+        statusEl.style.display = 'block';
+        statusEl.textContent = 'Sending...';
+      }
+
+      // Fire GA event (lead)
+      try {
+        if (typeof gtag === 'function') {
+          gtag('event', 'lead_submit', {
+            event_category: 'Contact',
+            event_label: 'Main Contact Form'
+          });
+        }
+      } catch (err) {
+        // ignore GA errors to not block form
+      }
+
+      try {
+        const res = await fetch('https://formspree.io/f/xnjjnqea', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        });
+
+        // If Formspree returns an error, show message but still keep user on page
+        if (!res.ok) {
+          if (statusEl) statusEl.textContent = 'Something went wrong. Please try again.';
+          return;
+        }
+
+        // Success → redirect to your thank-you page
+        window.location.href = 'https://daultinlove.github.io/Love-Crafted-Design/thank-you.html';
+      } catch (err) {
+        if (statusEl) statusEl.textContent = 'Network error. Please try again.';
+      }
+    });
+  })();
 </script>
 
 </body>
