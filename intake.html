@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Client Intake | Love Crafted Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Love Crafted Digital client intake form" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f7f7f7;
+      color: #111;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header img {
+      max-width: 220px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    p.sub {
+      color: #555;
+      font-size: 1rem;
+    }
+
+    form {
+      background: #fff;
+      padding: 32px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .checkbox-group label,
+    .radio-group label {
+      font-weight: 400;
+      margin-top: 6px;
+    }
+
+    button {
+      margin-top: 32px;
+      width: 100%;
+      padding: 14px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <!-- Replace src with your logo -->
+      <img src="assets/logo-lovecrafted-digital.png" alt="Love Crafted Digital logo" />
+      <h1>Client Intake Form</h1>
+      <p class="sub">
+        This helps me understand your business, goals, and needs before we begin.
+      </p>
+    </header>
+
+    <form action="https://formspree.io/f/xwvvpzaj" method="POST" enctype="multipart/form-data">
+      
+      <label>Full Name *</label>
+      <input type="text" name="full_name" required />
+
+      <label>Business Name *</label>
+      <input type="text" name="business_name" required />
+
+      <label>Email Address *</label>
+      <input type="email" name="email" required />
+
+      <label>Phone Number</label>
+      <input type="text" name="phone" />
+
+      <label>Type of Business</label>
+      <select name="business_type">
+        <option>Home Services</option>
+        <option>Retail / Shop</option>
+        <option>Restaurant / Food</option>
+        <option>Barber / Salon</option>
+        <option>Coaching / Consulting</option>
+        <option>Online / Digital</option>
+        <option>Other</option>
+      </select>
+
+      <label>Current Website (if any)</label>
+      <input type="url" name="current_website" />
+
+      <label>Main goals for this project</label>
+      <textarea name="project_goals"></textarea>
+
+      <label>Design inspiration or style preferences</label>
+      <textarea name="design_preferences"></textarea>
+
+      <label>Upload logos or brand assets</label>
+      <input type="file" name="brand_files" />
+
+      <label>Desired launch date (if any)</label>
+      <input type="text" name="launch_date" />
+
+      <label>Package of interest</label>
+      <select name="package">
+        <option>Starter</option>
+        <option>Standard</option>
+        <option>Premium</option>
+        <option>Not sure yet</option>
+      </select>
+
+      <label>Anything else I should know?</label>
+      <textarea name="additional_notes"></textarea>
+
+      <button type="submit">Submit Intake Form</button>
+    </form>
+  </div>
+</body>
+</html>
