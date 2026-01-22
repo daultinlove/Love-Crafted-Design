@@ -1,264 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Love Crafted Digital — Small Business Web Design & Branding</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Love Crafted Digital</title>
+  <meta name="description" content="Love Crafted Digital designs and builds websites for small businesses that want to look professional without losing their personality." />
 
-  <!-- SEO META -->
-  <meta name="description"
-        content="Love Crafted Digital builds fast, clean websites and branding for small businesses—service pros, shops, restaurants, barbers, coaches, and more—so you look legit and get more customers." />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Love Crafted Digital — Small Business Web Design & Branding" />
-  <meta property="og:description" content="Fast, clean websites and branding for small businesses." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://daultinlove.github.io/Love-Crafted-Design/" />
-
-  <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C2S3JEJS5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4C2S3JEJS5');
-  </script>
-
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <!-- Your repo uses /css/style.css -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+  <div class="bg-glow" aria-hidden="true"></div>
 
-<header>
-  <div class="container nav">
-    <div class="nav-logo">
-      <a href="index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;">
-        <img src="favicon.png" alt="Love Crafted Digital Logo" class="nav-logo-img" />
-        <span>Love Crafted Digital</span>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Love Crafted Digital home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Love Crafted Digital</span>
       </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">How we work</a>
+        <a href="about.html">About</a>
+        <a href="pricing.html">Pricing</a>
+        <a class="btn btn-primary" href="#contact">Start a project</a>
+      </nav>
     </div>
+  </header>
 
-    <nav class="nav-links">
-      <a href="pricing.html">Packages</a>
-      <a href="package-details.html">What’s included</a>
-      <a href="samples.html">Samples</a>
-      <a href="about.html">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+  <main id="top">
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Web design and branding for small businesses</p>
+          <h1>Websites built with care, not slapped together</h1>
+          <p class="lead">
+            Love Crafted Digital designs and builds websites for small businesses that want to look professional
+            without losing their personality. No templates. No shortcuts. Just clean, thoughtful work that fits your business.
+          </p>
 
-<main>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#work">View our work</a>
+            <a class="btn btn-ghost" href="#contact">Start a project</a>
+          </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-kicker">Websites & branding for small businesses</div>
-        <h1 class="hero-title">
-          Professional websites for <span>any small business.</span>
-        </h1>
-        <p class="hero-subtitle">
-          I design and build fast, clean websites that help small businesses look professional and get more customers—
-          service companies, shops, restaurants, barbers, coaches, contractors, and more.
-          No templates. No agency pricing.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Start your project</a>
-          <a href="pricing.html" class="btn btn-outline">View packages</a>
+          <div class="trust-inline" aria-label="Highlights">
+            <div class="trust-pill">Built for real small businesses</div>
+            <div class="trust-pill">Designed from scratch every time</div>
+            <div class="trust-pill">You can still reach us after your site goes live</div>
+          </div>
         </div>
 
-        <p class="hero-tagline">
-          Serving all small businesses • Fast turnaround • Clear pricing
-        </p>
+        <div class="hero-frame" aria-label="Featured preview">
+          <div class="frame-inner">
+            <div class="frame-top">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="frame-body">
+              <div class="mock-title"></div>
+              <div class="mock-line w90"></div>
+              <div class="mock-line w80"></div>
+              <div class="mock-line w70"></div>
+              <div class="mock-card-row">
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+              </div>
+              <div class="mock-footer"></div>
+              <p class="frame-caption">Swap this with real screenshots when ready</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <aside class="hero-card hero-card--framed">
-        <div class="hero-card-tag">Example project</div>
-        <h2 class="hero-card-title">Jay’s KickAsh BBQ</h2>
-        <p>
-          Full website + branding for a local BBQ truck—menu, schedule, and a bold visual identity built to attract customers and events.
-        </p>
-        <p style="margin-top:.75rem;font-size:.9rem;color:#cbd0df;">
-          Also built for contractors, shops, barbers, coaches, and local service businesses.
-        </p>
-      </aside>
-    </div>
-  </section>
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head">
+          <h2>Work that feels finished</h2>
+          <p class="muted">
+            A few examples of the kind of clean, intentional look we build. Replace these with real projects anytime.
+          </p>
+        </div>
 
-  <!-- WHO THIS IS FOR -->
-  <section class="section">
-    <div class="container">
-      <div class="section-kicker">Who this is for</div>
-      <h2 class="section-heading">If you run a small business, this is for you.</h2>
-      <p class="section-subtitle">
-        No matter your industry, the goal is the same: look professional, earn trust, and turn visitors into customers.
-      </p>
+        <div class="work-grid">
+          <a class="work-item" href="samples.html" aria-label="Samples">
+            <div class="work-thumb">
+              <span class="work-badge">Samples</span>
+            </div>
+            <div class="work-meta">
+              <h3>Samples gallery</h3>
+              <p>See the style and layout direction we build around</p>
+            </div>
+          </a>
 
-      <div class="portfolio-grid">
-        <article class="portfolio-card">
-          <h3>Service businesses</h3>
-          <p>Contractors, pressure washing, HVAC, landscaping, mobile services.</p>
-        </article>
+          <a class="work-item" href="demo-starter.html" aria-label="Starter demo">
+            <div class="work-thumb">
+              <span class="work-badge">Starter</span>
+            </div>
+            <div class="work-meta">
+              <h3>Starter demo</h3>
+              <p>Simple, clean, and built to convert</p>
+            </div>
+          </a>
 
-        <article class="portfolio-card">
-          <h3>Food & hospitality</h3>
-          <p>Restaurants, food trucks, cafés, catering, pop-ups.</p>
-        </article>
-
-        <article class="portfolio-card">
-          <h3>Personal brands</h3>
-          <p>Coaches, consultants, trainers, freelancers, creators.</p>
-        </article>
-
-        <article class="portfolio-card">
-          <h3>Local shops</h3>
-          <p>Barbershops, salons, gyms, retail, brick-and-mortar businesses.</p>
-        </article>
+          <a class="work-item" href="demo-standard.html" aria-label="Standard demo">
+            <div class="work-thumb">
+              <span class="work-badge">Standard</span>
+            </div>
+            <div class="work-meta">
+              <h3>Standard demo</h3>
+              <p>More pages, more trust, more polish</p>
+            </div>
+          </a>
+        </div>
       </div>
+    </section>
 
-      <p style="margin-top: 1.25rem;">
-        <a href="samples.html" class="btn btn-outline">See sample sites</a>
-        <a href="pricing.html" class="btn btn-outline">View packages</a>
-      </p>
-    </div>
-  </section>
+    <!-- SERVICES -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>What we do</h2>
+          <p class="muted">
+            Some businesses need a full website. Others just need things cleaned up and working better.
+            Either way, we focus on clarity, quality, and longevity.
+          </p>
+        </div>
 
-  <!-- HOW IT WORKS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-kicker">How it works</div>
-      <h2 class="section-heading">Simple. Fast. No guesswork.</h2>
+        <div class="services-grid">
+          <div class="service-feature">
+            <h3>Custom Website Design</h3>
+            <p>
+              We design and build websites from the ground up so they actually feel like your business,
+              not a reused theme with your logo dropped in.
+            </p>
 
-      <div class="portfolio-grid">
-        <article class="portfolio-card">
-          <h3>1. Pick a package</h3>
-          <p>Choose the package that fits your business.</p>
-        </article>
+            <ul class="checklist">
+              <li>Mobile friendly and fast</li>
+              <li>Clear structure and simple navigation</li>
+              <li>Built to earn trust quickly</li>
+            </ul>
 
-        <article class="portfolio-card">
-          <h3>2. Send your info</h3>
-          <p>I’ll collect everything I need with a short form.</p>
-        </article>
+            <a class="btn btn-primary" href="intake.html">Start a project</a>
+          </div>
 
-        <article class="portfolio-card">
-          <h3>3. I build everything</h3>
-          <p>You review and request revisions based on your package.</p>
-        </article>
+          <div class="service-stack">
+            <div class="service-card">
+              <h4>Branding and Visual Direction</h4>
+              <p>Logos, colors, and layout choices that help your business look consistent and intentional.</p>
+            </div>
 
-        <article class="portfolio-card">
-          <h3>4. Launch</h3>
-          <p>Your site goes live. Optional monthly support available.</p>
-        </article>
+            <div class="service-card">
+              <h4>Ongoing Updates and Support</h4>
+              <p>Edits, updates, and improvements so your site does not get outdated or ignored.</p>
+            </div>
+
+            <div class="service-card note-card">
+              <p class="note">If it is part of your website, we can handle it.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-kicker">Contact</div>
-      <h2 class="section-heading">Start your project</h2>
-      <p class="section-subtitle">
-        Tell me what you do and what you want your site to accomplish.
-        I usually reply within <strong>24 hours</strong> with a quick game plan.
-      </p>
-
-      <!-- NOTE: This form submits via JS (fetch) to avoid Formspree redirect page -->
-      <form id="contact-form">
-        <input type="hidden" name="_subject" value="New lead — Love Crafted Digital" />
-        <input type="text" name="_gotcha" style="display:none" />
-
-        <div>
-          <label for="c-name">Name</label>
-          <input id="c-name" name="name" type="text" required />
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <h2>How we work</h2>
+          <p class="muted">Clear steps, no confusion, and you always know what is next.</p>
         </div>
 
-        <div>
-          <label for="c-email">Email</label>
-          <input id="c-email" name="email" type="email" required />
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h3>We start by listening</h3>
+              <p>We learn what you do, who you serve, and what matters to you.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h3>We design with purpose</h3>
+              <p>Every section has a reason. Nothing is there just because.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h3>We build it clean and simple</h3>
+              <p>Fast, mobile friendly, and easy for people to use.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h3>We stay after launch</h3>
+              <p>You will have support when you need changes or updates later on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-wrap">
+        <div class="contact-card">
+          <h2>If your website does not feel like your business yet, let us fix that</h2>
+          <p class="muted">
+            No pressure. No sales pitch. Just a conversation about what you need and whether we are a good fit.
+          </p>
+
+          <!-- You already have intake.html. Use it as the main path. -->
+          <div class="form-actions">
+            <a class="btn btn-primary" href="intake.html">Start a project</a>
+            <a class="btn btn-ghost" href="pricing.html">See pricing</a>
+            <p class="fineprint">You will hear back within one to two business days.</p>
+          </div>
         </div>
 
-        <div>
-          <label for="c-business">Business name (optional)</label>
-          <input id="c-business" name="business" type="text" />
-        </div>
+        <footer class="site-footer">
+          <div class="footer-inner">
+            <p class="fineprint">© <span id="year"></span> Love Crafted Digital</p>
+            <div class="footer-links">
+              <a href="#top">Top</a>
+              <a href="#services">Services</a>
+              <a href="pricing.html">Pricing</a>
+              <a href="intake.html">Contact</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
 
-        <div>
-          <label for="c-message">What do you need your website to do?</label>
-          <textarea id="c-message" name="message" required></textarea>
-        </div>
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav");
 
-        <button class="btn btn-primary" type="submit">Send message</button>
-
-        <!-- Optional tiny status text (won't break styling if you ignore it) -->
-        <p id="form-status" style="margin-top:.75rem;display:none;"></p>
-      </form>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="container">
-    © <span id="year"></span> Love Crafted Digital
-  </div>
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Contact form handler (Formspree + GA4 + reliable redirect)
-  (function () {
-    const form = document.getElementById('contact-form');
-    const statusEl = document.getElementById('form-status');
-
-    if (!form) return;
-
-    form.addEventListener('submit', async function (e) {
-      e.preventDefault();
-
-      // optional UI feedback
-      if (statusEl) {
-        statusEl.style.display = 'block';
-        statusEl.textContent = 'Sending...';
-      }
-
-      // Fire GA event (lead)
-      try {
-        if (typeof gtag === 'function') {
-          gtag('event', 'lead_submit', {
-            event_category: 'Contact',
-            event_label: 'Main Contact Form'
-          });
-        }
-      } catch (err) {
-        // ignore GA errors to not block form
-      }
-
-      try {
-        const res = await fetch('https://formspree.io/f/xnjjnqea', {
-          method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: new FormData(form)
-        });
-
-        // If Formspree returns an error, show message but still keep user on page
-        if (!res.ok) {
-          if (statusEl) statusEl.textContent = 'Something went wrong. Please try again.';
-          return;
-        }
-
-        // Success → redirect to your thank-you page
-        window.location.href = 'https://daultinlove.github.io/Love-Crafted-Design/thank-you.html';
-      } catch (err) {
-        if (statusEl) statusEl.textContent = 'Network error. Please try again.';
-      }
+    toggle.addEventListener("click", () => {
+      const expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!expanded));
+      nav.classList.toggle("nav-open");
     });
-  })();
-</script>
 
+    nav.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => {
+        nav.classList.remove("nav-open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
