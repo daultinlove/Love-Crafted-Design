@@ -11,16 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Your repo uses /css/style.css -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <!-- Top texture glow -->
   <div class="bg-glow" aria-hidden="true"></div>
 
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Love Crafted Digital home">
+      <a class="brand" href="index.html" aria-label="Love Crafted Digital home">
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-text">Love Crafted Digital</span>
       </a>
@@ -35,7 +35,8 @@
         <a href="#work">Work</a>
         <a href="#services">Services</a>
         <a href="#process">How we work</a>
-        <a href="#about">About</a>
+        <a href="about.html">About</a>
+        <a href="pricing.html">Pricing</a>
         <a class="btn btn-primary" href="#contact">Start a project</a>
       </nav>
     </div>
@@ -80,7 +81,7 @@
                 <div class="mock-card"></div>
               </div>
               <div class="mock-footer"></div>
-              <p class="frame-caption">Replace this preview with a real screenshot when ready</p>
+              <p class="frame-caption">Swap this with real screenshots when ready</p>
             </div>
           </div>
         </div>
@@ -93,38 +94,38 @@
         <div class="section-head">
           <h2>Work that feels finished</h2>
           <p class="muted">
-            A few examples of the kind of clean, intentional look we build. You can swap these with real projects anytime.
+            A few examples of the kind of clean, intentional look we build. Replace these with real projects anytime.
           </p>
         </div>
 
         <div class="work-grid">
-          <a class="work-item" href="#contact" aria-label="Project example one">
+          <a class="work-item" href="samples.html" aria-label="Samples">
             <div class="work-thumb">
-              <span class="work-badge">Website build</span>
+              <span class="work-badge">Samples</span>
             </div>
             <div class="work-meta">
-              <h3>Project Example One</h3>
-              <p>Simple layout, clear messaging, strong calls to action</p>
+              <h3>Samples gallery</h3>
+              <p>See the style and layout direction we build around</p>
             </div>
           </a>
 
-          <a class="work-item" href="#contact" aria-label="Project example two">
+          <a class="work-item" href="demo-starter.html" aria-label="Starter demo">
             <div class="work-thumb">
-              <span class="work-badge">Refresh</span>
+              <span class="work-badge">Starter</span>
             </div>
             <div class="work-meta">
-              <h3>Project Example Two</h3>
-              <p>Cleaner design, improved structure, more trust</p>
+              <h3>Starter demo</h3>
+              <p>Simple, clean, and built to convert</p>
             </div>
           </a>
 
-          <a class="work-item" href="#contact" aria-label="Project example three">
+          <a class="work-item" href="demo-standard.html" aria-label="Standard demo">
             <div class="work-thumb">
-              <span class="work-badge">Branding</span>
+              <span class="work-badge">Standard</span>
             </div>
             <div class="work-meta">
-              <h3>Project Example Three</h3>
-              <p>Consistent colors, typography, and a cohesive look</p>
+              <h3>Standard demo</h3>
+              <p>More pages, more trust, more polish</p>
             </div>
           </a>
         </div>
@@ -156,7 +157,7 @@
               <li>Built to earn trust quickly</li>
             </ul>
 
-            <a class="btn btn-primary" href="#contact">Start a project</a>
+            <a class="btn btn-primary" href="intake.html">Start a project</a>
           </div>
 
           <div class="service-stack">
@@ -171,9 +172,7 @@
             </div>
 
             <div class="service-card note-card">
-              <p class="note">
-                If it is part of your website, we can handle it.
-              </p>
+              <p class="note">If it is part of your website, we can handle it.</p>
             </div>
           </div>
         </div>
@@ -224,47 +223,8 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section section-alt" id="about">
-      <div class="container about-grid">
-        <div>
-          <h2>Why Love Crafted Digital exists</h2>
-          <p class="muted">
-            Love Crafted Digital was built for small businesses that are tired of rushed websites and one size fits all solutions.
-            We take on fewer projects so each one gets real attention and the final result actually feels finished.
-          </p>
-
-          <div class="about-points">
-            <div class="about-point">
-              <h4>Less noise</h4>
-              <p>Clean pages that guide people to the next step.</p>
-            </div>
-            <div class="about-point">
-              <h4>More intention</h4>
-              <p>Design choices that match your business, not trends.</p>
-            </div>
-            <div class="about-point">
-              <h4>Real support</h4>
-              <p>Help after launch when you need updates and changes.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-card">
-          <h3>Quick project fit check</h3>
-          <p class="muted">If you answer these, we can usually tell you the right next step fast.</p>
-          <ul class="checklist">
-            <li>What do you want your website to do</li>
-            <li>Who is your customer</li>
-            <li>Do you need a full build or a cleanup</li>
-          </ul>
-          <a class="btn btn-ghost" href="#contact">Send details</a>
-        </div>
-      </div>
-    </section>
-
     <!-- CONTACT -->
-    <section class="section" id="contact">
+    <section class="section section-alt" id="contact">
       <div class="container contact-wrap">
         <div class="contact-card">
           <h2>If your website does not feel like your business yet, let us fix that</h2>
@@ -272,29 +232,12 @@
             No pressure. No sales pitch. Just a conversation about what you need and whether we are a good fit.
           </p>
 
-          <!-- Replace this form action with your Formspree URL if you have one -->
-          <form class="contact-form" action="#" method="post">
-            <div class="field-row">
-              <div class="field">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
-              </div>
-              <div class="field">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="you@business.com" autocomplete="email" required />
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="message">What are you trying to build or fix</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell me a little about your business and what you need" required></textarea>
-            </div>
-
-            <div class="form-actions">
-              <button class="btn btn-primary" type="submit">Start a project</button>
-              <p class="fineprint">You will hear back within one to two business days.</p>
-            </div>
-          </form>
+          <!-- You already have intake.html. Use it as the main path. -->
+          <div class="form-actions">
+            <a class="btn btn-primary" href="intake.html">Start a project</a>
+            <a class="btn btn-ghost" href="pricing.html">See pricing</a>
+            <p class="fineprint">You will hear back within one to two business days.</p>
+          </div>
         </div>
 
         <footer class="site-footer">
@@ -303,7 +246,8 @@
             <div class="footer-links">
               <a href="#top">Top</a>
               <a href="#services">Services</a>
-              <a href="#contact">Contact</a>
+              <a href="pricing.html">Pricing</a>
+              <a href="intake.html">Contact</a>
             </div>
           </div>
         </footer>
@@ -312,7 +256,6 @@
   </main>
 
   <script>
-    // Mobile nav
     const toggle = document.querySelector(".nav-toggle");
     const nav = document.querySelector(".nav");
 
@@ -322,7 +265,6 @@
       nav.classList.toggle("nav-open");
     });
 
-    // Close menu on link click
     nav.querySelectorAll("a").forEach(a => {
       a.addEventListener("click", () => {
         nav.classList.remove("nav-open");
@@ -330,7 +272,6 @@
       });
     });
 
-    // Year
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
