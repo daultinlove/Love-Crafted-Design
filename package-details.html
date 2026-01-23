@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Package Details — Love Crafted Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Full breakdown of Love Crafted Digital packages: Starter, Standard, and Premium." />
+  <meta name="description" content="Full breakdown of Love Crafted Digital packages: Starter, Standard, and Premium. Deliverables, timelines, and what to expect." />
 
   <meta property="og:title" content="Package Details — Love Crafted Digital" />
   <meta property="og:description" content="Clear deliverables, timelines, and what to expect from each tier." />
@@ -14,158 +14,288 @@
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-
-<header>
-  <div class="container nav">
-    <div class="nav-logo">
-      <a href="index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav-brand" href="index.html" aria-label="Love Crafted Digital Home">
         <img src="favicon.png" alt="Love Crafted Digital Logo" class="nav-logo-img" />
-        <span>Love Crafted Digital</span>
+        <span class="nav-brand-text">Love Crafted Digital</span>
       </a>
-    </div>
 
-    <nav class="nav-links">
-      <a href="pricing.html">Packages</a>
-      <a href="package-details.html" aria-current="page">What’s included</a>
-      <a href="samples.html">Samples</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="pricing.html">Packages</a>
+        <a href="package-details.html" aria-current="page">What’s Included</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
 
-<main>
-  <!-- HERO -->
-  <section class="hero" style="padding-bottom: 2.5rem;">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-kicker">What’s included</div>
-        <h1 class="hero-title">Package breakdown</h1>
-        <p class="hero-subtitle">
-          Clear deliverables, timelines, and exactly what you get with Starter, Standard, and Premium.
-          If you’re not sure which tier fits, start with Packages — I’ll help you choose.
-        </p>
+      <div class="nav-actions">
+        <a class="btn btn-outline btn-sm hide-mobile" href="pricing.html">Pricing</a>
+        <a class="btn btn-primary btn-sm hide-mobile" href="index.html#contact">Start</a>
 
-        <div class="hero-actions">
-          <a href="pricing.html" class="btn btn-primary">Compare packages</a>
-          <a href="#starter" class="btn btn-outline">Jump to Starter</a>
-        </div>
-
-        <p class="hero-tagline">
-          Built for real small businesses • No fluff • Clear scope
-        </p>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        </button>
       </div>
 
-      <aside class="hero-card hero-card--framed">
-        <div class="hero-card-tag">Quick note</div>
-        <h2 class="hero-card-title">Everything is customized</h2>
-        <p>
-          These are the standard inclusions for each tier. Your final build is customized to your business,
-          your goals, and how you want customers to contact you.
-        </p>
-        <p style="margin-top:.75rem;font-size:.9rem;color:#cbd0df;">
-          Want monthly edits handled for you? See Maintenance on the Packages page.
-        </p>
-      </aside>
+      <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile" hidden>
+        <a href="pricing.html">Packages</a>
+        <a href="package-details.html">What’s Included</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="nav-mobile-cta">
+          <a class="btn btn-outline" href="pricing.html">View pricing</a>
+          <a class="btn btn-primary" href="index.html#contact">Start your project</a>
+        </div>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- DETAILS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-kicker">Details</div>
-      <h2 class="section-heading">What you get by tier</h2>
-      <p class="section-subtitle">Pick the tier that matches where your business is today.</p>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">What’s included</div>
+          <h1 class="hero-title">Package breakdown.</h1>
+          <p class="hero-subtitle">
+            Clear deliverables, timelines, and exactly what you get with Starter, Standard, and Premium.
+            If you’re not sure which tier fits, start with Packages — I’ll help you choose.
+          </p>
 
-      <!-- Starter -->
-      <article id="starter" class="section" style="padding-top:0;">
-        <h2 class="section-heading">Starter — Launch</h2>
-        <p class="section-subtitle">Best for new businesses that need to look legit fast.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="pricing.html">Compare packages</a>
+            <a class="btn btn-outline" href="#tiers">View tiers</a>
+          </div>
 
-        <ul class="pricing-list">
-          <li>1–3 pages (Home, About, Services/Contact)</li>
-          <li>Mobile-first layout</li>
-          <li>Basic SEO setup (titles, descriptions, headings)</li>
-          <li>Google Business Profile setup</li>
-          <li>Contact form or click-to-call</li>
-          <li>1 revision round</li>
-          <li>Handoff training video</li>
-        </ul>
+          <div class="trust-row">
+            <div class="trust-item">
+              <div class="trust-top">Clear scope</div>
+              <div class="trust-sub">No mystery deliverables</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-top">Fast timelines</div>
+              <div class="trust-sub">Days, not months</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-top">Built to convert</div>
+              <div class="trust-sub">Calls • leads • booking • orders</div>
+            </div>
+          </div>
+        </div>
 
-        <p><strong>Timeline:</strong> 5–7 business days after kickoff + content.</p>
-        <p style="margin-top: 1rem;">
-          <a href="pricing.html#contact" class="btn btn-outline">Start with Starter</a>
-        </p>
-      </article>
+        <aside class="hero-card">
+          <div class="card-badge">Quick note</div>
+          <h2 class="card-title">Everything is customized.</h2>
+          <p class="card-text">
+            These are the standard inclusions for each tier. Your final build is tailored to your business,
+            your goals, and how you want customers to contact you.
+          </p>
 
-      <hr style="opacity:.15; margin: 32px 0;" />
+          <div class="card-divider"></div>
 
-      <!-- Standard -->
-      <article id="standard" class="section" style="padding-top:0;">
-        <h2 class="section-heading">Standard — Stand Out</h2>
-        <p class="section-subtitle">The “most businesses should pick this” package.</p>
+          <div class="card-meta">
+            <div class="meta-row">
+              <span class="meta-label">Add-ons</span>
+              <span class="meta-value">You can add features anytime (booking, ordering, payments, SEO pages).</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Maintenance</span>
+              <span class="meta-value">If you want monthly edits handled for you, it’s on the Packages page.</span>
+            </div>
+          </div>
 
-        <ul class="pricing-list">
-          <li>Everything in Starter</li>
-          <li>Up to 7 custom pages (menu/services, gallery, FAQ, etc.)</li>
-          <li>Simple logo suite (primary + alternate)</li>
-          <li>Brand colors &amp; typography</li>
-          <li>Brand guidelines PDF</li>
-          <li>Business card design</li>
-          <li>Social media templates</li>
-          <li>Booking system OR menu setup</li>
-          <li>2 revision rounds</li>
-        </ul>
+          <div class="card-actions">
+            <a class="btn btn-outline btn-sm" href="pricing.html#pricing">Pricing</a>
+            <a class="btn btn-primary btn-sm" href="pricing.html#calculator">Estimate</a>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-        <p><strong>Timeline:</strong> 7–10 business days after kickoff + content.</p>
-        <p style="margin-top: 1rem;">
-          <a href="pricing.html#contact" class="btn btn-primary">Book Standard</a>
-        </p>
-      </article>
+    <!-- JUMP NAV -->
+    <section class="section section-tight" id="tiers">
+      <div class="container">
+        <div class="tier-nav">
+          <a class="tier-pill" href="#starter">Starter</a>
+          <a class="tier-pill tier-pill--active" href="#standard">Standard</a>
+          <a class="tier-pill" href="#premium">Premium</a>
+        </div>
+      </div>
+    </section>
 
-      <hr style="opacity:.15; margin: 32px 0;" />
+    <!-- TIERS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Details</div>
+          <h2 class="h2">What you get by tier</h2>
+          <p class="muted">Pick the tier that matches where your business is today. Upgrade later if needed.</p>
+        </div>
 
-      <!-- Premium -->
-      <article id="premium" class="section" style="padding-top:0;">
-        <h2 class="section-heading">Premium — Full Brand Build</h2>
-        <p class="section-subtitle">Full identity + best-in-class site and integrations.</p>
+        <div class="tier-stack">
+          <!-- Starter -->
+          <article id="starter" class="tier-card">
+            <div class="tier-head">
+              <div class="tier-label">Starter</div>
+              <h3 class="tier-title">Launch</h3>
+              <p class="tier-sub">Best for new businesses that need to look legit fast.</p>
+            </div>
 
-        <ul class="pricing-list">
-          <li>Everything in Standard</li>
-          <li>Fully custom multi-page site</li>
-          <li>Smooth animations &amp; premium layout</li>
-          <li>Ordering or booking system</li>
-          <li>Stripe payment integration</li>
-          <li>Advanced SEO + content structure</li>
-          <li>Full brand identity system</li>
-          <li>Merch mockups (shirts, hats, stickers, signage)</li>
-          <li>5 revision rounds</li>
-          <li>30 days post-launch tweaks</li>
-        </ul>
+            <div class="tier-body">
+              <ul class="tier-list">
+                <li>1–3 pages (Home, About, Services/Contact)</li>
+                <li>Mobile-first layout</li>
+                <li>Basic SEO setup (titles, descriptions, headings)</li>
+                <li>Google Business Profile setup</li>
+                <li>Contact form or click-to-call</li>
+                <li>1 revision round</li>
+                <li>Handoff training video</li>
+              </ul>
 
-        <p><strong>Timeline:</strong> 10–20 business days after kickoff + content.</p>
-        <p style="margin-top: 1rem;">
-          <a href="pricing.html#contact" class="btn btn-outline">Talk Premium</a>
-        </p>
-      </article>
+              <div class="tier-meta">
+                <div class="tier-meta-row">
+                  <span class="tier-meta-label">Typical timeline</span>
+                  <span class="tier-meta-value">5–7 business days after kickoff + content</span>
+                </div>
+              </div>
 
-      <p style="margin-top: 2rem;">
-        <a href="pricing.html" class="btn btn-outline">Back to packages</a>
-      </p>
+              <div class="tier-actions">
+                <a href="pricing.html#starter" class="btn btn-outline btn-sm">See Starter price</a>
+                <a href="index.html#contact" class="btn btn-primary btn-sm">Start Starter</a>
+              </div>
+            </div>
+          </article>
 
+          <!-- Standard -->
+          <article id="standard" class="tier-card tier-card--highlight">
+            <div class="tier-badge">Most popular</div>
+
+            <div class="tier-head">
+              <div class="tier-label">Standard</div>
+              <h3 class="tier-title">Stand Out</h3>
+              <p class="tier-sub">The “most businesses should pick this” package.</p>
+            </div>
+
+            <div class="tier-body">
+              <ul class="tier-list">
+                <li>Everything in Starter</li>
+                <li>Up to 7 custom pages (menu/services, gallery, FAQ, etc.)</li>
+                <li>Simple logo suite (primary + alternate)</li>
+                <li>Brand colors &amp; typography</li>
+                <li>Brand guidelines PDF</li>
+                <li>Business card design</li>
+                <li>Social media templates</li>
+                <li>Booking system OR menu setup</li>
+                <li>2 revision rounds</li>
+              </ul>
+
+              <div class="tier-meta">
+                <div class="tier-meta-row">
+                  <span class="tier-meta-label">Typical timeline</span>
+                  <span class="tier-meta-value">7–10 business days after kickoff + content</span>
+                </div>
+              </div>
+
+              <div class="tier-actions">
+                <a href="pricing.html#standard" class="btn btn-outline btn-sm">See Standard price</a>
+                <a href="index.html#contact" class="btn btn-primary btn-sm">Book Standard</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Premium -->
+          <article id="premium" class="tier-card">
+            <div class="tier-head">
+              <div class="tier-label">Premium</div>
+              <h3 class="tier-title">Full Brand Build</h3>
+              <p class="tier-sub">Full identity + best-in-class site and integrations.</p>
+            </div>
+
+            <div class="tier-body">
+              <ul class="tier-list">
+                <li>Everything in Standard</li>
+                <li>Fully custom multi-page site</li>
+                <li>Smooth animations &amp; premium layout</li>
+                <li>Ordering or booking system</li>
+                <li>Stripe payment integration</li>
+                <li>Advanced SEO + content structure</li>
+                <li>Full brand identity system</li>
+                <li>Merch mockups (shirts, hats, stickers, signage)</li>
+                <li>5 revision rounds</li>
+                <li>30 days post-launch tweaks</li>
+              </ul>
+
+              <div class="tier-meta">
+                <div class="tier-meta-row">
+                  <span class="tier-meta-label">Typical timeline</span>
+                  <span class="tier-meta-value">10–20 business days after kickoff + content</span>
+                </div>
+              </div>
+
+              <div class="tier-actions">
+                <a href="pricing.html#premium" class="btn btn-outline btn-sm">See Premium range</a>
+                <a href="index.html#contact" class="btn btn-primary btn-sm">Talk Premium</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- CTA -->
+        <div class="details-cta">
+          <div class="details-cta-left">
+            <h3 class="details-cta-title">Not sure what to pick?</h3>
+            <p class="details-cta-text">Tell me what you do and what you want the site to accomplish — I’ll recommend the right tier.</p>
+          </div>
+          <div class="details-cta-actions">
+            <a class="btn btn-primary" href="index.html#contact">Ask me</a>
+            <a class="btn btn-outline" href="samples.html">See samples</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Love Crafted Digital</div>
+      <div class="footer-links">
+        <a href="pricing.html">Packages</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+      </div>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer>
-  <div class="container">
-    © <span id="year"></span> Love Crafted Digital — Hand-built websites &amp; branding for real small businesses.
-  </div>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</footer>
 
+    // Mobile nav
+    (function () {
+      const btn = document.querySelector('.nav-toggle');
+      const mobile = document.getElementById('mobile-nav');
+      if (!btn || !mobile) return;
+
+      const close = () => {
+        btn.setAttribute('aria-expanded', 'false');
+        mobile.hidden = true;
+      };
+
+      btn.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        mobile.hidden = isOpen;
+      });
+
+      mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => close()));
+      close();
+    })();
+  </script>
 </body>
 </html>
