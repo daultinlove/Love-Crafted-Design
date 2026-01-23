@@ -1,209 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Skyline Performance Coaching — Premium Demo | Love Crafted Digital</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Premium Skyline Performance Coaching demo site showing overview, programs, results, and coaching approach by Love Crafted Digital." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Moon & Timber Steakhouse</title>
+  <meta name="description" content="A modern steakhouse built around reservation flow. Seasonal menu, private dining, and a calm premium experience." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550,750&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="theme-coach">
-<header>
-  <div class="container nav">
-    <div class="nav-logo">
-      <div class="nav-logo-badge">SP</div>
-      <span>Skyline Performance Coaching</span>
-    </div>
-    <nav class="nav-links">
-      <a href="demo-premium.html">Overview</a>
-      <a href="demo-premium-brand.html">Branding</a>
-      <a href="demo-premium-sales.html">Online Sales</a>
-      <a href="#packages">Programs</a>
-      <a href="demo-premium-book.html">Book</a>
-      <a href="index.html">Back to Love Crafted</a>
-    </nav>
-  </div>
-</header>
 
-<main>
-  <!-- HERO -->
-  <section class="hero hero--split">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-kicker">Premium demo build</div>
-        <h1 class="hero-title">
-          For brands that want the <span>full package.</span>
-        </h1>
-        <p class="hero-subtitle">
-          A Premium Skyline Performance Coaching build: custom layout, brand system, and a
-          full online sales flow you can actually run your business on.
-        </p>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-        <div class="hero-actions">
-          <a href="demo-premium-book.html" class="btn btn-primary">Book a strategy call</a>
-          <a href="demo-premium-sales.html" class="btn btn-outline">See sales flow</a>
-        </div>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="demo-premium.html" aria-label="Moon & Timber home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Moon & Timber</span>
+      </a>
 
-        <div class="hero-chip-row">
-          <span class="hero-chip">Custom multi-page site</span>
-          <span class="hero-chip">Brand system &amp; merch mockups</span>
-          <span class="hero-chip">Online booking &amp; checkout</span>
-          <span class="hero-chip">Stripe integration</span>
-          <span class="hero-chip">SEO-first content</span>
-        </div>
+      <div class="topbar-actions">
+        <nav class="nav" aria-label="Primary">
+          <a href="#menu">Menu</a>
+          <a href="#experience">Experience</a>
+          <a href="#private">Private dining</a>
+          <a class="btn btn-solid" href="#reserve">Reserve</a>
+        </nav>
 
-        <p class="hero-tagline">
-          This is the level of polish Love Crafted Digital brings to Premium projects.
-        </p>
-      </div>
-
-      <aside class="hero-card--framed" style="padding: 1.5rem; background: var(--bg-panel);">
-        <div style="margin-bottom: 1.1rem;">
-          <img
-            src="Skyline.png"
-            alt="Skyline Performance Coaching logo"
-            style="width: 100%; border-radius: 1.1rem; display: block;"
-          />
-        </div>
-        <div class="hero-chip-row">
-          <span class="hero-chip">Primary logo</span>
-          <span class="hero-chip">Icon mark</span>
-          <span class="hero-chip">Typography</span>
-          <span class="hero-chip">Color palette</span>
-        </div>
-        <p style="margin-top: 1rem; font-size: 0.85rem; color: #cbd0df;">
-          Dedicated pages show the full brand system and online sales flow. This overview focuses
-          on the coaching offer and structure.
-        </p>
-      </aside>
-    </div>
-  </section>
-
-  <!-- PROGRAMS -->
-  <section id="packages" class="section">
-    <div class="container">
-      <div class="section-kicker">Programs</div>
-      <h2 class="section-heading">Signature coaching offers your site can actually sell.</h2>
-      <p class="section-subtitle">
-        These example programs show how Premium sites present your services clearly and move visitors
-        into your booking flow without feeling pushy or confusing.
-      </p>
-
-      <div class="pricing-grid">
-        <article class="pricing-card">
-          <div class="pricing-name">Reset</div>
-          <h3 class="pricing-title">90-Minute Deep Dive</h3>
-          <p class="pricing-price">$249 <span>one-time</span></p>
-          <ul class="pricing-list">
-            <li>90-minute clarity session</li>
-            <li>Specific 90-day action plan</li>
-            <li>Follow-up summary &amp; resources</li>
-          </ul>
-        </article>
-
-        <article class="pricing-card pricing-card--highlight">
-          <div class="pricing-badge">Most popular</div>
-          <div class="pricing-name">1:1 Coaching</div>
-          <h3 class="pricing-title">Performance Track</h3>
-          <p class="pricing-price">$750 <span>per month</span></p>
-          <ul class="pricing-list">
-            <li>Weekly 60-minute 1:1 calls</li>
-            <li>Custom systems &amp; habit stack</li>
-            <li>Messaging support between calls</li>
-            <li>Progress tracking dashboard</li>
-          </ul>
-        </article>
-
-        <article class="pricing-card">
-          <div class="pricing-name">Group</div>
-          <h3 class="pricing-title">Cohort Program</h3>
-          <p class="pricing-price">$1,200 <span>8 weeks</span></p>
-          <ul class="pricing-list">
-            <li>Weekly small-group calls</li>
-            <li>Shared curriculum &amp; templates</li>
-            <li>Peer accountability</li>
-            <li>Private community access</li>
-          </ul>
-        </article>
+        <button class="mode" type="button" id="modeBtn" aria-label="Toggle dark mode">
+          <span class="mode-dot" aria-hidden="true"></span>
+          <span class="mode-text" id="modeText">Dark</span>
+        </button>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- RESULTS -->
-  <section id="results" class="section">
-    <div class="container">
-      <div class="section-kicker">Results</div>
-      <h2 class="section-heading">What changes after a few months of real work.</h2>
-
-      <div class="portfolio-grid">
-        <article class="portfolio-card">
-          <div class="portfolio-label">Career</div>
-          <h3>Clear promotion path</h3>
-          <p>
-            Clients build visibility with leadership, clarify expectations, and stop guessing what
-            “good” looks like in their role.
+  <main id="main">
+    <!-- Hero -->
+    <section class="section">
+      <div class="wrap">
+        <div class="declaration">
+          <p class="kicker">Steakhouse • Cocktails • Private dining</p>
+          <h1>Quiet luxury. Loud flavor.</h1>
+          <p class="lead">
+            This isn’t a menu dump. It’s a reservation machine.
+            One clear path: pick a time, show up, and let us handle the rest.
           </p>
-        </article>
 
-        <article class="portfolio-card">
-          <div class="portfolio-label">Systems</div>
-          <h3>Weeks that actually work</h3>
-          <p>
-            We design a schedule that fits your role, your energy, and your life — not just a generic
-            productivity template.
-          </p>
-        </article>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="#reserve">Reserve a table</a>
+            <a class="btn btn-ghost" href="#menu">View menu</a>
+            <a class="btn btn-ghost" href="#private">Private dining</a>
+          </div>
 
-        <article class="portfolio-card">
-          <div class="portfolio-label">Life</div>
-          <h3>More margin, less guilt</h3>
-          <p>
-            The point isn’t to grind harder. It’s to focus on the right work, then have the energy
-            and time left for the people and things that matter most.
-          </p>
-        </article>
+          <div class="pills">
+            <span class="pill">Reservations encouraged</span>
+            <span class="pill">Seasonal menu</span>
+            <span class="pill">Cocktail program</span>
+            <span class="pill">Private rooms</span>
+          </div>
+
+          <div class="kpi">
+            <div class="card">
+              <div class="big">2–6 guests</div>
+              <div class="muted">Ideal table experience.</div>
+            </div>
+            <div class="card">
+              <div class="big">6–18 guests</div>
+              <div class="muted">Private dining options.</div>
+            </div>
+            <div class="card">
+              <div class="big">48 hours</div>
+              <div class="muted">Most weekend slots fill quickly.</div>
+            </div>
+          </div>
+
+          <p class="micro">This is a “Premium” demo: more structure, more polish, built for conversions.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-kicker">Coach</div>
-      <h2 class="section-heading">Coaching from someone who’s actually had a boss.</h2>
-      <p class="section-subtitle">
-        Skyline Performance Coaching is led by a former operations leader who spent a decade managing
-        teams, deadlines, and surprise 4pm “can you jump on a quick call?” meetings.
-      </p>
+    <!-- Menu -->
+    <section id="menu" class="section alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Menu highlights</h2>
+        </div>
 
-      <div class="portfolio-grid">
-        <article class="portfolio-card">
-          <div class="portfolio-label">Background</div>
-          <h3>Ops &amp; leadership experience</h3>
-          <p>
-            Real-world corporate and startup experience. We talk about the politics, the pressure,
-            and the people — not just “mindset” in a vacuum.
-          </p>
-        </article>
+        <div class="grid-3" style="margin-top: 18px;">
+          <div class="card">
+            <h3>Filet + peppercorn</h3>
+            <p class="muted">Center-cut, pan-seared, finished with a clean bite.</p>
+            <p class="micro"><strong>$52</strong></p>
+          </div>
+          <div class="card">
+            <h3>Ribeye + char</h3>
+            <p class="muted">Big flavor. Balanced fat. Proper crust.</p>
+            <p class="micro"><strong>$58</strong></p>
+          </div>
+          <div class="card">
+            <h3>Seasonal sides</h3>
+            <p class="muted">Rotating vegetables, potatoes, and house sauces.</p>
+            <p class="micro"><strong>$12–$16</strong></p>
+          </div>
+        </div>
 
-        <article class="portfolio-card">
-          <div class="portfolio-label">Approach</div>
-          <h3>No fluff, no guru talk</h3>
-          <p>
-            Direct, honest, and practical. Every call ends with concrete actions, not just a “believe
-            in yourself” pep talk.
-          </p>
-        </article>
+        <div class="notice" style="margin-top: 14px;">
+          Gluten-free and allergy-friendly options available. Ask your server—no attitude.
+        </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<footer>
-  <div class="container">
-    Overview page of the Premium Skyline demo — separate Branding, Online Sales, and Booking pages
-    show the full multi-page build. Designed by Love Crafted Digital.
-  </div>
-</footer>
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="wrap">
+        <div class="split">
+          <div class="split-main">
+            <h2>Designed to feel finished.</h2>
+            <p class="muted">
+              Premium restaurants don’t need more words. They need better decisions:
+              what to show, what to remove, and what to make easy.
+            </p>
+            <p class="muted">
+              The site exists to support reservations, communicate dress/expectations,
+              and answer the questions people ask before they book.
+            </p>
+
+            <div class="grid-2" style="margin-top: 14px;">
+              <div class="card">
+                <h3>Hours</h3>
+                <p class="muted">Tue–Thu: 5–10<br/>Fri–Sat: 5–11<br/>Sun: 5–9</p>
+              </div>
+              <div class="card">
+                <h3>Dress</h3>
+                <p class="muted">Smart casual. You don’t need a suit—just show up clean.</p>
+              </div>
+            </div>
+
+            <div class="mini-cta">
+              <a class="btn btn-solid" href="#reserve">Reserve now</a>
+              <a class="btn btn-ghost" href="#faq">Read FAQs</a>
+            </div>
+          </div>
+
+          <div class="split-card" aria-label="Featured event">
+            <h3>Chef’s tasting (monthly)</h3>
+            <p class="muted">
+              Five courses, limited seating, one seating per night.
+              Built for guests who want the full experience.
+            </p>
+            <ul class="list">
+              <li>Reserved seating</li>
+              <li>Wine pairing optional</li>
+              <li>Ticketed event</li>
+            </ul>
+            <a class="btn btn-ghost full" href="#reserve">Reserve tasting</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Private dining -->
+    <section id="private" class="section alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Private dining</h2>
+        </div>
+
+        <div class="grid-3" style="margin-top: 18px;">
+          <div class="card">
+            <h3>Small room</h3>
+            <p class="muted">6–10 guests. Perfect for birthdays and client dinners.</p>
+          </div>
+          <div class="card">
+            <h3>Long table</h3>
+            <p class="muted">10–18 guests. Fixed menu or family-style options.</p>
+          </div>
+          <div class="card">
+            <h3>Buyout</h3>
+            <p class="muted">Custom pricing. Ideal for corporate + holiday events.</p>
+          </div>
+        </div>
+
+        <div class="cta-row" style="margin-top: 14px;">
+          <a class="btn btn-solid" href="#reserve">Request private dining</a>
+          <a class="btn btn-ghost" href="#faq">FAQ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ + Reserve -->
+    <section id="faq" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>FAQ</h2>
+        </div>
+
+        <div class="grid-2" style="margin-top: 18px;">
+          <div class="card">
+            <h3>Do you take walk-ins?</h3>
+            <p class="muted">Sometimes. Weekends fill up fast—reservations are the move.</p>
+          </div>
+          <div class="card">
+            <h3>How do cancellations work?</h3>
+            <p class="muted">Cancel 4+ hours ahead. Private dining has a separate policy.</p>
+          </div>
+          <div class="card">
+            <h3>Dietary restrictions?</h3>
+            <p class="muted">Yes. We can accommodate most needs with notice.</p>
+          </div>
+          <div class="card">
+            <h3>Parking?</h3>
+            <p class="muted">Nearby garage + street parking. Details sent in confirmation.</p>
+          </div>
+        </div>
+
+        <div id="reserve" class="push" style="margin-top: 18px;">
+          <h2>Reserve a table</h2>
+          <p class="muted">Demo form—wire to OpenTable/Resy/Toast on a real build.</p>
+
+          <form class="form" action="#" method="post">
+            <div class="grid-3">
+              <div class="field">
+                <label for="rname">Name</label>
+                <input id="rname" name="name" required />
+              </div>
+              <div class="field">
+                <label for="rdate">Date</label>
+                <input id="rdate" name="date" placeholder="Fri, Feb 2" required />
+              </div>
+              <div class="field">
+                <label for="rsize">Party size</label>
+                <select id="rsize" name="party">
+                  <option>2</option><option>3</option><option>4</option><option>5</option>
+                  <option>6</option><option>7</option><option>8+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="rnote">Notes (optional)</label>
+              <textarea id="rnote" name="notes" placeholder="Allergies, celebration, private dining request, etc."></textarea>
+            </div>
+
+            <div class="cta-row">
+              <button class="btn btn-solid" type="submit">Request reservation</button>
+              <a class="btn btn-ghost" href="#menu">View menu</a>
+            </div>
+
+            <p class="micro">Premium builds usually include real booking + confirmation flow.</p>
+          </form>
+        </div>
+
+        <footer class="footer">
+          <p class="micro">© <span id="year"></span> Moon & Timber</p>
+          <div class="footer-links">
+            <a href="#menu">Menu</a>
+            <a href="#private">Private</a>
+            <a href="#reserve">Reserve</a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const root = document.documentElement;
+    const btn = document.getElementById("modeBtn");
+    const modeText = document.getElementById("modeText");
+
+    function applyTheme(mode) {
+      if (mode === "dark") { root.setAttribute("data-theme", "dark"); modeText.textContent = "Light"; }
+      else { root.removeAttribute("data-theme"); modeText.textContent = "Dark"; }
+    }
+
+    const saved = localStorage.getItem("lcd-theme");
+    applyTheme(saved === "dark" ? "dark" : "light");
+
+    btn.addEventListener("click", () => {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      const next = isDark ? "light" : "dark";
+      localStorage.setItem("lcd-theme", next);
+      applyTheme(next);
+    });
+  </script>
 </body>
 </html>
