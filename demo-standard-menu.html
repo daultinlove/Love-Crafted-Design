@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Menu | Moon Tim's Steak House</title>
+  <title>Menu | Moon Tim’s Steak House</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Explore the full menu at Moon Tim's Steak House — steaks, chicken entrées, and classic sides."
-  />
+  <meta name="description" content="Explore the menu at Moon Tim’s Steak House — hand-cut steaks, chicken entrées, and classic sides." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body class="theme-moon">
 <header class="moon-header">
   <div class="container nav">
@@ -17,14 +15,14 @@
       <div class="nav-logo-badge">MT</div>
       <span>Moon Tim’s Steak House</span>
     </div>
-    <nav class="nav-links">
+
+    <nav class="nav-links" aria-label="Primary">
       <a href="demo-standard.html">Home</a>
-      <a href="demo-standard-menu.html">Menu</a>
+      <a href="demo-standard-menu.html" aria-current="page">Menu</a>
       <a href="demo-standard-about.html">Our Story</a>
       <a href="demo-standard-visit.html">Visit</a>
       <a href="demo-standard-reserve.html" class="nav-cta">Reserve</a>
       <a href="demo-standard-contact.html">Contact</a>
-      <a href="index.html">Back to Love Crafted</a>
     </nav>
   </div>
 </header>
@@ -34,107 +32,94 @@
     <div class="container">
       <div class="moon-kicker">Menu</div>
       <h1 class="moon-heading">Fire-Grilled Favorites</h1>
-      <p class="moon-subtitle" style="max-width:38rem;margin-bottom:2rem;">
-        All steaks are hand-cut in house, seasoned with our moon-dust blend, and finished over open flame.
-        Chicken entrées and sides are built to match.
+      <p class="moon-subtitle">
+        Steaks are hand-cut in house, seasoned with our house blend, and finished over open flame.
+        Ask your server about tonight’s features.
       </p>
 
-      <h2 class="moon-heading" style="font-size:1.1rem;margin-bottom:1rem;">Steaks</h2>
+      <div class="hero-actions" style="margin-top:16px;">
+        <a href="demo-standard-reserve.html" class="btn btn-primary-moon">Reserve</a>
+        <a href="demo-standard-contact.html" class="btn btn-outline-moon">Questions?</a>
+      </div>
+
+      <div class="section-divider" style="margin:26px 0;"></div>
+
+      <h2 class="moon-heading" style="font-size:1.15rem;">Steaks</h2>
       <div class="menu-grid">
         <article class="menu-card">
           <p class="menu-label">Steak</p>
           <h3 class="menu-title">Moonlit Ribeye</h3>
           <p class="menu-price">$34</p>
-          <p class="menu-desc">
-            14oz hand-cut ribeye with deep char, brushed with roasted garlic butter and finished with flaky salt.
-          </p>
+          <p class="menu-desc">14oz ribeye with deep char, roasted garlic butter, flaky salt.</p>
         </article>
 
         <article class="menu-card">
           <p class="menu-label">Steak</p>
           <h3 class="menu-title">Tim’s Signature Sirloin</h3>
           <p class="menu-price">$28</p>
-          <p class="menu-desc">
-            Lean, bold sirloin grilled hot and fast, served with crispy onion straws and house steak sauce.
-          </p>
+          <p class="menu-desc">Lean, bold sirloin with crispy onion straws and house steak sauce.</p>
         </article>
 
         <article class="menu-card">
           <p class="menu-label">Steak</p>
           <h3 class="menu-title">Celestial Filet</h3>
           <p class="menu-price">$38</p>
-          <p class="menu-desc">
-            Center-cut filet mignon, seared in cast iron, topped with herb compound butter and a red wine reduction.
-          </p>
+          <p class="menu-desc">Center-cut filet with herb butter and red wine reduction.</p>
         </article>
 
         <article class="menu-card">
           <p class="menu-label">Steak</p>
           <h3 class="menu-title">Crescent Cut Prime</h3>
           <p class="menu-price">$42</p>
-          <p class="menu-desc">
-            Prime cut seared in cast iron, finished with thyme, roasted garlic, and moon-dust seasoning.
-          </p>
+          <p class="menu-desc">Prime cut finished with thyme, roasted garlic, and house seasoning.</p>
         </article>
       </div>
 
-      <h2 class="moon-heading" style="font-size:1.1rem;margin:2.5rem 0 1rem;">Chicken &amp; Mains</h2>
+      <h2 class="moon-heading" style="font-size:1.15rem; margin-top:30px;">Chicken &amp; Mains</h2>
       <div class="menu-grid">
         <article class="menu-card">
           <p class="menu-label">Chicken</p>
           <h3 class="menu-title">Starfire Chicken</h3>
           <p class="menu-price">$24</p>
-          <p class="menu-desc">
-            Flame-grilled marinated chicken breast with charred lemon, served over garlic whipped potatoes.
-          </p>
+          <p class="menu-desc">Flame-grilled chicken with charred lemon and whipped potatoes.</p>
         </article>
 
         <article class="menu-card">
           <p class="menu-label">Chicken</p>
           <h3 class="menu-title">Southern Moon Fried Chicken</h3>
           <p class="menu-price">$22</p>
-          <p class="menu-desc">
-            Buttermilk-brined, pressure-fried thighs and drumsticks with hot honey drizzle and house slaw.
-          </p>
+          <p class="menu-desc">Buttermilk-brined, hot honey drizzle, house slaw.</p>
         </article>
       </div>
 
-      <h2 class="moon-heading" style="font-size:1.1rem;margin:2.5rem 0 1rem;">Sides</h2>
+      <h2 class="moon-heading" style="font-size:1.15rem; margin-top:30px;">Sides</h2>
       <div class="menu-grid">
         <article class="menu-card">
           <p class="menu-label">Side</p>
           <h3 class="menu-title">Garlic Whipped Potatoes</h3>
           <p class="menu-price">$7</p>
-          <p class="menu-desc">
-            Smooth Yukon golds with roasted garlic and brown butter.
-          </p>
+          <p class="menu-desc">Yukon golds, roasted garlic, brown butter.</p>
         </article>
 
         <article class="menu-card">
           <p class="menu-label">Side</p>
           <h3 class="menu-title">Ember-Roasted Vegetables</h3>
           <p class="menu-price">$8</p>
-          <p class="menu-desc">
-            Seasonal veggies roasted on the grill, finished with lemon and smoked sea salt.
-          </p>
+          <p class="menu-desc">Seasonal vegetables with lemon and smoked sea salt.</p>
         </article>
 
         <article class="menu-card">
           <p class="menu-label">Side</p>
           <h3 class="menu-title">Skillet Cornbread</h3>
           <p class="menu-price">$6</p>
-          <p class="menu-desc">
-            Cast-iron cornbread with honey butter and a hint of jalapeño.
-          </p>
+          <p class="menu-desc">Cast-iron cornbread with honey butter.</p>
         </article>
 
         <article class="menu-card">
           <p class="menu-label">Side</p>
           <h3 class="menu-title">Moonlit Mac &amp; Cheese</h3>
           <p class="menu-price">$9</p>
-          <p class="menu-desc">
-            Three-cheese baked mac with smoked cheddar, crisp bacon, and toasted crumbs.
-          </p>
+          <p class="menu-desc">Three-cheese bake with smoked cheddar and bacon.</p>
         </article>
       </div>
     </div>
@@ -142,9 +127,11 @@
 </main>
 
 <footer class="moon-footer">
-  <div class="container">
-    Full menu page as part of the Standard demo site by Love Crafted Digital.
+  <div class="container footer-row">
+    <span>© <span id="year"></span> Moon Tim’s Steak House</span>
+    <a href="index.html" style="opacity:.85;">Studio</a>
   </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
 </body>
 </html>
