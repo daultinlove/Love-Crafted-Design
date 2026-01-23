@@ -491,3 +491,105 @@ input:focus, select:focus, textarea:focus, button:focus, a:focus{
   .btn{ width: 100%; }
   .mode{ width: 100%; justify-content: center; }
 }
+
+/* =========================================================
+   Demo Site Utilities (real-client feel)
+   Append to bottom of your Branch 2 css/style.css
+========================================================= */
+
+.card{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.grid-2{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.grid-3{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.pills{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.pill{
+  font-size: .85rem;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  color: color-mix(in srgb, var(--text) 85%, transparent);
+}
+
+.hr{
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 18px 0;
+}
+
+.form{
+  margin-top: 14px;
+  display:grid;
+  gap: 12px;
+}
+.field label{
+  display:block;
+  font-weight: 800;
+  font-size: .92rem;
+  margin-bottom: 6px;
+}
+.field input,
+.field select,
+.field textarea{
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  padding: 12px 12px;
+  color: var(--text);
+}
+.field textarea{ min-height: 120px; resize: vertical; }
+
+.notice{
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--blue) 10%, var(--surface)),
+    color-mix(in srgb, var(--gold) 10%, var(--surface))
+  );
+  padding: 14px 16px;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.kpi{
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.kpi .card{
+  flex: 1 1 190px;
+  padding: 14px 16px;
+}
+.kpi .big{
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 980px){
+  .grid-2, .grid-3{ grid-template-columns: 1fr; }
+}
