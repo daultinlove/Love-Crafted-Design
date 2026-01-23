@@ -6,11 +6,28 @@
   <title>Love Crafted Digital</title>
   <meta name="description" content="I design websites that make decisions. Clear websites for small businesses that want customers to act." />
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Love Crafted Digital" />
+  <meta property="og:description" content="I design websites that make decisions. Clear websites for small businesses that want customers to act." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://daultinlove.github.io/Love-Crafted-Design/" />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550,750&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C2S3JEJS5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4C2S3JEJS5');
+  </script>
 </head>
 
 <body>
@@ -46,6 +63,7 @@
         <div class="declaration">
           <p class="kicker">A decisive boutique studio</p>
           <h1>I design websites that make decisions.</h1>
+
           <p class="lead">
             Most small business websites try to say everything and end up doing nothing.
             Your website should guide people to one clear next step. That is the job.
@@ -134,15 +152,9 @@
           </div>
 
           <div class="case-body">
-            <p>
-              Jay needed customers to know where he would be and how to order fast.
-            </p>
-            <p>
-              We removed everything that did not support location, menu, and schedule.
-            </p>
-            <p>
-              The site now does one thing well: get people to show up hungry.
-            </p>
+            <p>Jay needed customers to know where he would be and how to order fast.</p>
+            <p>We removed everything that did not support location, menu, and schedule.</p>
+            <p>The site now does one thing well: get people to show up hungry.</p>
 
             <div class="mini-cta">
               <a class="btn btn-solid" href="samples.html">View work</a>
@@ -229,10 +241,8 @@
   </main>
 
   <script>
-    // Year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Theme: default light for conversion, with optional dark toggle
     const root = document.documentElement;
     const btn = document.getElementById("modeBtn");
     const modeText = document.getElementById("modeText");
@@ -259,4 +269,3 @@
   </script>
 </body>
 </html>
-l>
