@@ -5,431 +5,563 @@
   <title>Pricing & Packages — Love Crafted Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- SEO META -->
+  <!-- SEO -->
   <meta name="description"
-        content="Compare Starter, Standard, and Premium website & branding packages from Love Crafted Digital, built for real small businesses." />
+        content="Compare Starter, Standard, and Premium website & branding packages from Love Crafted Digital. Clear pricing, fast turnaround, built for real small businesses." />
 
-  <!-- Open Graph / Social -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Pricing & Packages — Love Crafted Digital" />
-  <meta property="og:description"
-        content="Simple, transparent web design & branding packages for small businesses, BBQ trucks, barbers, and service pros." />
+  <meta property="og:description" content="Clear, fixed packages for websites & branding. No surprises. No agency markup." />
   <meta property="og:url" content="https://daultinlove.github.io/Love-Crafted-Design/pricing.html" />
   <meta property="og:type" content="website" />
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
-
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-
-<header>
-  <div class="container nav">
-    <div class="nav-logo">
-      <a href="index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav-brand" href="index.html" aria-label="Love Crafted Digital Home">
         <img src="favicon.png" alt="Love Crafted Digital Logo" class="nav-logo-img" />
-        <span>Love Crafted Digital</span>
+        <span class="nav-brand-text">Love Crafted Digital</span>
       </a>
-    </div>
 
-    <nav class="nav-links">
-      <a href="pricing.html">Packages</a>
-      <a href="package-details.html">What’s included</a>
-      <a href="samples.html">Samples</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="pricing.html">Packages</a>
+        <a href="package-details.html">What’s Included</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
 
-<main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-kicker">Websites &amp; Branding for Real Small Businesses</div>
-        <h1 class="hero-title">
-          Simple packages. <span>Real pricing. No surprises.</span>
-        </h1>
-        <p class="hero-subtitle">
-          These are the same packages I use on every project—clear, fixed, and built around how
-          real small businesses actually work. No mystery pricing, no “contact for quote” games.
-        </p>
-        <div class="hero-actions">
-          <a href="#pricing" class="btn btn-primary">Compare packages</a>
-          <a href="#calculator" class="btn btn-outline">Use the estimate wizard</a>
+      <div class="nav-actions">
+        <a class="btn btn-outline btn-sm hide-mobile" href="samples.html">See samples</a>
+        <a class="btn btn-primary btn-sm hide-mobile" href="#contact">Start</a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile" hidden>
+        <a href="pricing.html">Packages</a>
+        <a href="package-details.html">What’s Included</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="nav-mobile-cta">
+          <a class="btn btn-outline" href="samples.html">See samples</a>
+          <a class="btn btn-primary" href="#contact">Start your project</a>
         </div>
-        <p class="hero-tagline">
-          DFW-based • Fast turnaround • Starter, Standard, and Premium options.
-        </p>
-      </div>
-
-      <aside class="hero-card hero-card--framed">
-        <div class="hero-card-tag">How it works</div>
-        <h2 class="hero-card-title">Pick your tier, then we build.</h2>
-        <p>
-          You tell me what you need your site to do—take orders, book appointments, show off your
-          work—and we match it to the right package. If your needs grow, you can always upgrade later.
-        </p>
-        <p class="hero-card-quote">
-          “Clear pricing made it easy to say yes. I knew exactly what I was getting.”
-        </p>
-      </aside>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- PRICING -->
-  <section id="pricing" class="section">
-    <div class="container">
-      <div class="section-kicker">Packages</div>
-      <h2 class="section-heading">Starter, Standard, and Premium.</h2>
-      <p class="section-subtitle">
-        Every project starts here. We pick the package that fits your business today, with room to
-        grow later if you need more pages, features, or brand depth.
-      </p>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">Pricing</div>
+          <h1 class="hero-title">Clear packages. <span>Real pricing.</span> No surprises.</h1>
+          <p class="hero-subtitle">
+            These are the same packages I use on every build. Pick your tier, send your info, and I’ll handle the design + build.
+            If you outgrow your package later, you can upgrade.
+          </p>
 
-      <div class="pricing-grid">
-        <!-- Starter -->
-        <article class="pricing-card" id="starter">
-          <div class="pricing-name">Starter</div>
-          <h3 class="pricing-title">Launch</h3>
-          <p class="pricing-price">$750 <span>one-time</span></p>
-          <p class="pricing-meta">
-            Perfect for new businesses who need a clean, credible online presence.
-          </p>
-          <ul class="pricing-list">
-            <li>1–3 mobile-first pages (Home, About, Contact/Services)</li>
-            <li>Basic SEO (titles, descriptions, headings)</li>
-            <li>Google Business Profile setup</li>
-            <li>Contact form or click-to-call</li>
-            <li>1 revision round included</li>
-            <li>Handoff training video</li>
-          </ul>
-          <p class="pricing-meta">
-            Typical timeline: <strong>5–7 business days</strong> after content collection + kickoff.
-          </p>
-          <a href="#contact" class="btn btn-outline">Start with Starter</a>
-        </article>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#packages">Compare packages</a>
+            <a class="btn btn-outline" href="#wizard">Use estimate wizard</a>
+          </div>
 
-        <!-- Standard -->
-        <article class="pricing-card pricing-card--highlight" id="standard">
-          <div class="pricing-badge">Most popular</div>
-          <div class="pricing-name">Standard</div>
-          <h3 class="pricing-title">Stand Out</h3>
-          <p class="pricing-price">$1,650 <span>one-time</span></p>
-          <p class="pricing-meta">
-            The sweet spot for most small businesses—custom site and real branding.
-          </p>
-          <ul class="pricing-list">
-            <li>Everything in Starter</li>
-            <li>Up to 7 custom pages (menu/services, gallery, FAQ, etc.)</li>
-            <li>Simple logo suite (primary + alternate)</li>
-            <li>Brand colors &amp; typography</li>
-            <li>Brand guidelines PDF</li>
-            <li>Business card design</li>
-            <li>Social media templates</li>
-            <li>Booking system OR menu setup</li>
-            <li>2 revision rounds</li>
-          </ul>
-          <p class="pricing-meta">
-            Typical timeline: <strong>7–10 business days</strong> after content collection + kickoff.
-          </p>
-          <a href="#contact" class="btn btn-primary">Book Standard</a>
-        </article>
+          <div class="trust-row">
+            <div class="trust-item">
+              <div class="trust-top">Fixed tiers</div>
+              <div class="trust-sub">No “contact for quote” games</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-top">Fast turnaround</div>
+              <div class="trust-sub">Built to ship, not drag</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-top">Built to convert</div>
+              <div class="trust-sub">Calls, forms, booking, trust signals</div>
+            </div>
+          </div>
+        </div>
 
-        <!-- Premium -->
-        <article class="pricing-card" id="premium">
-          <div class="pricing-name">Premium</div>
-          <h3 class="pricing-title">Full Brand Build</h3>
-          <p class="pricing-price">$3,200–$4,500 <span>project-based</span></p>
-          <p class="pricing-meta">
-            For serious brands that want a top-tier online presence and full brand system.
+        <aside class="hero-card">
+          <div class="card-badge">How it works</div>
+          <h2 class="card-title">Pick your tier → we build.</h2>
+          <p class="card-text">
+            You tell me what you need the site to do (calls, bookings, ordering, showing your work).
+            I match it to the right package and build it clean + mobile-first.
           </p>
-          <ul class="pricing-list">
-            <li>Everything in Standard</li>
-            <li>Fully custom multi-page site</li>
-            <li>Smooth animations &amp; premium layout</li>
-            <li>Online ordering or booking system</li>
-            <li>Stripe payment integration</li>
-            <li>Advanced SEO + content structure</li>
-            <li>Full brand identity system</li>
-            <li>Social templates &amp; business cards</li>
-            <li>Digital merch mockups (shirts, hats, stickers, signage)</li>
-            <li>5 revision rounds</li>
-            <li>30 days of post-launch tweaks</li>
-          </ul>
-          <p class="pricing-meta">
-            Typical timeline: <strong>10–20 business days</strong> after content collection + kickoff.
-          </p>
-          <a href="#contact" class="btn btn-outline">Talk Premium</a>
-        </article>
+
+          <div class="card-divider"></div>
+
+          <div class="card-meta">
+            <div class="meta-row">
+              <span class="meta-label">Best fit</span>
+              <span class="meta-value">Contractors • Shops • Food • Barbers • Local service pros</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Next step</span>
+              <span class="meta-value">Use the wizard or jump straight to contact</span>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn btn-outline btn-sm" href="#wizard">Wizard</a>
+            <a class="btn btn-primary btn-sm" href="#contact">Start</a>
+          </div>
+        </aside>
       </div>
+    </section>
 
-      <!-- OPTIONAL ADDITIONAL SERVICES (Maintenance moved here) -->
-      <div class="section" style="padding-top:24px;">
-        <div class="section-kicker">Optional</div>
-        <h2 class="section-heading">Optional additional services</h2>
-        <p class="section-subtitle">
-          Add these anytime — before launch or after your site is live.
-        </p>
+    <!-- PACKAGES -->
+    <section id="packages" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Packages</div>
+          <h2 class="h2">Starter, Standard, and Premium.</h2>
+          <p class="muted">
+            Every project starts here. Choose what fits your business today — you can always upgrade later if your needs grow.
+          </p>
+        </div>
 
+        <!-- Uses your original pricing-card classes -->
         <div class="pricing-grid">
-          <!-- Maintenance -->
-          <article class="pricing-card">
-            <div class="pricing-name">Maintenance</div>
-            <h3 class="pricing-title">Website upkeep</h3>
-            <p class="pricing-price">$50 <span>/ month</span></p>
-            <p class="pricing-meta">
-              For businesses that want changes handled without worrying about it.
-            </p>
+          <!-- Starter -->
+          <article class="pricing-card" id="starter">
+            <div class="pricing-name">Starter</div>
+            <h3 class="pricing-title">Launch</h3>
+            <p class="pricing-price">$750 <span>one-time</span></p>
+            <p class="pricing-meta">Perfect for new businesses that need a clean, credible online presence.</p>
+
             <ul class="pricing-list">
-              <li>Small text/photo updates (up to 30 mins/month)</li>
-              <li>Broken link fixes</li>
-              <li>Basic monthly site health check</li>
-              <li>Email support</li>
+              <li>1–3 mobile-first pages (Home, About, Contact/Services)</li>
+              <li>Basic SEO (titles, descriptions, headings)</li>
+              <li>Google Business Profile setup</li>
+              <li>Contact form or click-to-call</li>
+              <li>1 revision round included</li>
+              <li>Handoff training video</li>
             </ul>
-            <p class="pricing-meta">
-              Need more than 30 mins? I’ll quote it based on what you need.
-            </p>
-            <a href="#contact" class="btn btn-outline">Add maintenance</a>
+
+            <p class="pricing-meta">Typical timeline: <strong>5–7 business days</strong> after kickoff + content.</p>
+            <a href="#contact" class="btn btn-outline">Start with Starter</a>
           </article>
 
-          <!-- Add-ons -->
-          <article class="pricing-card">
-            <div class="pricing-name">Add-ons</div>
-            <h3 class="pricing-title">Common extras</h3>
-            <p class="pricing-meta">Optional upgrades depending on your business.</p>
+          <!-- Standard -->
+          <article class="pricing-card pricing-card--highlight" id="standard">
+            <div class="pricing-badge">Most picked</div>
+            <div class="pricing-name">Standard</div>
+            <h3 class="pricing-title">Stand Out</h3>
+            <p class="pricing-price">$1,650 <span>one-time</span></p>
+            <p class="pricing-meta">The sweet spot for most small businesses — custom site + real branding.</p>
+
             <ul class="pricing-list">
-              <li>Extra pages</li>
-              <li>Copywriting / rewriting</li>
-              <li>Local SEO pages</li>
-              <li>Ordering / booking setup</li>
-              <li>Stripe payments</li>
-              <li>Extra revision rounds</li>
+              <li>Everything in Starter</li>
+              <li>Up to 7 custom pages (menu/services, gallery, FAQ, etc.)</li>
+              <li>Simple logo suite (primary + alternate)</li>
+              <li>Brand colors &amp; typography</li>
+              <li>Brand guidelines PDF</li>
+              <li>Business card design</li>
+              <li>Social media templates</li>
+              <li>Booking system OR menu setup</li>
+              <li>2 revision rounds</li>
             </ul>
-            <a href="#calculator" class="btn btn-outline">Use estimate wizard</a>
+
+            <p class="pricing-meta">Typical timeline: <strong>7–10 business days</strong> after kickoff + content.</p>
+            <a href="#contact" class="btn btn-primary">Book Standard</a>
+          </article>
+
+          <!-- Premium -->
+          <article class="pricing-card" id="premium">
+            <div class="pricing-name">Premium</div>
+            <h3 class="pricing-title">Full Brand Build</h3>
+            <p class="pricing-price">$3,200–$4,500 <span>project-based</span></p>
+            <p class="pricing-meta">For serious brands that want a flagship site + full brand system.</p>
+
+            <ul class="pricing-list">
+              <li>Everything in Standard</li>
+              <li>Fully custom multi-page site</li>
+              <li>Smooth animations &amp; premium layout</li>
+              <li>Online ordering or booking system</li>
+              <li>Stripe payment integration</li>
+              <li>Advanced SEO + content structure</li>
+              <li>Full brand identity system</li>
+              <li>Digital merch mockups (shirts, hats, signage)</li>
+              <li>5 revision rounds</li>
+              <li>30 days of post-launch tweaks</li>
+            </ul>
+
+            <p class="pricing-meta">Typical timeline: <strong>10–20 business days</strong> after kickoff + content.</p>
+            <a href="#contact" class="btn btn-outline">Talk Premium</a>
           </article>
         </div>
+
+        <!-- OPTIONAL SERVICES -->
+        <div class="section" style="padding-top: 2rem;">
+          <div class="section-head">
+            <div class="kicker">Optional</div>
+            <h2 class="h2">Additional services</h2>
+            <p class="muted">Add these anytime — before launch or after your site is live.</p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="pricing-card">
+              <div class="pricing-name">Maintenance</div>
+              <h3 class="pricing-title">Website upkeep</h3>
+              <p class="pricing-price">$50 <span>/ month</span></p>
+              <p class="pricing-meta">For businesses that want updates handled without thinking about it.</p>
+
+              <ul class="pricing-list">
+                <li>Small text/photo updates (up to 30 mins/month)</li>
+                <li>Broken link fixes</li>
+                <li>Basic monthly site health check</li>
+                <li>Email support</li>
+              </ul>
+
+              <p class="pricing-meta">Need more than 30 mins? I’ll quote it based on scope.</p>
+              <a href="#contact" class="btn btn-outline">Add maintenance</a>
+            </article>
+
+            <article class="pricing-card">
+              <div class="pricing-name">Add-ons</div>
+              <h3 class="pricing-title">Common extras</h3>
+              <p class="pricing-meta">Optional upgrades depending on your business.</p>
+
+              <ul class="pricing-list">
+                <li>Extra pages</li>
+                <li>Copywriting / rewriting</li>
+                <li>Local SEO pages</li>
+                <li>Ordering / booking setup</li>
+                <li>Stripe payments</li>
+                <li>Extra revision rounds</li>
+              </ul>
+
+              <a href="#wizard" class="btn btn-outline">Use estimate wizard</a>
+            </article>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- CALCULATOR -->
-  <section id="calculator" class="section">
-    <div class="container">
-      <div class="section-kicker">Estimate</div>
-      <h2 class="section-heading">Use the quick estimate wizard.</h2>
-      <p class="section-subtitle">
-        Answer a few quick questions and get a ballpark recommendation. Final pricing always comes
-        from a real quote based on these packages.
-      </p>
-
-      <div class="calc-wizard">
-        <div class="calc-steps">
-          <div class="calc-step-indicator calc-step-indicator--active" data-step="1">1. Your business</div>
-          <div class="calc-step-indicator" data-step="2">2. Website size</div>
-          <div class="calc-step-indicator" data-step="3">3. Branding</div>
-          <div class="calc-step-indicator" data-step="4">4. Features</div>
-          <div class="calc-step-indicator" data-step="5">5. Summary</div>
+    <!-- ESTIMATE WIZARD -->
+    <section id="wizard" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Estimate</div>
+          <h2 class="h2">Quick estimate wizard</h2>
+          <p class="muted">
+            Answer a few questions and get a ballpark recommendation. Final pricing always comes from a real quote.
+          </p>
         </div>
 
-        <form id="calcForm">
-          <!-- STEP 1 -->
-          <div class="calc-step calc-step--active" data-step="1">
-            <h3>What stage is your business in?</h3>
-            <p class="calc-help">This helps me guess how big and serious the build should be.</p>
-            <div class="calc-options">
-              <label class="calc-option">
-                <input type="radio" name="stage" value="new" required />
-                <span>Just starting out</span>
-                <small>New or side hustle, low overhead, just need to look legit.</small>
-              </label>
-              <label class="calc-option">
-                <input type="radio" name="stage" value="growing" />
-                <span>Growing</span>
-                <small>Steady customers, want to look more established.</small>
-              </label>
-              <label class="calc-option">
-                <input type="radio" name="stage" value="established" />
-                <span>Established brand</span>
-                <small>Multiple services/locations, ready for a flagship site.</small>
-              </label>
-            </div>
+        <div class="calc-wizard">
+          <div class="calc-steps">
+            <div class="calc-step-indicator calc-step-indicator--active" data-step="1">1. Your business</div>
+            <div class="calc-step-indicator" data-step="2">2. Website size</div>
+            <div class="calc-step-indicator" data-step="3">3. Branding</div>
+            <div class="calc-step-indicator" data-step="4">4. Features</div>
+            <div class="calc-step-indicator" data-step="5">5. Summary</div>
           </div>
 
-          <!-- STEP 2 -->
-          <div class="calc-step" data-step="2">
-            <h3>How big do you see the website being?</h3>
-            <p class="calc-help">Rough guess is fine.</p>
-            <div class="calc-options">
-              <label class="calc-option">
-                <input type="radio" name="pages" value="small" required />
-                <span>1–3 pages</span>
-                <small>Home, About, Contact/Services.</small>
-              </label>
-              <label class="calc-option">
-                <input type="radio" name="pages" value="medium" />
-                <span>Up to 7 pages</span>
-                <small>Menu/services, gallery, FAQ, etc.</small>
-              </label>
-              <label class="calc-option">
-                <input type="radio" name="pages" value="large" />
-                <span>8+ pages</span>
-                <small>Multiple offers, locations, or deep content.</small>
-              </label>
+          <form id="calcForm">
+            <!-- STEP 1 -->
+            <div class="calc-step calc-step--active" data-step="1">
+              <h3 class="wizard-h3">What stage is your business in?</h3>
+              <p class="calc-help">This helps me estimate the scope.</p>
+              <div class="calc-options">
+                <label class="calc-option">
+                  <input type="radio" name="stage" value="new" required />
+                  <span>Just starting out</span>
+                  <small>New or side hustle, need to look legit fast.</small>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="stage" value="growing" />
+                  <span>Growing</span>
+                  <small>Steady customers, want to level up.</small>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="stage" value="established" />
+                  <span>Established</span>
+                  <small>Multiple services/locations, flagship build.</small>
+                </label>
+              </div>
             </div>
-          </div>
 
-          <!-- STEP 3 -->
-          <div class="calc-step" data-step="3">
-            <h3>Do you need branding help?</h3>
-            <p class="calc-help">Logos, colors, fonts, etc.</p>
-            <div class="calc-options">
-              <label class="calc-option">
-                <input type="radio" name="branding" value="none" required />
-                <span>I already have a logo &amp; brand.</span>
-                <small>Just need the site built around it.</small>
-              </label>
-              <label class="calc-option">
-                <input type="radio" name="branding" value="simple" />
-                <span>I need a simple logo &amp; basics.</span>
-                <small>Logo suite, colors, fonts, basic brand PDF.</small>
-              </label>
-              <label class="calc-option">
-                <input type="radio" name="branding" value="full" />
-                <span>I want a full brand system.</span>
-                <small>Logo family, guidelines, social graphics, merch mockups.</small>
-              </label>
+            <!-- STEP 2 -->
+            <div class="calc-step" data-step="2">
+              <h3 class="wizard-h3">How big will the website be?</h3>
+              <p class="calc-help">Rough guess is fine.</p>
+              <div class="calc-options">
+                <label class="calc-option">
+                  <input type="radio" name="pages" value="small" required />
+                  <span>1–3 pages</span>
+                  <small>Home, About, Contact/Services.</small>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="pages" value="medium" />
+                  <span>Up to 7 pages</span>
+                  <small>Menu/services, gallery, FAQ, etc.</small>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="pages" value="large" />
+                  <span>8+ pages</span>
+                  <small>Multiple offers, locations, deeper content.</small>
+                </label>
+              </div>
             </div>
-          </div>
 
-          <!-- STEP 4 -->
-          <div class="calc-step" data-step="4">
-            <h3>What features do you need?</h3>
-            <p class="calc-help">Pick all that apply.</p>
-            <div class="calc-options calc-options--multi">
-              <label class="calc-option">
-                <input type="checkbox" name="features" value="booking" />
-                <span>Booking / appointments</span>
-                <small>Clients can book time with you.</small>
-              </label>
-              <label class="calc-option">
-                <input type="checkbox" name="features" value="menu" />
-                <span>Menu or service list</span>
-                <small>Organized, easy-to-read offerings.</small>
-              </label>
-              <label class="calc-option">
-                <input type="checkbox" name="features" value="ordering" />
-                <span>Online ordering</span>
-                <small>Let people place orders online.</small>
-              </label>
-              <label class="calc-option">
-                <input type="checkbox" name="features" value="stripe" />
-                <span>Stripe payments</span>
-                <small>Take deposits or payments online.</small>
-              </label>
-              <label class="calc-option">
-                <input type="checkbox" name="features" value="blog" />
-                <span>Blog / news</span>
-                <small>Post updates, content, or articles.</small>
-              </label>
-              <label class="calc-option">
-                <input type="checkbox" name="features" value="seo" />
-                <span>Advanced SEO</span>
-                <small>More than just basics—schema, structure, etc.</small>
-              </label>
+            <!-- STEP 3 -->
+            <div class="calc-step" data-step="3">
+              <h3 class="wizard-h3">Do you need branding help?</h3>
+              <p class="calc-help">Logo, colors, fonts, basic identity.</p>
+              <div class="calc-options">
+                <label class="calc-option">
+                  <input type="radio" name="branding" value="none" required />
+                  <span>I already have branding</span>
+                  <small>Build the site around what I have.</small>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="branding" value="simple" />
+                  <span>Simple branding</span>
+                  <small>Logo suite + colors + fonts + simple guide.</small>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="branding" value="full" />
+                  <span>Full brand system</span>
+                  <small>Logo family + guidelines + social + mockups.</small>
+                </label>
+              </div>
             </div>
-          </div>
 
-          <!-- STEP 5 -->
-          <div class="calc-step" data-step="5">
-            <h3>Your rough estimate</h3>
-            <p class="calc-help">
-              This is a ballpark range based on what you chose. Final pricing always comes from a real quote.
-            </p>
-            <div class="calc-summary">
-              <p class="calc-summary-line">
-                Recommended package:
-                <strong id="calcPackage"></strong>
+            <!-- STEP 4 -->
+            <div class="calc-step" data-step="4">
+              <h3 class="wizard-h3">What features do you need?</h3>
+              <p class="calc-help">Pick all that apply.</p>
+              <div class="calc-options calc-options--multi">
+                <label class="calc-option">
+                  <input type="checkbox" name="features" value="booking" />
+                  <span>Booking</span>
+                  <small>Clients can schedule time.</small>
+                </label>
+                <label class="calc-option">
+                  <input type="checkbox" name="features" value="menu" />
+                  <span>Menu / service list</span>
+                  <small>Clear offerings layout.</small>
+                </label>
+                <label class="calc-option">
+                  <input type="checkbox" name="features" value="ordering" />
+                  <span>Online ordering</span>
+                  <small>Orders through the site.</small>
+                </label>
+                <label class="calc-option">
+                  <input type="checkbox" name="features" value="stripe" />
+                  <span>Stripe payments</span>
+                  <small>Deposits / payments.</small>
+                </label>
+                <label class="calc-option">
+                  <input type="checkbox" name="features" value="blog" />
+                  <span>Blog / updates</span>
+                  <small>Posts &amp; content.</small>
+                </label>
+                <label class="calc-option">
+                  <input type="checkbox" name="features" value="seo" />
+                  <span>Advanced SEO</span>
+                  <small>Beyond the basics.</small>
+                </label>
+              </div>
+            </div>
+
+            <!-- STEP 5 -->
+            <div class="calc-step" data-step="5">
+              <h3 class="wizard-h3">Your rough estimate</h3>
+              <p class="calc-help">Ballpark based on your selections.</p>
+
+              <div class="calc-summary">
+                <p class="calc-summary-line">
+                  Recommended package: <strong id="calcPackage"></strong>
+                </p>
+                <p class="calc-summary-line">
+                  Estimated investment: <strong id="calcPrice"></strong>
+                </p>
+                <p class="calc-summary-note" id="calcNote"></p>
+              </div>
+
+              <p class="calc-summary-foot">
+                Want an exact quote? Tell me what you picked and I’ll confirm pricing + timeline.
               </p>
-              <p class="calc-summary-line">
-                Estimated investment:
-                <strong id="calcPrice"></strong>
-              </p>
-              <p class="calc-summary-note" id="calcNote"></p>
             </div>
-            <p class="calc-summary-foot">
-              Want an exact quote? Drop your info below and mention what you picked here.
-            </p>
-          </div>
 
-          <div class="calc-nav">
-            <button type="button" class="btn btn-outline" id="calcPrev">Back</button>
-            <button type="button" class="btn btn-primary" id="calcNext">Next</button>
-            <button type="button" class="btn btn-outline" id="calcReset" style="display:none;">Start over</button>
+            <div class="calc-nav">
+              <button type="button" class="btn btn-outline" id="calcPrev">Back</button>
+              <button type="button" class="btn btn-primary" id="calcNext">Next</button>
+              <button type="button" class="btn btn-outline" id="calcReset" style="display:none;">Start over</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <div class="kicker">Contact</div>
+          <h2 class="h2">Ready to lock in a package?</h2>
+          <p class="muted">
+            Tell me your business, the package you’re leaning toward, and what you need the site to do.
+            I’ll reply with a simple game plan — no pressure.
+          </p>
+
+          <div class="contact-points">
+            <div class="contact-point">
+              <div class="point-title">What to send</div>
+              <div class="point-text">Business type, service area, and what you want the website to do.</div>
+            </div>
+            <div class="contact-point">
+              <div class="point-title">What you get</div>
+              <div class="point-text">Package recommendation + timeline + next steps.</div>
+            </div>
           </div>
-        </form>
+        </div>
+
+        <div class="contact-card">
+          <!-- IMPORTANT: use the same Formspree endpoint as index.html -->
+          <form id="pricing-contact-form" class="lcd-form">
+            <input type="hidden" name="_subject" value="New lead — Love Crafted Digital (Pricing Page)" />
+            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
+
+            <div class="field">
+              <label for="pc-name">Name</label>
+              <input id="pc-name" name="name" type="text" required />
+            </div>
+
+            <div class="field">
+              <label for="pc-email">Email</label>
+              <input id="pc-email" name="email" type="email" required />
+            </div>
+
+            <div class="field">
+              <label for="pc-business">Business name &amp; type</label>
+              <input id="pc-business" name="business" type="text" placeholder="Example: Jay’s KickAsh BBQ — food truck" />
+            </div>
+
+            <div class="field">
+              <label for="pc-package">Interested package</label>
+              <select id="pc-package" name="package">
+                <option>Not sure yet</option>
+                <option>Starter — $750</option>
+                <option>Standard — $1,650</option>
+                <option>Premium — $3,200–$4,500</option>
+                <option>Maintenance — $50/month</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="pc-message">Anything else I should know?</label>
+              <textarea id="pc-message" name="message" placeholder="Timeline, features, ordering/booking, etc."></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Send message</button>
+            <p id="pricing-form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Love Crafted Digital</div>
+      <div class="footer-links">
+        <a href="pricing.html">Packages</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-kicker">Contact</div>
-      <h2 class="section-heading">Ready to lock in a package?</h2>
-      <p class="section-subtitle">
-        Tell me a little about your business, which package you’re leaning toward, and what you need
-        your website to do. I’ll reply with a simple game plan—no pressure, no hard sell.
-      </p>
-
-      <!-- Uses SAME Formspree endpoint as index.html -->
-      <form action="https://formspree.io/f/4047d1c6a0419e0f64075d1761535bc1f396721b" method="POST">
-        <div>
-          <label for="pc-name">Name</label>
-          <input id="pc-name" name="name" type="text" placeholder="Your name" required />
-        </div>
-        <div>
-          <label for="pc-email">Email</label>
-          <input id="pc-email" name="email" type="email" placeholder="you@example.com" required />
-        </div>
-        <div>
-          <label for="pc-business">Business name &amp; type</label>
-          <input id="pc-business" name="business" type="text"
-                 placeholder="Example: Jay’s KickAsh BBQ — food truck" />
-        </div>
-        <div>
-          <label for="pc-package">Interested package</label>
-          <select id="pc-package" name="package">
-            <option>Not sure yet</option>
-            <option>Starter — $750</option>
-            <option>Standard — $1,650</option>
-            <option>Premium — $3,200–$4,500</option>
-            <option>Maintenance — $50/month</option>
-          </select>
-        </div>
-        <div>
-          <label for="pc-message">Anything else I should know?</label>
-          <textarea id="pc-message" name="message"
-                    placeholder="Example: need online ordering, want to launch before a certain date, etc."></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit">Send message</button>
-      </form>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="container">
-    © <span id="year"></span> Love Crafted Digital
-  </div>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav
+    (function () {
+      const btn = document.querySelector('.nav-toggle');
+      const mobile = document.getElementById('mobile-nav');
+      if (!btn || !mobile) return;
+
+      const close = () => {
+        btn.setAttribute('aria-expanded', 'false');
+        mobile.hidden = true;
+      };
+
+      btn.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        mobile.hidden = isOpen;
+      });
+
+      mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => close()));
+      close();
+    })();
   </script>
 
   <script>
-    // Calculator logic
+    // Pricing page contact form (same behavior as index: fetch + status + redirect)
+    (function () {
+      const form = document.getElementById('pricing-contact-form');
+      const statusEl = document.getElementById('pricing-form-status');
+      if (!form) return;
+
+      const setStatus = (msg, kind) => {
+        if (!statusEl) return;
+        statusEl.textContent = msg;
+        statusEl.dataset.kind = kind || '';
+      };
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        setStatus('Sending…', 'loading');
+
+        try {
+          if (typeof gtag === 'function') {
+            gtag('event', 'lead_submit', {
+              event_category: 'Contact',
+              event_label: 'Pricing Page Form'
+            });
+          }
+        } catch (err) {}
+
+        try {
+          const res = await fetch('https://formspree.io/f/xnjjnqea', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form)
+          });
+
+          if (!res.ok) {
+            setStatus('Something went wrong. Please try again.', 'error');
+            return;
+          }
+
+          setStatus('Sent. Redirecting…', 'success');
+          window.location.href = 'https://daultinlove.github.io/Love-Crafted-Design/thank-you.html';
+        } catch (err) {
+          setStatus('Network error. Please try again.', 'error');
+        }
+      });
+    })();
+  </script>
+
+  <script>
+    // Estimate wizard logic (your logic, cleaned + consistent)
     (function () {
       const steps = Array.from(document.querySelectorAll(".calc-step"));
       const indicators = Array.from(document.querySelectorAll(".calc-step-indicator"));
@@ -463,8 +595,8 @@
         const requiredRadios = Array.from(stepEl.querySelectorAll("input[type='radio'][required]"));
         if (requiredRadios.length === 0) return true;
 
-        const nameSet = new Set(requiredRadios.map(r => r.name));
-        for (const name of nameSet) {
+        const names = new Set(requiredRadios.map(r => r.name));
+        for (const name of names) {
           const group = stepEl.querySelectorAll(`input[name="${name}"]`);
           if (![...group].some(r => r.checked)) {
             stepEl.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -489,6 +621,7 @@
         const hasStripe = features.includes("stripe");
         const hasSEO = features.includes("seo");
         const hasBlog = features.includes("blog");
+
         const heavy =
           pages === "large" ||
           branding === "full" ||
@@ -524,13 +657,11 @@
 
         let note = "";
         if (recommended === "Starter") {
-          note = "You’re in Starter territory: 1–3 pages, simple setup, and a clean online home. Exact quote will match the $750 Starter package, plus any custom add-ons.";
+          note = "Starter territory: lean build, clean presence, and a conversion-ready setup. Exact quote will match the Starter package plus any add-ons.";
         } else if (recommended === "Standard") {
-          note = "You’re in Standard range. Expect around $1,650 for most builds like this. Add-ons or custom features may nudge that up slightly.";
+          note = "Standard territory: most small businesses land here. Expect around $1,650 for most builds, plus optional add-ons.";
         } else {
-          const low = 3200;
-          const high = 4500;
-          note = `You’re in Premium territory. Most projects like this land between $${low.toLocaleString()} and $${high.toLocaleString()}. The exact quote depends on content, integrations, and timeline.`;
+          note = "Premium territory: flagship builds with deeper branding + integrations. Typical range depends on content, integrations, and timeline.";
         }
 
         pkgEl.textContent = recommended + " package";
@@ -538,6 +669,7 @@
           recommended === "Premium"
             ? "$3,200–$4,500 (typical range)"
             : `$${estimated.toLocaleString()}`;
+
         noteEl.textContent = note;
       }
 
@@ -558,6 +690,5 @@
       showStep(1);
     })();
   </script>
-</footer>
 </body>
 </html>
