@@ -2,162 +2,344 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Client Intake | Love Crafted Digital</title>
+  <title>Client Intake — Love Crafted Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Love Crafted Digital client intake form" />
+  <meta name="description" content="Love Crafted Digital client intake form. Send business details, goals, brand assets, and timeline so we can start your build." />
 
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f7f7f7;
-      color: #111;
-    }
+  <meta property="og:title" content="Client Intake — Love Crafted Digital" />
+  <meta property="og:description" content="Client intake form to kick off your website + branding project." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://daultinlove.github.io/Love-Crafted-Design/intake.html" />
 
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    header img {
-      max-width: 220px;
-      margin-bottom: 16px;
-    }
-
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 8px;
-    }
-
-    p.sub {
-      color: #555;
-      font-size: 1rem;
-    }
-
-    form {
-      background: #fff;
-      padding: 32px;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-
-    label {
-      display: block;
-      font-weight: 600;
-      margin-top: 20px;
-      margin-bottom: 6px;
-    }
-
-    input,
-    select,
-    textarea {
-      width: 100%;
-      padding: 12px;
-      font-size: 1rem;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-
-    textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    .checkbox-group label,
-    .radio-group label {
-      font-weight: 400;
-      margin-top: 6px;
-    }
-
-    button {
-      margin-top: 32px;
-      width: 100%;
-      padding: 14px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      background: #111;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-  </style>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <!-- Replace src with your logo -->
-   <img src="logo-lovecrafted-digital.png" alt="Love Crafted Digital logo" />
-      <h1>Client Intake Form</h1>
-      <p class="sub">
-        This helps me understand your business, goals, and needs before we begin.
-      </p>
-    </header>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav-brand" href="index.html" aria-label="Love Crafted Digital Home">
+        <img src="favicon.png" alt="Love Crafted Digital Logo" class="nav-logo-img" />
+        <span class="nav-brand-text">Love Crafted Digital</span>
+      </a>
 
-    <form action="https://formspree.io/f/xwvvpzaj" method="POST" enctype="multipart/form-data">
-      
-      <label>Full Name *</label>
-      <input type="text" name="full_name" required />
+      <nav class="nav-links" aria-label="Primary">
+        <a href="pricing.html">Packages</a>
+        <a href="package-details.html">What’s Included</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
 
-      <label>Business Name *</label>
-      <input type="text" name="business_name" required />
+      <div class="nav-actions">
+        <a class="btn btn-outline btn-sm hide-mobile" href="pricing.html">Packages</a>
+        <a class="btn btn-primary btn-sm hide-mobile" href="#intake-form">Submit intake</a>
 
-      <label>Email Address *</label>
-      <input type="email" name="email" required />
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        </button>
+      </div>
 
-      <label>Phone Number</label>
-      <input type="text" name="phone" />
+      <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile" hidden>
+        <a href="pricing.html">Packages</a>
+        <a href="package-details.html">What’s Included</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="nav-mobile-cta">
+          <a class="btn btn-outline" href="pricing.html">View packages</a>
+          <a class="btn btn-primary" href="#intake-form">Submit intake</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-      <label>Type of Business</label>
-      <select name="business_type">
-        <option>Home Services</option>
-        <option>Retail / Shop</option>
-        <option>Restaurant / Food</option>
-        <option>Barber / Salon</option>
-        <option>Coaching / Consulting</option>
-        <option>Online / Digital</option>
-        <option>Other</option>
-      </select>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">Client intake</div>
+          <h1 class="hero-title">Let’s get the details locked in.</h1>
+          <p class="hero-subtitle">
+            This form helps me understand your business, your goals, and what you need the website to do.
+            The better the info here, the faster I can build.
+          </p>
 
-      <label>Current Website (if any)</label>
-      <input type="url" name="current_website" />
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#intake-form">Start intake</a>
+            <a class="btn btn-outline" href="pricing.html">View packages</a>
+          </div>
 
-      <label>Main goals for this project</label>
-      <textarea name="project_goals"></textarea>
+          <div class="trust-row">
+            <div class="trust-item">
+              <div class="trust-top">Fast kickoff</div>
+              <div class="trust-sub">No back-and-forth guessing</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-top">Clear goals</div>
+              <div class="trust-sub">Calls • leads • booking • orders</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-top">Brand-ready</div>
+              <div class="trust-sub">Upload logos + assets</div>
+            </div>
+          </div>
+        </div>
 
-      <label>Design inspiration or style preferences</label>
-      <textarea name="design_preferences"></textarea>
+        <aside class="hero-card">
+          <div class="card-badge">What happens next</div>
+          <h2 class="card-title">I’ll reply with a plan.</h2>
+          <p class="card-text">
+            After you submit, I’ll review everything and respond with next steps:
+            recommended structure, what I still need (if anything), timeline, and kickoff details.
+          </p>
 
-      <label>Upload logos or brand assets</label>
-      <input type="file" name="brand_files" />
+          <div class="card-divider"></div>
 
-      <label>Desired launch date (if any)</label>
-      <input type="text" name="launch_date" />
+          <div class="card-meta">
+            <div class="meta-row">
+              <span class="meta-label">Tip</span>
+              <span class="meta-value">If you don’t have copy/photos yet, just describe your business — I’ll guide it.</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Uploads</span>
+              <span class="meta-value">Logo files, photos, menus, pricing sheets, etc.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-      <label>Package of interest</label>
-      <select name="package">
-        <option>Starter</option>
-        <option>Standard</option>
-        <option>Premium</option>
-        <option>Not sure yet</option>
-      </select>
+    <!-- FORM -->
+    <section id="intake-form" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Intake form</div>
+          <h2 class="h2">Project details</h2>
+          <p class="muted">
+            Fill out what you can. If you’re not sure on something, leave it blank — we’ll handle it together.
+          </p>
+        </div>
 
-      <label>Anything else I should know?</label>
-      <textarea name="additional_notes"></textarea>
+        <div class="intake-layout">
+          <!-- Left: form -->
+          <div class="intake-card">
+            <form id="lcd-intake" class="lcd-form" enctype="multipart/form-data">
+              <input type="hidden" name="_subject" value="Client Intake — Love Crafted Digital" />
+              <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
 
-      <button type="submit">Submit Intake Form</button>
-    </form>
-  </div>
+              <!-- Contact -->
+              <div class="form-section">
+                <h3 class="form-h3">Contact</h3>
+
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="full_name">Full name <span class="req">*</span></label>
+                    <input id="full_name" name="full_name" type="text" required />
+                  </div>
+
+                  <div class="field">
+                    <label for="email">Email <span class="req">*</span></label>
+                    <input id="email" name="email" type="email" required />
+                  </div>
+
+                  <div class="field">
+                    <label for="phone">Phone (optional)</label>
+                    <input id="phone" name="phone" type="tel" inputmode="tel" />
+                  </div>
+
+                  <div class="field">
+                    <label for="business_name">Business name <span class="req">*</span></label>
+                    <input id="business_name" name="business_name" type="text" required />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Business -->
+              <div class="form-section">
+                <h3 class="form-h3">Business</h3>
+
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="business_type">Type of business</label>
+                    <select id="business_type" name="business_type">
+                      <option>Home Services</option>
+                      <option>Retail / Shop</option>
+                      <option>Restaurant / Food</option>
+                      <option>Barber / Salon</option>
+                      <option>Coaching / Consulting</option>
+                      <option>Online / Digital</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+
+                  <div class="field">
+                    <label for="current_website">Current website (if any)</label>
+                    <input id="current_website" name="current_website" type="url" placeholder="https://..." />
+                  </div>
+
+                  <div class="field field--full">
+                    <label for="project_goals">Main goals for this project</label>
+                    <textarea id="project_goals" name="project_goals" placeholder="Example: more calls, better trust, booking, online ordering, show my work, etc."></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Design -->
+              <div class="form-section">
+                <h3 class="form-h3">Design direction</h3>
+
+                <div class="form-grid">
+                  <div class="field field--full">
+                    <label for="design_preferences">Design inspiration / style preferences</label>
+                    <textarea id="design_preferences" name="design_preferences" placeholder="Example: clean + modern, bold, rustic, luxury, colors you like/hate, sites you like, etc."></textarea>
+                  </div>
+
+                  <div class="field field--full">
+                    <label for="brand_files">Upload logos / brand assets (optional)</label>
+                    <input id="brand_files" name="brand_files" type="file" />
+                    <p class="help">Logos, photos, menu PDFs, price lists, brand guides, anything helpful.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timeline + Package -->
+              <div class="form-section">
+                <h3 class="form-h3">Timeline + package</h3>
+
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="launch_date">Desired launch date (optional)</label>
+                    <input id="launch_date" name="launch_date" type="text" placeholder="Example: Feb 15 or ASAP" />
+                  </div>
+
+                  <div class="field">
+                    <label for="package">Package of interest</label>
+                    <select id="package" name="package">
+                      <option>Not sure yet</option>
+                      <option>Starter</option>
+                      <option>Standard</option>
+                      <option>Premium</option>
+                    </select>
+                  </div>
+
+                  <div class="field field--full">
+                    <label for="additional_notes">Anything else I should know?</label>
+                    <textarea id="additional_notes" name="additional_notes" placeholder="Anything that impacts the build: must-have features, service area, competitors, special requests, etc."></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-block" type="submit">Submit intake</button>
+              <p id="intake-status" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <!-- Right: notes -->
+          <aside class="intake-side">
+            <div class="side-card">
+              <h3 class="side-title">What makes a site convert</h3>
+              <ul class="side-list">
+                <li>Clear “what you do” above the fold</li>
+                <li>Trust: photos, reviews, proof, story</li>
+                <li>Strong call-to-action (call, form, booking)</li>
+                <li>Fast load + clean mobile layout</li>
+              </ul>
+            </div>
+
+            <div class="side-card">
+              <h3 class="side-title">If you’re stuck</h3>
+              <p class="side-text">
+                Don’t overthink it. Just describe your business and what you want more of:
+                calls, leads, booking, orders, or credibility.
+              </p>
+              <div class="side-actions">
+                <a class="btn btn-outline btn-sm" href="samples.html">See samples</a>
+                <a class="btn btn-primary btn-sm" href="pricing.html">Packages</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Love Crafted Digital</div>
+      <div class="footer-links">
+        <a href="pricing.html">Packages</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav
+    (function () {
+      const btn = document.querySelector('.nav-toggle');
+      const mobile = document.getElementById('mobile-nav');
+      if (!btn || !mobile) return;
+
+      const close = () => {
+        btn.setAttribute('aria-expanded', 'false');
+        mobile.hidden = true;
+      };
+
+      btn.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        mobile.hidden = isOpen;
+      });
+
+      mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => close()));
+      close();
+    })();
+  </script>
+
+  <script>
+    // Intake submit (Formspree) — stays on-brand, no redirect page
+    (function () {
+      const form = document.getElementById('lcd-intake');
+      const statusEl = document.getElementById('intake-status');
+      if (!form) return;
+
+      const setStatus = (msg, kind) => {
+        if (!statusEl) return;
+        statusEl.textContent = msg;
+        statusEl.dataset.kind = kind || '';
+      };
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        setStatus('Submitting…', 'loading');
+
+        try {
+          const res = await fetch('https://formspree.io/f/xwvvpzaj', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form)
+          });
+
+          if (!res.ok) {
+            setStatus('Something went wrong. If you uploaded a file, try again without the upload or email it to me.', 'error');
+            return;
+          }
+
+          setStatus('Submitted. Thanks — I’ll follow up soon.', 'success');
+          form.reset();
+          form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } catch (err) {
+          setStatus('Network error. Please try again.', 'error');
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
