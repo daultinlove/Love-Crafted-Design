@@ -1,20 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Message Sent — Love Crafted Digital</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thank You — Love Crafted Digital</title>
+  <meta name="description" content="Thanks for reaching out. Your message is in. Next step: I’ll reply with a simple game plan." />
+
+  <meta property="og:title" content="Thank You — Love Crafted Digital" />
+  <meta property="og:description" content="Your message is in. I’ll reply with a simple game plan." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://daultinlove.github.io/Love-Crafted-Design/thank-you.html" />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550,750&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <main class="section">
-    <div class="container" style="text-align:center;">
-      <h1 class="section-heading">Message sent ✅</h1>
-      <p class="section-subtitle">Thanks for reaching out. I’ll reply within 24 hours with a quick game plan.</p>
-      <p style="margin-top:1rem;">
-        <a class="btn btn-primary" href="index.html">Back to home</a>
-      </p>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html" aria-label="Love Crafted Digital home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Love Crafted Digital</span>
+      </a>
+
+      <div class="topbar-actions">
+        <nav class="nav" aria-label="Primary">
+          <a href="samples.html">Work</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a class="btn btn-solid" href="intake.html">Start a project</a>
+        </nav>
+
+        <button class="mode" type="button" id="modeBtn" aria-label="Toggle dark mode">
+          <span class="mode-dot" aria-hidden="true"></span>
+          <span class="mode-text" id="modeText">Dark</span>
+        </button>
+      </div>
     </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="wrap">
+        <div class="declaration">
+          <p class="kicker">Message received</p>
+          <h1>Good. You’re in.</h1>
+
+          <p class="lead">
+            I got your message. Next step is simple:
+            I’ll reply with a quick game plan and the cleanest recommendation for your package.
+          </p>
+
+          <div class="beliefs" style="margin-top: 18px;">
+            <div class="belief">
+              <h3>What happens next</h3>
+              <p>Expect a response within about 24 hours with a clear next step.</p>
+            </div>
+            <div class="belief">
+              <h3>What helps</h3>
+              <p>If you have links, photos, or examples—send them when you reply. Faster clarity.</p>
+            </div>
+            <div class="belief">
+              <h3>What to do right now</h3>
+              <p>Pick a lane: look at work examples or review pricing tiers.</p>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-solid" href="pricing.html">See pricing</a>
+            <a class="btn btn-ghost" href="samples.html">View work</a>
+            <a class="btn btn-ghost" href="index.html">Back home</a>
+          </div>
+
+          <p class="micro">If you don’t see my reply, check spam/promotions.</p>
+        </div>
+
+        <footer class="footer">
+          <p class="micro">© <span id="year"></span> Love Crafted Digital</p>
+          <div class="footer-links">
+            <a href="samples.html">Work</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="intake.html">Contact</a>
+          </div>
+        </footer>
+      </div>
+    </section>
   </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const root = document.documentElement;
+    const btn = document.getElementById("modeBtn");
+    const modeText = document.getElementById("modeText");
+
+    function applyTheme(mode) {
+      if (mode === "dark") {
+        root.setAttribute("data-theme", "dark");
+        modeText.textContent = "Light";
+      } else {
+        root.removeAttribute("data-theme");
+        modeText.textContent = "Dark";
+      }
+    }
+
+    const saved = localStorage.getItem("lcd-theme");
+    applyTheme(saved === "dark" ? "dark" : "light");
+
+    btn.addEventListener("click", () => {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      const next = isDark ? "light" : "dark";
+      localStorage.setItem("lcd-theme", next);
+      applyTheme(next);
+    });
+  </script>
 </body>
 </html>
