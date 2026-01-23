@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Reservations | Moon Tim's Steak House</title>
+  <title>Reserve | Moon Tim’s Steak House</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Reserve a table at Moon Tim's Steak House — book online or call the restaurant."
-  />
+  <meta name="description" content="Request a reservation at Moon Tim’s Steak House in Burleson, TX." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body class="theme-moon">
 <header class="moon-header">
   <div class="container nav">
@@ -17,14 +15,14 @@
       <div class="nav-logo-badge">MT</div>
       <span>Moon Tim’s Steak House</span>
     </div>
-    <nav class="nav-links">
+
+    <nav class="nav-links" aria-label="Primary">
       <a href="demo-standard.html">Home</a>
       <a href="demo-standard-menu.html">Menu</a>
       <a href="demo-standard-about.html">Our Story</a>
       <a href="demo-standard-visit.html">Visit</a>
-      <a href="demo-standard-reserve.html" class="nav-cta">Reserve</a>
+      <a href="demo-standard-reserve.html" class="nav-cta" aria-current="page">Reserve</a>
       <a href="demo-standard-contact.html">Contact</a>
-      <a href="index.html">Back to Love Crafted</a>
     </nav>
   </div>
 </header>
@@ -33,47 +31,46 @@
   <section class="moon-section">
     <div class="container">
       <div class="moon-kicker">Reservations</div>
-      <h1 class="moon-heading">Book a table under the moon.</h1>
-      <p class="moon-subtitle" style="max-width:38rem;margin-bottom:2rem;">
-        Use the form below to request a reservation. We’ll confirm your time by phone or text.
-      </p>
+      <h1 class="moon-heading">Reserve a table</h1>
+      <p class="moon-subtitle">Request a time below and we’ll confirm by phone or text.</p>
 
       <form class="reservation-form">
         <div>
-          <label>Name</label>
-          <input type="text" placeholder="John Doe" />
+          <label for="r-name">Name</label>
+          <input id="r-name" type="text" placeholder="John Doe" />
         </div>
         <div>
-          <label>Phone</label>
-          <input type="tel" placeholder="(555) 123-0199" />
+          <label for="r-phone">Phone</label>
+          <input id="r-phone" type="tel" placeholder="(555) 987-4421" />
         </div>
         <div>
-          <label>Party Size</label>
-          <input type="number" placeholder="2" />
+          <label for="r-party">Party size</label>
+          <input id="r-party" type="number" placeholder="2" />
         </div>
         <div>
-          <label>Preferred Date &amp; Time</label>
-          <input type="text" placeholder="Friday at 7pm" />
+          <label for="r-time">Preferred date &amp; time</label>
+          <input id="r-time" type="text" placeholder="Friday at 7pm" />
         </div>
         <div>
-          <label>Occasion (optional)</label>
-          <input type="text" placeholder="Birthday, date night, anniversary, etc." />
+          <label for="r-notes">Notes (optional)</label>
+          <input id="r-notes" type="text" placeholder="Birthday, anniversary, accessibility needs…" />
         </div>
-        <button class="btn btn-primary-moon" type="submit">Request Reservation</button>
+        <button class="btn btn-primary-moon" type="submit">Send request</button>
       </form>
 
-      <p class="reservation-note">
-        For same-day reservations or parties larger than 8, please call us directly at
-        <strong>(555) 987-4421</strong>.
+      <p style="margin-top:12px; color: var(--muted-2);">
+        For same-day reservations or parties larger than 8, please call <strong style="color: var(--text);">(555) 987-4421</strong>.
       </p>
     </div>
   </section>
 </main>
 
 <footer class="moon-footer">
-  <div class="container">
-    Reservation page as part of the Standard demo site by Love Crafted Digital.
+  <div class="container footer-row">
+    <span>© <span id="year"></span> Moon Tim’s Steak House</span>
+    <a href="index.html" style="opacity:.85;">Studio</a>
   </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
 </body>
 </html>
