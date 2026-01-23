@@ -2,97 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Book Skyline Strategy Call — Premium Demo | Love Crafted Digital</title>
+  <title>Book a Call | Skyline Performance Coaching</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Premium Skyline booking page demo for a free 20-minute strategy call, wired into a multi-page coaching site." />
+  <meta name="description" content="Book a free 20-minute Skyline strategy call." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="theme-coach">
-<header>
-  <div class="container nav">
-    <div class="nav-logo">
-      <div class="nav-logo-badge">SP</div>
-      <span>Skyline Performance Coaching</span>
-    </div>
-    <nav class="nav-links">
-      <a href="demo-premium.html">Overview</a>
-      <a href="demo-premium-brand.html">Branding</a>
-      <a href="demo-premium-sales.html">Online Sales</a>
-      <a href="demo-premium.html#packages">Programs</a>
-      <a href="demo-premium-book.html">Book</a>
-      <a href="index.html">Back to Love Crafted</a>
-    </nav>
-  </div>
-</header>
 
-<main>
-  <section class="hero hero--centered">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-kicker">Booking</div>
-        <h1 class="hero-title">
-          Book your free <span>20-minute strategy call.</span>
-        </h1>
-        <p class="hero-subtitle">
-          This is the dedicated booking page in the Premium build. In a real project, this form
-          would be replaced or integrated with your scheduling tool of choice.
-        </p>
-        <div class="hero-actions">
-          <a href="demo-premium-sales.html" class="btn btn-outline">View sales page</a>
-        </div>
-        <p class="hero-tagline">
-          One place to send prospects from your DMs, email list, or social bio links.
+<body class="theme-coach">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="demo-topbar">
+    <div class="container nav">
+      <a class="nav-logo" href="demo-premium.html" aria-label="Skyline home">
+        <span class="nav-logo-badge">SP</span>
+        <span>Skyline Performance Coaching</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="demo-premium.html">Overview</a>
+        <a href="demo-premium.html#programs">Programs</a>
+        <a href="demo-premium-sales.html">Enroll</a>
+        <a href="demo-premium-brand.html">Media Kit</a>
+        <a href="demo-premium-book.html" class="nav-cta" aria-current="page">Book a Call</a>
+        <a href="index.html" class="nav-muted">Studio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="coach-hero coach-hero--compact">
+      <div class="container">
+        <p class="hero-kicker">Book</p>
+        <h1 class="hero-title">Free 20-minute strategy call.</h1>
+        <p class="hero-subtitle" style="max-width:60ch;">
+          Tell us what you’re stuck on. We’ll clarify the real problem and map the next steps.
+          If we’re not a fit, you still leave with a plan.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-kicker">Call details</div>
-      <h2 class="section-heading">Tell us a bit about where you are now.</h2>
-      <p class="section-subtitle">
-        The questions below are what we’d typically include before a free strategy call so the
-        coach can come prepared with useful next steps.
-      </p>
+    <section class="section alt">
+      <div class="container">
+        <div class="two-col-grid">
+          <article class="info-card">
+            <h2 style="margin:0 0 .6rem;">Before we meet</h2>
+            <p class="muted">Quick answers help us make the call useful.</p>
 
-      <form>
-        <div>
-          <label for="b-name">Name</label>
-          <input id="b-name" type="text" placeholder="Your name" />
-        </div>
-        <div>
-          <label for="b-email">Email</label>
-          <input id="b-email" type="email" placeholder="you@example.com" />
-        </div>
-        <div>
-          <label for="b-role">Role / industry</label>
-          <input id="b-role" type="text" placeholder="Example: Ops manager in logistics" />
-        </div>
-        <div>
-          <label for="b-focus">What do you want to work on?</label>
-          <textarea id="b-focus" placeholder="Promotion, burnout, better systems, etc."></textarea>
-        </div>
-        <div>
-          <label for="b-timeline">Timeline</label>
-          <input id="b-timeline" type="text" placeholder="Example: I’d like to see real change in 3–6 months" />
-        </div>
-        <button class="btn btn-primary" type="submit">Request call</button>
-      </form>
+            <form class="coach-form">
+              <div>
+                <label for="b-name">Name</label>
+                <input id="b-name" type="text" placeholder="Your name" />
+              </div>
 
-      <p style="margin-top: 1rem; font-size: 0.85rem; color: #9ca3b8;">
-        Demo only — in a real build, this page would either embed your calendar directly or redirect
-        to your scheduling tool after submitting this form.
-      </p>
-    </div>
-  </section>
-</main>
+              <div>
+                <label for="b-email">Email</label>
+                <input id="b-email" type="email" placeholder="you@example.com" />
+              </div>
 
-<footer>
-  <div class="container">
-    Booking page of the Premium Skyline demo — part of a multi-page build with overview, branding,
-    and sales pages. Designed by Love Crafted Digital.
-  </div>
-</footer>
+              <div>
+                <label for="b-role">Role / industry</label>
+                <input id="b-role" type="text" placeholder="Example: Ops manager in logistics" />
+              </div>
+
+              <div>
+                <label for="b-focus">What do you want to fix?</label>
+                <textarea id="b-focus" placeholder="Promotion plan, burnout, execution systems, leadership friction, etc."></textarea>
+              </div>
+
+              <button class="btn btn-primary full" type="submit">Request call</button>
+
+              <p class="micro" style="margin-top:.8rem;">
+                Demo form — in production this can embed Calendly/Acuity or route into your intake + calendar.
+              </p>
+            </form>
+          </article>
+
+          <article class="info-card">
+            <h2 style="margin:0 0 .6rem;">What you’ll get</h2>
+            <ul class="list">
+              <li>Clarity on the real bottleneck</li>
+              <li>A simple 2–3 step plan</li>
+              <li>A recommendation for the right level of support</li>
+            </ul>
+
+            <div class="callout" style="margin-top:1.2rem;">
+              <strong>Good fit:</strong> you’ll implement between calls.<br />
+              <strong>Bad fit:</strong> you want “motivation” without change.
+            </div>
+
+            <a class="btn btn-outline full" href="demo-premium-sales.html" style="margin-top:1rem;">See enrollment</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="demo-footer">
+      <div class="container footer-inner">
+        <p class="micro">© <span id="year"></span> Skyline Performance Coaching</p>
+        <div class="footer-links">
+          <a href="demo-premium.html">Overview</a>
+          <a href="demo-premium-sales.html">Enroll</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
