@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact | Moon Tim's Steak House</title>
+  <title>Contact | Moon Tim’s Steak House</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Contact Moon Tim's Steak House — send a message, call, or connect on social."
-  />
+  <meta name="description" content="Contact Moon Tim’s Steak House — questions, feedback, and catering inquiries." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body class="theme-moon">
 <header class="moon-header">
   <div class="container nav">
@@ -17,14 +15,14 @@
       <div class="nav-logo-badge">MT</div>
       <span>Moon Tim’s Steak House</span>
     </div>
-    <nav class="nav-links">
+
+    <nav class="nav-links" aria-label="Primary">
       <a href="demo-standard.html">Home</a>
       <a href="demo-standard-menu.html">Menu</a>
       <a href="demo-standard-about.html">Our Story</a>
       <a href="demo-standard-visit.html">Visit</a>
       <a href="demo-standard-reserve.html" class="nav-cta">Reserve</a>
-      <a href="demo-standard-contact.html">Contact</a>
-      <a href="index.html">Back to Love Crafted</a>
+      <a href="demo-standard-contact.html" aria-current="page">Contact</a>
     </nav>
   </div>
 </header>
@@ -33,41 +31,41 @@
   <section class="moon-section">
     <div class="container">
       <div class="moon-kicker">Contact</div>
-      <h1 class="moon-heading">Reach out to Moon Tim’s.</h1>
+      <h1 class="moon-heading">Reach out</h1>
+      <p class="moon-subtitle">Questions, feedback, or catering inquiries — send a message and we’ll get back to you.</p>
 
-      <div class="two-col-grid" style="margin-top:2rem;">
+      <div class="two-col-grid" style="margin-top:18px;">
         <article class="info-card">
-          <h3>Send us a message</h3>
-          <form class="reservation-form">
+          <h3>Send a message</h3>
+          <form>
             <div>
-              <label>Name</label>
-              <input type="text" placeholder="Your name" />
+              <label for="c-name">Name</label>
+              <input id="c-name" type="text" placeholder="Your name" />
             </div>
             <div>
-              <label>Email</label>
-              <input type="email" placeholder="you@example.com" />
+              <label for="c-email">Email</label>
+              <input id="c-email" type="email" placeholder="you@example.com" />
             </div>
             <div>
-              <label>Message</label>
-              <textarea placeholder="Questions, feedback, or catering inquiries." style="width:100%;min-height:120px;border-radius:10px;border:1px solid #e0cfa5;padding:0.75rem;"></textarea>
+              <label for="c-msg">Message</label>
+              <textarea id="c-msg" placeholder="Questions, feedback, or catering details…"></textarea>
             </div>
-            <button class="btn btn-primary-moon" type="submit">Send Message</button>
+            <button class="btn btn-primary-moon" type="submit">Send</button>
           </form>
         </article>
 
         <article class="info-card">
-          <h3>Other ways to connect</h3>
-          <p>
-            Phone: <strong>(555) 987-4421</strong><br />
-            Email: <strong>hello@moontimssteakhouse.com</strong> (demo)
+          <h3>Details</h3>
+          <p style="color: var(--muted);">
+            Phone: <strong style="color: var(--text);">(555) 987-4421</strong><br />
+            Email: <strong style="color: var(--text);">hello@moontimssteakhouse.com</strong>
           </p>
-          <p style="margin-top:0.8rem;">
+          <p style="margin-top:12px; color: var(--muted);">
             215 Crescent Lane<br />
             Burleson, TX 76028
           </p>
-          <p style="margin-top:0.8rem;font-size:0.9rem;">
-            Follow us on social (links for demo):<br />
-            Instagram • Facebook • TikTok
+          <p style="margin-top:12px; color: var(--muted-2); font-size: 0.92rem;">
+            Social: Instagram • Facebook • TikTok
           </p>
         </article>
       </div>
@@ -76,9 +74,11 @@
 </main>
 
 <footer class="moon-footer">
-  <div class="container">
-    Contact page as part of the Standard demo site by Love Crafted Digital.
+  <div class="container footer-row">
+    <span>© <span id="year"></span> Moon Tim’s Steak House</span>
+    <a href="index.html" style="opacity:.85;">Studio</a>
   </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
 </body>
 </html>
