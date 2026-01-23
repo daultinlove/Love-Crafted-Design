@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Love Crafted Digital — Samples</title>
+  <title>Samples — Love Crafted Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="description"
-        content="Browse sample website layouts for Love Crafted Digital packages—Starter, Standard, and Premium demos." />
+        content="Browse Love Crafted Digital sample layouts for Starter, Standard, and Premium packages. See the style before you book." />
 
-  <meta property="og:title" content="Love Crafted Digital — Samples" />
+  <meta property="og:title" content="Samples — Love Crafted Digital" />
   <meta property="og:description" content="View sample layouts for each package tier." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://daultinlove.github.io/Love-Crafted-Design/samples.html" />
@@ -18,186 +18,266 @@
 </head>
 
 <body>
-<header>
-  <div class="container nav">
-    <div class="nav-logo">
-      <a href="index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav-brand" href="index.html" aria-label="Love Crafted Digital Home">
         <img src="favicon.png" alt="Love Crafted Digital Logo" class="nav-logo-img" />
-        <span>Love Crafted Digital</span>
+        <span class="nav-brand-text">Love Crafted Digital</span>
       </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="pricing.html">Packages</a>
+        <a href="package-details.html">What’s Included</a>
+        <a href="samples.html" aria-current="page">Samples</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-outline btn-sm hide-mobile" href="pricing.html">View packages</a>
+        <a class="btn btn-primary btn-sm hide-mobile" href="index.html#contact">Start</a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile" hidden>
+        <a href="pricing.html">Packages</a>
+        <a href="package-details.html">What’s Included</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="nav-mobile-cta">
+          <a class="btn btn-outline" href="pricing.html">View packages</a>
+          <a class="btn btn-primary" href="index.html#contact">Start your project</a>
+        </div>
+      </nav>
     </div>
+  </header>
 
-    <nav class="nav-links">
-      <a href="pricing.html">Packages</a>
-      <a href="package-details.html">What’s included</a>
-      <a href="samples.html" aria-current="page">Samples</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">Samples</div>
+          <h1 class="hero-title">See the style before you book.</h1>
+          <p class="hero-subtitle">
+            These demos show what each package can look like. When we work together, I swap in your copy,
+            photos, and brand direction so it feels like <strong>your</strong> business — not a generic template.
+          </p>
 
-<main>
-  <!-- HERO -->
-  <section class="hero" style="padding-bottom: 2.5rem;">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-kicker">Samples</div>
-        <h1 class="hero-title">
-          See the style before you book.
-        </h1>
-        <p class="hero-subtitle">
-          These demos show what each package can look like. When we work together,
-          I swap in your copy, photos, and brand style so it feels like <strong>your</strong> business.
-        </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#demos">View demos</a>
+            <a class="btn btn-outline" href="pricing.html">Compare packages</a>
+          </div>
 
-        <div class="hero-actions">
-          <a href="#sample-grid" class="btn btn-primary">View demos</a>
-          <a href="pricing.html" class="btn btn-outline">Compare packages</a>
+          <div class="trust-row">
+            <div class="trust-item">
+              <div class="trust-top">Not one-size-fits-all</div>
+              <div class="trust-sub">Layout + sections match your goals</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-top">Built for conversions</div>
+              <div class="trust-sub">Calls, forms, booking, and trust</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-top">Clean + fast</div>
+              <div class="trust-sub">Mobile-first and easy to navigate</div>
+            </div>
+          </div>
         </div>
 
-        <p class="hero-tagline">
-          Not sure what you need? Pick the closest match — I’ll help you choose.
-        </p>
+        <aside class="hero-card">
+          <div class="card-badge">Quick note</div>
+          <h2 class="card-title">These are examples</h2>
+          <p class="card-text">
+            Every build is customized. Colors, layout, sections, and features are tailored to what you need:
+            more calls, more leads, booking, ordering, or showing your work.
+          </p>
+
+          <div class="card-divider"></div>
+
+          <div class="card-meta">
+            <div class="meta-row">
+              <span class="meta-label">Best move</span>
+              <span class="meta-value">Pick the closest demo — I’ll help you choose the right tier</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Shortcut</span>
+              <span class="meta-value">If you’re unsure, hit contact and tell me what you do</span>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn btn-outline btn-sm" href="pricing.html">Pricing</a>
+            <a class="btn btn-primary btn-sm" href="index.html#contact">Ask me</a>
+          </div>
+        </aside>
       </div>
+    </section>
 
-      <aside class="hero-card hero-card--framed">
-        <div class="hero-card-tag">Quick note</div>
-        <h2 class="hero-card-title">These are examples</h2>
-        <p>
-          Every project is customized to your business. Colors, layout, sections, and features
-          are tailored based on your goals (calls, leads, booking, orders, etc.).
-        </p>
-        <p style="margin-top: 0.8rem; font-size: 0.9rem; color: #cbd0df;">
-          Want something specific? Tell me what you do and I’ll recommend the right package.
-        </p>
-      </aside>
-    </div>
-  </section>
+    <!-- DEMOS -->
+    <section id="demos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Demos</div>
+          <h2 class="h2">Choose a package tier</h2>
+          <p class="muted">Open a demo to see the feel. If you like the direction, book the matching package.</p>
+        </div>
 
-  <!-- SAMPLE GRID -->
-  <section id="sample-grid" class="section">
-    <div class="container">
-      <div class="section-kicker">Demos</div>
-      <h2 class="section-heading">Choose a package tier</h2>
-      <p class="section-subtitle">
-        Click a demo to see a full sample site. If you like the direction, book the matching package.
-      </p>
+        <div class="samples-grid">
+          <!-- Starter -->
+          <article class="sample-card">
+            <div class="sample-top">
+              <div class="sample-label">Starter</div>
+              <h3 class="sample-title">Starter demo</h3>
+              <p class="sample-text">
+                Best for new businesses: clean layout, services, tap-to-call, and simple contact flow.
+              </p>
+            </div>
 
-      <div class="portfolio-grid">
-        <!-- Starter -->
-        <article class="portfolio-card">
-          <div class="portfolio-label">Starter</div>
-          <h3>Starter demo (one-page)</h3>
-          <p>
-            Perfect for new businesses: services, hours, location, tap-to-call, simple contact.
-          </p>
+            <ul class="sample-list">
+              <li>Fast + clean layout</li>
+              <li>Mobile-first</li>
+              <li>Built for calls/leads</li>
+            </ul>
 
-          <ul style="margin: .9rem 0 0; padding-left: 1.1rem;">
-            <li>Fast + clean layout</li>
-            <li>Mobile-first</li>
-            <li>Built for calls/leads</li>
-          </ul>
-
-          <p style="margin-top: 1rem;">
-            <a href="demo-starter.html" class="btn btn-outline">Open Starter demo</a>
-          </p>
-        </article>
-
-        <!-- Standard -->
-        <article class="portfolio-card">
-          <div class="portfolio-label">Standard</div>
-          <h3>Standard demo (multi-page feel)</h3>
-          <p>
-            Best for businesses that want stronger trust: sections for story, reviews, gallery, and FAQs.
-          </p>
-
-          <ul style="margin: .9rem 0 0; padding-left: 1.1rem;">
-            <li>More content sections</li>
-            <li>Brand-ready design</li>
-            <li>Better trust + clarity</li>
-          </ul>
-
-          <p style="margin-top: 1rem;">
-            <a href="demo-standard.html" class="btn btn-outline">Open Standard demo</a>
-          </p>
-        </article>
-
-        <!-- Premium -->
-        <article class="portfolio-card">
-          <div class="portfolio-label">Premium</div>
-          <h3>Premium demo (high-end)</h3>
-          <p>
-            For serious brands: premium visuals, packages, booking flow, and conversion-focused design.
-          </p>
-
-          <ul style="margin: .9rem 0 0; padding-left: 1.1rem;">
-            <li>High-end feel</li>
-            <li>Animations + polish</li>
-            <li>Booking/ordering ready</li>
-          </ul>
-
-          <p style="margin-top: 1rem;">
-            <a href="demo-premium.html" class="btn btn-outline">Open Premium demo</a>
-          </p>
-        </article>
-      </div>
-
-      <div style="margin-top: 2rem;">
-        <div class="portfolio-grid">
-          <article class="portfolio-card">
-            <h3>Want a quick recommendation?</h3>
-            <p>
-              Tell me what type of business you run and what you want your website to do
-              (more calls, leads, booking, orders). I’ll point you to the best package.
-            </p>
-            <p style="margin-top: 1rem;">
-              <a href="index.html#contact" class="btn btn-primary">Ask me</a>
-              <a href="pricing.html" class="btn btn-outline">View pricing</a>
-            </p>
+            <div class="sample-actions">
+              <a href="demo-starter.html" class="btn btn-outline btn-sm">Open demo</a>
+              <a href="pricing.html#starter" class="btn btn-primary btn-sm">See Starter</a>
+            </div>
           </article>
 
-          <article class="portfolio-card">
-            <h3>Common add-ons (optional)</h3>
-            <p>Most businesses ask for one of these:</p>
-            <ul style="margin: .9rem 0 0; padding-left: 1.1rem;">
+          <!-- Standard -->
+          <article class="sample-card sample-card--highlight">
+            <div class="sample-badge">Most picked</div>
+            <div class="sample-top">
+              <div class="sample-label">Standard</div>
+              <h3 class="sample-title">Standard demo</h3>
+              <p class="sample-text">
+                Strongest balance: better trust signals, more content sections, and a brand-ready feel.
+              </p>
+            </div>
+
+            <ul class="sample-list">
+              <li>More sections (FAQ, gallery, reviews)</li>
+              <li>Brand-ready design</li>
+              <li>Clear conversion flow</li>
+            </ul>
+
+            <div class="sample-actions">
+              <a href="demo-standard.html" class="btn btn-outline btn-sm">Open demo</a>
+              <a href="pricing.html#standard" class="btn btn-primary btn-sm">See Standard</a>
+            </div>
+          </article>
+
+          <!-- Premium -->
+          <article class="sample-card">
+            <div class="sample-top">
+              <div class="sample-label">Premium</div>
+              <h3 class="sample-title">Premium demo</h3>
+              <p class="sample-text">
+                For serious brands: high-end visuals, deeper layout, and ordering/booking-ready structure.
+              </p>
+            </div>
+
+            <ul class="sample-list">
+              <li>High-end feel + polish</li>
+              <li>Animations and structure</li>
+              <li>Booking/ordering ready</li>
+            </ul>
+
+            <div class="sample-actions">
+              <a href="demo-premium.html" class="btn btn-outline btn-sm">Open demo</a>
+              <a href="pricing.html#premium" class="btn btn-primary btn-sm">See Premium</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Two-up utility section -->
+        <div class="samples-two">
+          <article class="samples-panel">
+            <h3 class="panel-title">Want a quick recommendation?</h3>
+            <p class="panel-text">
+              Tell me what type of business you run and what you want the site to do (calls, leads, booking, orders).
+              I’ll point you to the right tier.
+            </p>
+            <div class="panel-actions">
+              <a href="index.html#contact" class="btn btn-primary">Ask me</a>
+              <a href="pricing.html" class="btn btn-outline">View pricing</a>
+            </div>
+          </article>
+
+          <article class="samples-panel">
+            <h3 class="panel-title">Common add-ons</h3>
+            <p class="panel-text">Most businesses ask for one of these:</p>
+            <ul class="panel-list">
               <li>Online booking</li>
               <li>Quote request form</li>
               <li>Menu / service list</li>
-              <li>Payments (Stripe)</li>
+              <li>Stripe payments</li>
               <li>Google Business polish</li>
             </ul>
           </article>
         </div>
       </div>
+    </section>
 
+    <!-- CTA -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Next step</div>
+          <h2 class="h2">Ready to build yours?</h2>
+          <p class="muted">Pick a package and send your info — I’ll handle the rest.</p>
+        </div>
+
+        <div class="row-actions">
+          <a href="pricing.html" class="btn btn-primary">Compare packages</a>
+          <a href="index.html#contact" class="btn btn-outline">Start your project</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Love Crafted Digital</div>
+      <div class="footer-links">
+        <a href="pricing.html">Packages</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+      </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- CTA -->
-  <section class="section">
-    <div class="container">
-      <div class="section-kicker">Next step</div>
-      <h2 class="section-heading">Ready to build yours?</h2>
-      <p class="section-subtitle">
-        If you like what you see, pick a package and send your info — I’ll handle the rest.
-      </p>
-      <p style="margin-top: 1rem;">
-        <a href="pricing.html" class="btn btn-primary">Compare packages</a>
-        <a href="index.html#contact" class="btn btn-outline">Start your project</a>
-      </p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="container">
-    © <span id="year"></span> Love Crafted Digital
-  </div>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</footer>
 
+    // Mobile nav
+    (function () {
+      const btn = document.querySelector('.nav-toggle');
+      const mobile = document.getElementById('mobile-nav');
+      if (!btn || !mobile) return;
+
+      const close = () => {
+        btn.setAttribute('aria-expanded', 'false');
+        mobile.hidden = true;
+      };
+
+      btn.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        mobile.hidden = isOpen;
+      });
+
+      mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => close()));
+      close();
+    })();
+  </script>
 </body>
 </html>
