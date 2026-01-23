@@ -1,249 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BrightLine Pressure Washing</title>
-  <meta name="description" content="Pressure washing for driveways, homes, fences, and patios. Fast quotes. Clean results. Serving Burleson + Fort Worth." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550,750&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <title>Mason’s Barbershop | Burleson, TX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mason’s Barbershop in Burleson, TX — classic cuts, modern fades, straight-answers service. Book a spot or walk in." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
-  <a class="skip" href="#main">Skip to content</a>
+<body class="theme-masons">
+<header>
+  <div class="container nav">
+    <div class="nav-logo">
+      <div class="nav-logo-badge">MB</div>
+      <span>Mason’s Barbershop</span>
+    </div>
 
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <a class="brand" href="demo-starter.html" aria-label="BrightLine home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">BrightLine Pressure Washing</span>
-      </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#hours">Hours</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Book</a>
+    </nav>
+  </div>
+</header>
 
-      <div class="topbar-actions">
-        <nav class="nav" aria-label="Primary">
-          <a href="#services">Services</a>
-          <a href="#work">Work</a>
-          <a href="#quote">Get a quote</a>
-          <a class="btn btn-solid" href="#quote">Call / Text</a>
-        </nav>
+<main>
+  <section class="masons-hero">
+    <div class="container masons-hero-grid">
+      <div>
+        <div class="hero-kicker">Classic cuts • Modern fades • Burleson, TX</div>
+        <h1 class="hero-title">Clean cuts. <span>No nonsense.</span></h1>
+        <p class="hero-subtitle">
+          A laid-back neighborhood shop focused on sharp work and easy conversation.
+          Walk in, show a photo, or tell us what you want — we’ll get you right.
+        </p>
 
-        <button class="mode" type="button" id="modeBtn" aria-label="Toggle dark mode">
-          <span class="mode-dot" aria-hidden="true"></span>
-          <span class="mode-text" id="modeText">Dark</span>
-        </button>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Request an appointment</a>
+          <a href="#services" class="btn btn-outline">See services</a>
+        </div>
+
+        <p class="hero-tagline">Walk-ins welcome • Cash & card • Kid-friendly • Good vibes</p>
+      </div>
+
+      <aside class="masons-logo-wrapper" aria-label="Shop branding">
+        <img src="Mason Barbershop.png" alt="Mason’s Barbershop logo" class="masons-logo" />
+        <p style="margin-top:12px; color: var(--muted-2); font-size: 0.92rem;">
+          214 Main Street, Suite B • Burleson, TX • (555) 123-0199
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-kicker">Services</div>
+      <h2 class="section-heading">The chair menu</h2>
+      <p class="section-subtitle">
+        Straight pricing, solid work. If you’re not sure what to book, pick your closest match and we’ll confirm.
+      </p>
+
+      <div class="pricing-grid">
+        <article class="pricing-card">
+          <div class="pricing-name">Cut</div>
+          <h3 class="pricing-title">Classic Cut</h3>
+          <p class="pricing-price">$25 <span>~30 min</span></p>
+          <ul class="pricing-list">
+            <li>Scissor or clipper cut</li>
+            <li>Neck cleanup</li>
+            <li>Styled how you wear it</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card pricing-card--highlight">
+          <div class="pricing-badge">Most booked</div>
+          <div class="pricing-name">Fade</div>
+          <h3 class="pricing-title">Skin / Taper Fade</h3>
+          <p class="pricing-price">$30 <span>~40 min</span></p>
+          <ul class="pricing-list">
+            <li>Low / mid / high fade</li>
+            <li>Blended to your head shape</li>
+            <li>Razor cleanup included</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card">
+          <div class="pricing-name">Beard</div>
+          <h3 class="pricing-title">Beard Trim & Lineup</h3>
+          <p class="pricing-price">$18 <span>stand-alone</span></p>
+          <ul class="pricing-list">
+            <li>Shape and soften</li>
+            <li>Clean cheek/neck lines</li>
+            <li>Add-on to any cut: $15</li>
+          </ul>
+        </article>
+      </div>
+
+      <p style="margin-top:14px;">
+        <span class="badge-soft">Good to know</span>
+        <span style="color: var(--muted);">Kids & seniors pricing available — just ask.</span>
+      </p>
+    </div>
+  </section>
+
+  <section id="hours" class="section alt">
+    <div class="container">
+      <div class="section-kicker">Visit</div>
+      <h2 class="section-heading">Hours, location, and the vibe</h2>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="section-kicker">Hours</div>
+          <h3>When we’re open</h3>
+          <p style="color: var(--muted);">
+            Mon–Thu: 9:00am – 6:00pm<br />
+            Fri: 9:00am – 7:00pm<br />
+            Sat: 9:00am – 3:00pm<br />
+            Sun: Closed
+          </p>
+          <p style="margin-top:10px;">Call / Text: <strong>(555) 123-0199</strong></p>
+        </article>
+
+        <article class="portfolio-card" id="about">
+          <div class="section-kicker">About</div>
+          <h3>A shop that keeps it simple</h3>
+          <p>
+            Classic barber fundamentals with modern finishes. Bring a reference photo or tell us what you’re after.
+            We’ll make it clean and make it last.
+          </p>
+          <p>Good music, easy talk, and work we’re proud to put our name on.</p>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="section-kicker">Location</div>
+          <h3>Find us</h3>
+          <p style="color: var(--muted);">
+            214 Main Street, Suite B<br />
+            Burleson, TX 76028<br />
+            Free parking behind the building
+          </p>
+          <p style="margin-top:10px; font-size:0.92rem; color: var(--muted-2);">
+            Look for the window decal by the front door.
+          </p>
+        </article>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main id="main">
-    <!-- Hero -->
-    <section class="section">
-      <div class="wrap">
-        <div class="declaration">
-          <p class="kicker">Burleson • Fort Worth • Crowley</p>
-          <h1>Make the outside of your home look cared for.</h1>
-          <p class="lead">
-            Driveways, siding, fences, patios, and storefronts—cleaned safely and done right.
-            Fast quotes. No “mystery pricing.” Show me the job and I’ll tell you the number.
-          </p>
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-kicker">Book</div>
+      <h2 class="section-heading">Request a time</h2>
+      <p class="section-subtitle">
+        Send a quick request and we’ll confirm by text. Walk-ins are always welcome — this just saves your seat.
+      </p>
 
-          <div class="cta-row">
-            <a class="btn btn-solid" href="#quote">Get a fast quote</a>
-            <a class="btn btn-ghost" href="#services">See services</a>
-            <a class="btn btn-ghost" href="#work">Before / after</a>
-          </div>
-
-          <div class="pills" aria-label="Trust pills">
-            <span class="pill">Insured</span>
-            <span class="pill">Soft-wash safe</span>
-            <span class="pill">Same-week availability</span>
-            <span class="pill">Text-friendly</span>
-          </div>
-
-          <div class="kpi" aria-label="Service highlights">
-            <div class="card">
-              <div class="big">Most quotes in 10 minutes</div>
-              <div class="muted">Send photos + address. You’ll get a straight answer.</div>
-            </div>
-            <div class="card">
-              <div class="big">Zero mess left behind</div>
-              <div class="muted">We clean up like professionals. Your property stays clean.</div>
-            </div>
-            <div class="card">
-              <div class="big">Results you can see</div>
-              <div class="muted">Bright concrete. Clean siding. Fences that look new again.</div>
-            </div>
-          </div>
-
-          <p class="micro">This is a sample “Starter” build: decisive, simple, built for calls.</p>
+      <form>
+        <div>
+          <label for="c-name">Name</label>
+          <input id="c-name" type="text" placeholder="Your name" />
         </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="section alt">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Services</h2>
+        <div>
+          <label for="c-phone">Phone</label>
+          <input id="c-phone" type="tel" placeholder="Best number to text" />
         </div>
-
-        <div class="grid-3" style="margin-top: 18px;">
-          <div class="card">
-            <h3>Driveways + sidewalks</h3>
-            <p class="muted">Oil spots, grime, and buildup removed for a cleaner first impression.</p>
-          </div>
-          <div class="card">
-            <h3>House wash (soft wash)</h3>
-            <p class="muted">Safe on siding. Removes algae + staining without damage.</p>
-          </div>
-          <div class="card">
-            <h3>Fences + patios</h3>
-            <p class="muted">Restore wood and concrete so the whole backyard feels newer.</p>
-          </div>
+        <div>
+          <label for="c-service">Service</label>
+          <input id="c-service" type="text" placeholder="Example: Skin fade + beard trim" />
         </div>
-
-        <div class="notice" style="margin-top: 14px;">
-          Tip: If you can’t decide what you need, send one photo. I’ll tell you the right service.
+        <div>
+          <label for="c-time">Preferred day & time</label>
+          <input id="c-time" type="text" placeholder="Example: Friday after 4pm" />
         </div>
-      </div>
-    </section>
-
-    <!-- Work / proof -->
-    <section id="work" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Recent work</h2>
+        <div>
+          <label for="c-notes">Notes (optional)</label>
+          <textarea id="c-notes" placeholder="Reference photo, hair notes, anything we should know."></textarea>
         </div>
+        <button type="submit" class="btn btn-primary">Send request</button>
+      </form>
+    </div>
+  </section>
+</main>
 
-        <div class="grid-2" style="margin-top: 18px;">
-          <div class="card">
-            <h3>Concrete revival</h3>
-            <p class="muted">Driveway cleaned + edges detailed. Instant curb appeal.</p>
-            <hr class="hr" />
-            <p class="muted"><strong>Before/after:</strong> (placeholder images)</p>
-            <div class="grid-2" style="margin-top: 10px;">
-              <div class="card" style="padding:14px; text-align:center;">Before</div>
-              <div class="card" style="padding:14px; text-align:center;">After</div>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>House wash</h3>
-            <p class="muted">Soft wash—safe on siding. Removes algae and dark streaking.</p>
-            <hr class="hr" />
-            <p class="muted"><strong>Before/after:</strong> (placeholder images)</p>
-            <div class="grid-2" style="margin-top: 10px;">
-              <div class="card" style="padding:14px; text-align:center;">Before</div>
-              <div class="card" style="padding:14px; text-align:center;">After</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mini-cta">
-          <a class="btn btn-solid" href="#quote">Get my quote</a>
-          <a class="btn btn-ghost" href="#reviews">Read reviews</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section id="reviews" class="section alt">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Reviews</h2>
-        </div>
-
-        <div class="grid-3" style="margin-top:18px;">
-          <div class="card">
-            <h3>“Night and day difference.”</h3>
-            <p class="muted">Driveway looks new again. Showed up on time and worked fast.</p>
-          </div>
-          <div class="card">
-            <h3>“Easy quote over text.”</h3>
-            <p class="muted">Sent pics and got a price immediately. No back-and-forth.</p>
-          </div>
-          <div class="card">
-            <h3>“Clean work. No mess.”</h3>
-            <p class="muted">Protected plants, cleaned up after, and the results were legit.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quote -->
-    <section id="quote" class="section">
-      <div class="wrap">
-        <div class="push">
-          <h2>Get a fast quote</h2>
-          <p class="muted">Tell me what you want cleaned. If you have photos, even better.</p>
-
-          <form class="form" action="#" method="post">
-            <div class="grid-2">
-              <div class="field">
-                <label for="qname">Name</label>
-                <input id="qname" name="name" placeholder="Your name" required />
-              </div>
-              <div class="field">
-                <label for="qphone">Phone</label>
-                <input id="qphone" name="phone" placeholder="(###) ###-####" required />
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="qaddr">Address or neighborhood</label>
-              <input id="qaddr" name="address" placeholder="So I can estimate travel + size" />
-            </div>
-
-            <div class="field">
-              <label for="qmsg">What do you need cleaned?</label>
-              <textarea id="qmsg" name="message" placeholder="Driveway + sidewalk, fence, house wash, etc."></textarea>
-            </div>
-
-            <div class="cta-row">
-              <button class="btn btn-solid" type="submit">Request quote</button>
-              <a class="btn btn-ghost" href="tel:+18175551234">Call now</a>
-            </div>
-
-            <p class="micro">Demo note: wire this to Formspree or your booking tool on a real build.</p>
-          </form>
-        </div>
-
-        <footer class="footer">
-          <p class="micro">© <span id="year"></span> BrightLine Pressure Washing</p>
-          <div class="footer-links">
-            <a href="#services">Services</a>
-            <a href="#work">Work</a>
-            <a href="#quote">Quote</a>
-          </div>
-        </footer>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const root = document.documentElement;
-    const btn = document.getElementById("modeBtn");
-    const modeText = document.getElementById("modeText");
-
-    function applyTheme(mode) {
-      if (mode === "dark") { root.setAttribute("data-theme", "dark"); modeText.textContent = "Light"; }
-      else { root.removeAttribute("data-theme"); modeText.textContent = "Dark"; }
-    }
-
-    const saved = localStorage.getItem("lcd-theme");
-    applyTheme(saved === "dark" ? "dark" : "light");
-
-    btn.addEventListener("click", () => {
-      const isDark = root.getAttribute("data-theme") === "dark";
-      const next = isDark ? "light" : "dark";
-      localStorage.setItem("lcd-theme", next);
-      applyTheme(next);
-    });
-  </script>
+<footer>
+  <div class="container footer-row">
+    <span>© <span id="year"></span> Mason’s Barbershop</span>
+    <a href="index.html" style="opacity:.85;">Studio</a>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
 </body>
 </html>
