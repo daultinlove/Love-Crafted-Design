@@ -1,163 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Client Intake | Love Crafted Digital</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Love Crafted Digital client intake form" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Start a Project — Love Crafted Digital</title>
+  <meta name="description" content="Client intake. Tell me what you do and what you want customers to do next." />
+
+  <meta property="og:title" content="Start a Project — Love Crafted Digital" />
+  <meta property="og:description" content="Client intake. Tell me what you do and what you want customers to do next." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://daultinlove.github.io/Love-Crafted-Design/intake.html" />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550,750&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
 
   <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f7f7f7;
-      color: #111;
+    /* tiny page-specific form layout (keeps Branch 2 vibe, avoids bloating your main CSS) */
+    .form-shell{
+      margin-top: 18px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 22px 60px rgba(0,0,0,0.45);
     }
-
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    header img {
-      max-width: 220px;
-      margin-bottom: 16px;
-    }
-
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 8px;
-    }
-
-    p.sub {
-      color: #555;
-      font-size: 1rem;
-    }
-
-    form {
-      background: #fff;
-      padding: 32px;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-
-    label {
-      display: block;
-      font-weight: 600;
-      margin-top: 20px;
-      margin-bottom: 6px;
-    }
-
-    input,
-    select,
-    textarea {
+    .grid2{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+    .field label{ display:block; font-weight: 700; margin: 0 0 6px; }
+    .field input, .field select, .field textarea{
       width: 100%;
       padding: 12px;
-      font-size: 1rem;
-      border-radius: 6px;
-      border: 1px solid #ccc;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(5,6,8,0.55);
+      color: inherit;
+      font: inherit;
     }
-
-    textarea {
-      min-height: 120px;
-      resize: vertical;
+    .field textarea{ min-height: 120px; resize: vertical; }
+    .hint{ margin-top: 8px; font-size: .92rem; color: #a1a8bc; }
+    .actions{ display:flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    @media (max-width: 900px){ .grid2{ grid-template-columns: 1fr; } }
+    html:not([data-theme="dark"]) .form-shell{
+      background:#ffffff;
+      border-color: rgba(0,0,0,0.10);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.10);
     }
-
-    .checkbox-group label,
-    .radio-group label {
-      font-weight: 400;
-      margin-top: 6px;
-    }
-
-    button {
-      margin-top: 32px;
-      width: 100%;
-      padding: 14px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      background: #111;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      opacity: 0.9;
+    html:not([data-theme="dark"]) .field input,
+    html:not([data-theme="dark"]) .field select,
+    html:not([data-theme="dark"]) .field textarea{
+      background: #ffffff;
+      border-color: rgba(0,0,0,0.12);
+      color: #0b0d10;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <!-- Replace src with your logo -->
-   <img src="logo-lovecrafted-digital.png" alt="Love Crafted Digital logo" />
-      <h1>Client Intake Form</h1>
-      <p class="sub">
-        This helps me understand your business, goals, and needs before we begin.
-      </p>
-    </header>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <form action="https://formspree.io/f/xwvvpzaj" method="POST" enctype="multipart/form-data">
-      
-      <label>Full Name *</label>
-      <input type="text" name="full_name" required />
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html" aria-label="Love Crafted Digital home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Love Crafted Digital</span>
+      </a>
 
-      <label>Business Name *</label>
-      <input type="text" name="business_name" required />
+      <div class="topbar-actions">
+        <nav class="nav" aria-label="Primary">
+          <a href="samples.html">Work</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a class="btn btn-solid" href="intake.html" aria-current="page">Start a project</a>
+        </nav>
 
-      <label>Email Address *</label>
-      <input type="email" name="email" required />
+        <button class="mode" type="button" id="modeBtn" aria-label="Toggle dark mode">
+          <span class="mode-dot" aria-hidden="true"></span>
+          <span class="mode-text" id="modeText">Dark</span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-      <label>Phone Number</label>
-      <input type="text" name="phone" />
+  <main id="main">
+    <section class="section">
+      <div class="wrap">
+        <div class="declaration">
+          <p class="kicker">Start a project</p>
+          <h1>Tell me what you do. Tell me what you want customers to do next.</h1>
+          <p class="lead">
+            This intake is short on purpose. Clarity first.
+            If you give me the basics, I can usually tell you the right tier and next step fast.
+          </p>
 
-      <label>Type of Business</label>
-      <select name="business_type">
-        <option>Home Services</option>
-        <option>Retail / Shop</option>
-        <option>Restaurant / Food</option>
-        <option>Barber / Salon</option>
-        <option>Coaching / Consulting</option>
-        <option>Online / Digital</option>
-        <option>Other</option>
-      </select>
+          <div class="cta-row">
+            <a class="btn btn-ghost" href="pricing.html">See pricing</a>
+            <a class="btn btn-ghost" href="samples.html">View work</a>
+          </div>
 
-      <label>Current Website (if any)</label>
-      <input type="url" name="current_website" />
+          <div class="form-shell" role="region" aria-label="Client intake form">
+            <form action="https://formspree.io/f/xwvvpzaj" method="POST">
+              <input type="hidden" name="_subject" value="New intake — Love Crafted Digital" />
+              <input type="text" name="_gotcha" style="display:none" />
 
-      <label>Main goals for this project</label>
-      <textarea name="project_goals"></textarea>
+              <div class="grid2">
+                <div class="field">
+                  <label for="full_name">Full name *</label>
+                  <input id="full_name" name="full_name" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="email">Email *</label>
+                  <input id="email" name="email" type="email" required />
+                </div>
+              </div>
 
-      <label>Design inspiration or style preferences</label>
-      <textarea name="design_preferences"></textarea>
+              <div class="grid2" style="margin-top:12px;">
+                <div class="field">
+                  <label for="business_name">Business name *</label>
+                  <input id="business_name" name="business_name" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone (optional)</label>
+                  <input id="phone" name="phone" type="text" />
+                </div>
+              </div>
 
-      <label>Upload logos or brand assets</label>
-      <input type="file" name="brand_files" />
+              <div class="grid2" style="margin-top:12px;">
+                <div class="field">
+                  <label for="business_type">Type of business</label>
+                  <select id="business_type" name="business_type">
+                    <option>Home Services</option>
+                    <option>Retail / Shop</option>
+                    <option>Restaurant / Food</option>
+                    <option>Barber / Salon</option>
+                    <option>Coaching / Consulting</option>
+                    <option>Online / Digital</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="current_website">Current website (optional)</label>
+                  <input id="current_website" name="current_website" type="url" placeholder="https://..." />
+                </div>
+              </div>
 
-      <label>Desired launch date (if any)</label>
-      <input type="text" name="launch_date" />
+              <div class="field" style="margin-top:12px;">
+                <label for="project_goals">What do you want the website to do?</label>
+                <textarea id="project_goals" name="project_goals" placeholder="Examples: get calls, collect quote requests, book appointments, show menu, take orders…"></textarea>
+                <p class="hint">If you can name the first action you want visitors to take, we’re already winning.</p>
+              </div>
 
-      <label>Package of interest</label>
-      <select name="package">
-        <option>Starter</option>
-        <option>Standard</option>
-        <option>Premium</option>
-        <option>Not sure yet</option>
-      </select>
+              <div class="field" style="margin-top:12px;">
+                <label for="design_preferences">Style notes / inspiration (optional)</label>
+                <textarea id="design_preferences" name="design_preferences" placeholder="Examples: modern, bold, simple, clean… links help too."></textarea>
+              </div>
 
-      <label>Anything else I should know?</label>
-      <textarea name="additional_notes"></textarea>
+              <div class="grid2" style="margin-top:12px;">
+                <div class="field">
+                  <label for="launch_date">Ideal launch date (optional)</label>
+                  <input id="launch_date" name="launch_date" type="text" placeholder="Example: Feb 10" />
+                </div>
+                <div class="field">
+                  <label for="package">Package you’re leaning toward</label>
+                  <select id="package" name="package">
+                    <option>Not sure yet</option>
+                    <option>Starter</option>
+                    <option>Standard</option>
+                    <option>Premium</option>
+                  </select>
+                </div>
+              </div>
 
-      <button type="submit">Submit Intake Form</button>
-    </form>
-  </div>
+              <div class="field" style="margin-top:12px;">
+                <label for="additional_notes">Anything else I should know?</label>
+                <textarea id="additional_notes" name="additional_notes" placeholder="Constraints, must-haves, pages you think you need, booking/payment needs, etc."></textarea>
+              </div>
+
+              <div class="actions">
+                <button class="btn btn-solid" type="submit">Submit intake</button>
+                <a class="btn btn-ghost" href="pricing.html">See pricing</a>
+              </div>
+
+              <p class="hint">After you submit, I’ll reply with the cleanest next step.</p>
+            </form>
+          </div>
+        </div>
+
+        <footer class="footer" style="margin-top: 28px;">
+          <p class="micro">© <span id="year"></span> Love Crafted Digital</p>
+          <div class="footer-links">
+            <a href="samples.html">Work</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="index.html">Home</a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const root = document.documentElement;
+    const btn = document.getElementById("modeBtn");
+    const modeText = document.getElementById("modeText");
+
+    function applyTheme(mode) {
+      if (mode === "dark") {
+        root.setAttribute("data-theme", "dark");
+        modeText.textContent = "Light";
+      } else {
+        root.removeAttribute("data-theme");
+        modeText.textContent = "Dark";
+      }
+    }
+
+    const saved = localStorage.getItem("lcd-theme");
+    applyTheme(saved === "dark" ? "dark" : "light");
+
+    btn.addEventListener("click", () => {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      const next = isDark ? "light" : "dark";
+      localStorage.setItem("lcd-theme", next);
+      applyTheme(next);
+    });
+  </script>
 </body>
 </html>
