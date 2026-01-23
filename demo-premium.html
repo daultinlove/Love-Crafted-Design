@@ -1,293 +1,207 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Moon & Timber Steakhouse</title>
-  <meta name="description" content="A modern steakhouse built around reservation flow. Seasonal menu, private dining, and a calm premium experience." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550,750&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <title>Skyline Performance Coaching</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Skyline Performance Coaching — practical coaching for professionals who want clear plans, stronger weeks, and real momentum." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="theme-coach">
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <a class="brand" href="demo-premium.html" aria-label="Moon & Timber home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">Moon & Timber</span>
+  <header class="demo-topbar">
+    <div class="container nav">
+      <a class="nav-logo" href="demo-premium.html" aria-label="Skyline home">
+        <span class="nav-logo-badge">SP</span>
+        <span>Skyline Performance Coaching</span>
       </a>
 
-      <div class="topbar-actions">
-        <nav class="nav" aria-label="Primary">
-          <a href="#menu">Menu</a>
-          <a href="#experience">Experience</a>
-          <a href="#private">Private dining</a>
-          <a class="btn btn-solid" href="#reserve">Reserve</a>
-        </nav>
-
-        <button class="mode" type="button" id="modeBtn" aria-label="Toggle dark mode">
-          <span class="mode-dot" aria-hidden="true"></span>
-          <span class="mode-text" id="modeText">Dark</span>
-        </button>
-      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="demo-premium.html" aria-current="page">Overview</a>
+        <a href="demo-premium.html#programs">Programs</a>
+        <a href="demo-premium-sales.html">Enroll</a>
+        <a href="demo-premium-book.html" class="nav-cta">Book a Call</a>
+        <a href="index.html" class="nav-muted">Studio</a>
+      </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- Hero -->
-    <section class="section">
-      <div class="wrap">
-        <div class="declaration">
-          <p class="kicker">Steakhouse • Cocktails • Private dining</p>
-          <h1>Quiet luxury. Loud flavor.</h1>
-          <p class="lead">
-            This isn’t a menu dump. It’s a reservation machine.
-            One clear path: pick a time, show up, and let us handle the rest.
+    <!-- HERO -->
+    <section class="coach-hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="hero-kicker">For high-performers who want less chaos</p>
+          <h1 class="hero-title">Build a week that holds under pressure.</h1>
+          <p class="hero-subtitle">
+            Skyline is coaching for people with real jobs, real deadlines, and real responsibilities.
+            We turn vague goals into a plan you can execute — with structure, accountability, and zero guru talk.
           </p>
 
-          <div class="cta-row">
-            <a class="btn btn-solid" href="#reserve">Reserve a table</a>
-            <a class="btn btn-ghost" href="#menu">View menu</a>
-            <a class="btn btn-ghost" href="#private">Private dining</a>
+          <div class="hero-actions">
+            <a href="demo-premium-book.html" class="btn btn-primary">Book a free 20-minute call</a>
+            <a href="#programs" class="btn btn-outline">See programs</a>
           </div>
 
-          <div class="pills">
-            <span class="pill">Reservations encouraged</span>
-            <span class="pill">Seasonal menu</span>
-            <span class="pill">Cocktail program</span>
-            <span class="pill">Private rooms</span>
+          <div class="hero-chip-row">
+            <span class="hero-chip">Clear 90-day plan</span>
+            <span class="hero-chip">Weekly structure</span>
+            <span class="hero-chip">Accountability</span>
+            <span class="hero-chip">No fluff</span>
           </div>
 
-          <div class="kpi">
-            <div class="card">
-              <div class="big">2–6 guests</div>
-              <div class="muted">Ideal table experience.</div>
-            </div>
-            <div class="card">
-              <div class="big">6–18 guests</div>
-              <div class="muted">Private dining options.</div>
-            </div>
-            <div class="card">
-              <div class="big">48 hours</div>
-              <div class="muted">Most weekend slots fill quickly.</div>
-            </div>
-          </div>
+          <p class="hero-tagline">Small roster • High attention • Real implementation</p>
+        </div>
 
-          <p class="micro">This is a “Premium” demo: more structure, more polish, built for conversions.</p>
+        <aside class="coach-card">
+          <div class="coach-card-top">
+            <img src="Skyline.png" alt="Skyline Performance Coaching logo" class="coach-logo" />
+          </div>
+          <div class="coach-card-body">
+            <p class="coach-card-kicker">Start here</p>
+            <h2 class="coach-card-title">Free strategy call</h2>
+            <p class="coach-card-text">
+              Get clarity on your biggest bottleneck and leave with next steps — even if we don’t work together.
+            </p>
+            <a class="btn btn-ghost full" href="demo-premium-book.html">Book the call</a>
+            <p class="micro" style="margin-top:.8rem;">Typical call time: 20 minutes</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-kicker">What changes</div>
+        <h2 class="section-heading">Less overwhelm. More forward motion.</h2>
+        <p class="section-subtitle">The goal is not “do more.” It’s do the right work — consistently.</p>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card">
+            <div class="portfolio-label">Clarity</div>
+            <h3>One priority at a time</h3>
+            <p>You stop spreading effort across ten things and start shipping the one thing that matters now.</p>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-label">Structure</div>
+            <h3>A week you can repeat</h3>
+            <p>Systems replace willpower: planning, execution blocks, and recovery — built for your actual life.</p>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-label">Momentum</div>
+            <h3>Better decisions under pressure</h3>
+            <p>Clear rules + accountability means fewer spiral days and more “I handled that” days.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Menu -->
-    <section id="menu" class="section alt">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Menu highlights</h2>
-        </div>
+    <!-- PROGRAMS -->
+    <section id="programs" class="section">
+      <div class="container">
+        <div class="section-kicker">Programs</div>
+        <h2 class="section-heading">Choose the level of support you need.</h2>
+        <p class="section-subtitle">Simple offers. Clear outcomes. No confusing tiers.</p>
 
-        <div class="grid-3" style="margin-top: 18px;">
-          <div class="card">
-            <h3>Filet + peppercorn</h3>
-            <p class="muted">Center-cut, pan-seared, finished with a clean bite.</p>
-            <p class="micro"><strong>$52</strong></p>
-          </div>
-          <div class="card">
-            <h3>Ribeye + char</h3>
-            <p class="muted">Big flavor. Balanced fat. Proper crust.</p>
-            <p class="micro"><strong>$58</strong></p>
-          </div>
-          <div class="card">
-            <h3>Seasonal sides</h3>
-            <p class="muted">Rotating vegetables, potatoes, and house sauces.</p>
-            <p class="micro"><strong>$12–$16</strong></p>
-          </div>
-        </div>
-
-        <div class="notice" style="margin-top: 14px;">
-          Gluten-free and allergy-friendly options available. Ask your server—no attitude.
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <div class="wrap">
-        <div class="split">
-          <div class="split-main">
-            <h2>Designed to feel finished.</h2>
-            <p class="muted">
-              Premium restaurants don’t need more words. They need better decisions:
-              what to show, what to remove, and what to make easy.
-            </p>
-            <p class="muted">
-              The site exists to support reservations, communicate dress/expectations,
-              and answer the questions people ask before they book.
-            </p>
-
-            <div class="grid-2" style="margin-top: 14px;">
-              <div class="card">
-                <h3>Hours</h3>
-                <p class="muted">Tue–Thu: 5–10<br/>Fri–Sat: 5–11<br/>Sun: 5–9</p>
-              </div>
-              <div class="card">
-                <h3>Dress</h3>
-                <p class="muted">Smart casual. You don’t need a suit—just show up clean.</p>
-              </div>
-            </div>
-
-            <div class="mini-cta">
-              <a class="btn btn-solid" href="#reserve">Reserve now</a>
-              <a class="btn btn-ghost" href="#faq">Read FAQs</a>
-            </div>
-          </div>
-
-          <div class="split-card" aria-label="Featured event">
-            <h3>Chef’s tasting (monthly)</h3>
-            <p class="muted">
-              Five courses, limited seating, one seating per night.
-              Built for guests who want the full experience.
-            </p>
-            <ul class="list">
-              <li>Reserved seating</li>
-              <li>Wine pairing optional</li>
-              <li>Ticketed event</li>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <div class="pricing-name">Reset</div>
+            <h3 class="pricing-title">90-Minute Deep Dive</h3>
+            <p class="pricing-price">$249 <span>one time</span></p>
+            <ul class="pricing-list">
+              <li>90-minute clarity session</li>
+              <li>90-day plan you can execute</li>
+              <li>Written recap + next steps</li>
             </ul>
-            <a class="btn btn-ghost full" href="#reserve">Reserve tasting</a>
-          </div>
+            <a class="btn btn-outline" href="demo-premium-sales.html">Enroll</a>
+          </article>
+
+          <article class="pricing-card pricing-card--highlight">
+            <div class="pricing-badge">Most popular</div>
+            <div class="pricing-name">1:1 Coaching</div>
+            <h3 class="pricing-title">Performance Track</h3>
+            <p class="pricing-price">$750 <span>/ month</span></p>
+            <ul class="pricing-list">
+              <li>Weekly 60-minute calls</li>
+              <li>Systems + execution plan</li>
+              <li>Messaging support between calls</li>
+              <li>Progress review & adjustments</li>
+            </ul>
+            <a class="btn btn-primary" href="demo-premium-book.html">Book a call</a>
+          </article>
+
+          <article class="pricing-card">
+            <div class="pricing-name">Group</div>
+            <h3 class="pricing-title">Cohort Program</h3>
+            <p class="pricing-price">$1,200 <span>8 weeks</span></p>
+            <ul class="pricing-list">
+              <li>Weekly small-group calls</li>
+              <li>Curriculum + templates</li>
+              <li>Peer accountability</li>
+            </ul>
+            <a class="btn btn-outline" href="demo-premium-sales.html">Enroll</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Private dining -->
-    <section id="private" class="section alt">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Private dining</h2>
+    <!-- ABOUT -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-kicker">Coach</div>
+        <h2 class="section-heading">Coaching built for real careers.</h2>
+        <p class="section-subtitle" style="max-width:58ch;">
+          Skyline is led by a former operations leader who’s managed deadlines, people,
+          and the “quick call at 4pm” chaos. We focus on decisions, structure, and execution.
+        </p>
+
+        <div class="two-col-grid">
+          <article class="info-card">
+            <h3>How we work</h3>
+            <ul class="list">
+              <li>We pick the smallest next decision that unlocks momentum</li>
+              <li>We build a week you can repeat</li>
+              <li>We track progress and remove friction</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <h3>Who it’s for</h3>
+            <ul class="list">
+              <li>Managers, operators, founders, and high-responsibility roles</li>
+              <li>People who want practical systems, not motivation quotes</li>
+              <li>Clients who will implement between calls</li>
+            </ul>
+          </article>
         </div>
 
-        <div class="grid-3" style="margin-top: 18px;">
-          <div class="card">
-            <h3>Small room</h3>
-            <p class="muted">6–10 guests. Perfect for birthdays and client dinners.</p>
-          </div>
-          <div class="card">
-            <h3>Long table</h3>
-            <p class="muted">10–18 guests. Fixed menu or family-style options.</p>
-          </div>
-          <div class="card">
-            <h3>Buyout</h3>
-            <p class="muted">Custom pricing. Ideal for corporate + holiday events.</p>
-          </div>
-        </div>
-
-        <div class="cta-row" style="margin-top: 14px;">
-          <a class="btn btn-solid" href="#reserve">Request private dining</a>
-          <a class="btn btn-ghost" href="#faq">FAQ</a>
+        <div class="cta-row" style="margin-top:1.4rem;">
+          <a class="btn btn-primary" href="demo-premium-book.html">Book a free call</a>
+          <a class="btn btn-outline" href="demo-premium-sales.html">See enrollment</a>
         </div>
       </div>
     </section>
 
-    <!-- FAQ + Reserve -->
-    <section id="faq" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>FAQ</h2>
+    <!-- FOOTER -->
+    <footer class="demo-footer">
+      <div class="container footer-inner">
+        <p class="micro">© <span id="year"></span> Skyline Performance Coaching</p>
+        <div class="footer-links">
+          <a href="demo-premium.html#programs">Programs</a>
+          <a href="demo-premium-sales.html">Enroll</a>
+          <a href="demo-premium-book.html">Book</a>
         </div>
-
-        <div class="grid-2" style="margin-top: 18px;">
-          <div class="card">
-            <h3>Do you take walk-ins?</h3>
-            <p class="muted">Sometimes. Weekends fill up fast—reservations are the move.</p>
-          </div>
-          <div class="card">
-            <h3>How do cancellations work?</h3>
-            <p class="muted">Cancel 4+ hours ahead. Private dining has a separate policy.</p>
-          </div>
-          <div class="card">
-            <h3>Dietary restrictions?</h3>
-            <p class="muted">Yes. We can accommodate most needs with notice.</p>
-          </div>
-          <div class="card">
-            <h3>Parking?</h3>
-            <p class="muted">Nearby garage + street parking. Details sent in confirmation.</p>
-          </div>
-        </div>
-
-        <div id="reserve" class="push" style="margin-top: 18px;">
-          <h2>Reserve a table</h2>
-          <p class="muted">Demo form—wire to OpenTable/Resy/Toast on a real build.</p>
-
-          <form class="form" action="#" method="post">
-            <div class="grid-3">
-              <div class="field">
-                <label for="rname">Name</label>
-                <input id="rname" name="name" required />
-              </div>
-              <div class="field">
-                <label for="rdate">Date</label>
-                <input id="rdate" name="date" placeholder="Fri, Feb 2" required />
-              </div>
-              <div class="field">
-                <label for="rsize">Party size</label>
-                <select id="rsize" name="party">
-                  <option>2</option><option>3</option><option>4</option><option>5</option>
-                  <option>6</option><option>7</option><option>8+</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="rnote">Notes (optional)</label>
-              <textarea id="rnote" name="notes" placeholder="Allergies, celebration, private dining request, etc."></textarea>
-            </div>
-
-            <div class="cta-row">
-              <button class="btn btn-solid" type="submit">Request reservation</button>
-              <a class="btn btn-ghost" href="#menu">View menu</a>
-            </div>
-
-            <p class="micro">Premium builds usually include real booking + confirmation flow.</p>
-          </form>
-        </div>
-
-        <footer class="footer">
-          <p class="micro">© <span id="year"></span> Moon & Timber</p>
-          <div class="footer-links">
-            <a href="#menu">Menu</a>
-            <a href="#private">Private</a>
-            <a href="#reserve">Reserve</a>
-          </div>
-        </footer>
       </div>
-    </section>
+    </footer>
   </main>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    const root = document.documentElement;
-    const btn = document.getElementById("modeBtn");
-    const modeText = document.getElementById("modeText");
-
-    function applyTheme(mode) {
-      if (mode === "dark") { root.setAttribute("data-theme", "dark"); modeText.textContent = "Light"; }
-      else { root.removeAttribute("data-theme"); modeText.textContent = "Dark"; }
-    }
-
-    const saved = localStorage.getItem("lcd-theme");
-    applyTheme(saved === "dark" ? "dark" : "light");
-
-    btn.addEventListener("click", () => {
-      const isDark = root.getAttribute("data-theme") === "dark";
-      const next = isDark ? "light" : "dark";
-      localStorage.setItem("lcd-theme", next);
-      applyTheme(next);
-    });
   </script>
 </body>
 </html>
