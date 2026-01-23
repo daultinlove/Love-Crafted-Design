@@ -1,191 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Moon Tim's Steak House | Burleson, TX</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Moon Tim's Steak House in Burleson, TX — fire-grilled steaks, chicken, and classic sides served under a warm, celestial atmosphere."
-  />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mason’s Barbershop</title>
+  <meta name="description" content="Classic cuts. Clean fades. Easy booking. Mason’s Barbershop — appointments and walk-ins." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550,750&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="theme-moon">
-<header class="moon-header">
-  <div class="container nav">
-    <div class="nav-logo">
-      <div class="nav-logo-badge">MT</div>
-      <span>Moon Tim’s Steak House</span>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="demo-standard.html" aria-label="Mason’s Barbershop home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Mason’s Barbershop</span>
+      </a>
+
+      <div class="topbar-actions">
+        <nav class="nav" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#barbers">Barbers</a>
+          <a href="#gallery">Gallery</a>
+          <a class="btn btn-solid" href="#book">Book now</a>
+        </nav>
+
+        <button class="mode" type="button" id="modeBtn" aria-label="Toggle dark mode">
+          <span class="mode-dot" aria-hidden="true"></span>
+          <span class="mode-text" id="modeText">Dark</span>
+        </button>
+      </div>
     </div>
-    <nav class="nav-links">
-      <a href="demo-standard.html">Home</a>
-      <a href="demo-standard-menu.html">Menu</a>
-      <a href="demo-standard-about.html">Our Story</a>
-      <a href="demo-standard-visit.html">Visit</a>
-      <a href="demo-standard-reserve.html" class="nav-cta">Reserve</a>
-      <a href="demo-standard-contact.html">Contact</a>
-      <a href="index.html">Back to Love Crafted</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main>
-  <!-- HERO -->
-  <section class="moon-hero">
-    <div class="moon-hero-gradient"></div>
-   
-    <div class="container moon-hero-inner">
-      <div class="moon-hero-copy">
-        <div class="hero-kicker moon-kicker">Est. 1972 • Burleson, TX</div>
+  <main id="main">
+    <!-- Hero -->
+    <section class="section">
+      <div class="wrap">
+        <div class="declaration">
+          <p class="kicker">Cuts • Fades • Beard work</p>
+          <h1>Look sharp without the hassle.</h1>
+          <p class="lead">
+            This shop is built on two things: consistency and respect for your time.
+            Book an appointment or walk in—either way you’ll leave clean.
+          </p>
 
-        <h1 class="hero-title moon-title">
-          A steakhouse where <span>night meets flavor.</span>
-        </h1>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="#book">Book an appointment</a>
+            <a class="btn btn-ghost" href="#services">View services</a>
+            <a class="btn btn-ghost" href="#gallery">See cuts</a>
+          </div>
 
-        <p class="hero-subtitle moon-subtitle">
-          Moon Tim's Steak House brings deep-South cooking, slow-aged steaks, and
-          golden fire-grilled flavor together under one warm, celestial roof.
-        </p>
+          <div class="pills">
+            <span class="pill">Appointments + walk-ins</span>
+            <span class="pill">Kid-friendly</span>
+            <span class="pill">Beard specialists</span>
+            <span class="pill">Open late Fridays</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="hero-actions">
-          <a href="demo-standard-reserve.html" class="btn btn-primary-moon">Reserve a Table</a>
-          <a href="demo-standard-menu.html" class="btn btn-outline-moon">View the Menu</a>
+    <!-- Services -->
+    <section id="services" class="section alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Services</h2>
         </div>
 
-        <p class="moon-note">
-          Open for dinner Monday–Saturday • Closed Sunday (even the moon rests).
-        </p>
-      </div>
-
-      <aside class="moon-hero-card">
-        <div class="moon-logo-wrapper">
-          <img
-            src="Moon.png"
-            alt="Moon Tim's Steak House Logo"
-            class="moon-logo"
-          />
+        <div class="grid-3" style="margin-top: 18px;">
+          <div class="card">
+            <h3>Classic cut</h3>
+            <p class="muted">Clean lines, blended sides, finished with detail.</p>
+            <p class="micro"><strong>30–40 min</strong></p>
+          </div>
+          <div class="card">
+            <h3>Fade + lineup</h3>
+            <p class="muted">Tight fade, sharp edges, built to last.</p>
+            <p class="micro"><strong>35–50 min</strong></p>
+          </div>
+          <div class="card">
+            <h3>Beard + hot towel</h3>
+            <p class="muted">Shape, trim, and finish that actually looks intentional.</p>
+            <p class="micro"><strong>25–35 min</strong></p>
+          </div>
         </div>
-        <div class="moon-hero-card-body">
-          <div class="moon-hero-tag">Tonight at Moon Tim’s</div>
-          <p class="moon-hero-line">
-            Wood-fired steaks, house-made sauces, and desserts served until close.
-          </p>
-          <p class="moon-hero-meta">
-            215 Crescent Lane • Burleson, TX<br />
-            <strong>(555) 987-4421</strong>
-          </p>
+
+        <div class="notice" style="margin-top: 14px;">
+          Want a specific look? Bring a reference photo. We’ll match the shape to your face.
         </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- FEATURED DISHES PREVIEW -->
-  <section class="moon-section">
-    <div class="container">
-      <div class="moon-kicker">Featured</div>
-      <h2 class="moon-heading">A taste of what’s on the grill.</h2>
-
-      <div class="menu-grid">
-        <article class="menu-card">
-          <p class="menu-label">Steak</p>
-          <h3 class="menu-title">Moonlit Ribeye</h3>
-          <p class="menu-desc">
-            14oz hand-cut ribeye with deep char and garlic butter, finished over open flame.
-          </p>
-        </article>
-
-        <article class="menu-card">
-          <p class="menu-label">Chicken</p>
-          <h3 class="menu-title">Starfire Chicken</h3>
-          <p class="menu-desc">
-            Flame-grilled marinated chicken breast with charred lemon and garlic whipped potatoes.
-          </p>
-        </article>
-
-        <article class="menu-card">
-          <p class="menu-label">Side</p>
-          <h3 class="menu-title">Moonlit Mac &amp; Cheese</h3>
-          <p class="menu-desc">
-            Baked three-cheese mac with smoked cheddar, crisp bacon, and toasted crumbs.
-          </p>
-        </article>
       </div>
+    </section>
 
-      <p style="margin-top:1.2rem;font-size:0.9rem;">
-        See the full selection on our <a href="demo-standard-menu.html">Menu</a> page.
-      </p>
-    </div>
-  </section>
+    <!-- Barbers -->
+    <section id="barbers" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Meet the barbers</h2>
+        </div>
 
-  <!-- HOURS / VISIT PREVIEW -->
-  <section class="moon-section">
-    <div class="container">
-      <div class="moon-kicker">Visit</div>
-      <h2 class="moon-heading">When and where to find us.</h2>
-
-      <div class="two-col-grid">
-        <article class="info-card">
-          <h3>Hours</h3>
-          <p>
-            Mon–Thu: 4pm – 10pm<br />
-            Friday: 4pm – 11pm<br />
-            Saturday: 12pm – 11pm<br />
-            Sunday: Closed
-          </p>
-          <p class="info-note">
-            Last seating 30 minutes before close.
-          </p>
-        </article>
-
-        <article class="info-card">
-          <h3>Location</h3>
-          <p>
-            215 Crescent Lane<br />
-            Burleson, TX 76028<br />
-          </p>
-          <p style="margin-top:0.7rem;">
-            Phone: <strong>(555) 987-4421</strong><br />
-            <a href="#">Open in Maps</a> (link placeholder)
-          </p>
-        </article>
+        <div class="grid-3" style="margin-top: 18px;">
+          <div class="card">
+            <h3>Mason</h3>
+            <p class="muted">Fades + beard work. “Keep it clean” specialist.</p>
+            <div class="cta-row" style="margin-top: 12px;">
+              <a class="btn btn-ghost" href="#book">Book with Mason</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Jordan</h3>
+            <p class="muted">Classic cuts + scissor work. Great for longer styles.</p>
+            <div class="cta-row" style="margin-top: 12px;">
+              <a class="btn btn-ghost" href="#book">Book with Jordan</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Rae</h3>
+            <p class="muted">Kid cuts + lineups. Fast hands, calm energy.</p>
+            <div class="cta-row" style="margin-top: 12px;">
+              <a class="btn btn-ghost" href="#book">Book with Rae</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- REVIEWS PREVIEW -->
-  <section class="moon-section">
-    <div class="container">
-      <div class="moon-kicker">Guests are saying</div>
-      <h2 class="moon-heading">What dinner under our moon feels like.</h2>
+    <!-- Gallery -->
+    <section id="gallery" class="section alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Gallery</h2>
+        </div>
 
-      <div class="reviews-grid">
-        <article class="review-card">
-          <p class="review-quote">
-            “Best ribeye I’ve had in years. The crust, the garlic butter, everything was on point.”
-          </p>
-          <p class="review-meta">— Jordan R.</p>
-        </article>
+        <div class="grid-3" style="margin-top: 18px;">
+          <div class="card" style="text-align:center; padding: 28px;">Fade</div>
+          <div class="card" style="text-align:center; padding: 28px;">Lineup</div>
+          <div class="card" style="text-align:center; padding: 28px;">Beard</div>
+        </div>
 
-        <article class="review-card">
-          <p class="review-quote">
-            “Cozy, warm, and just the right amount of fancy. Perfect date-night spot.”
-          </p>
-          <p class="review-meta">— Mia L.</p>
-        </article>
+        <p class="micro">Placeholders here—swap in real cut photos on a client build.</p>
       </div>
+    </section>
 
-      <p style="margin-top:1rem;font-size:0.9rem;">
-        Ready to see for yourself? <a href="demo-standard-reserve.html">Book a table</a>.
-      </p>
-    </div>
-  </section>
-</main>
+    <!-- FAQ + Booking -->
+    <section id="book" class="section">
+      <div class="wrap">
+        <div class="split">
+          <div class="split-main">
+            <h2>Book in 30 seconds.</h2>
+            <p class="muted">
+              Pick a service, choose a time, and you’re locked in.
+              Prefer walk-ins? We’ll still take care of you—booking just saves your spot.
+            </p>
 
-<footer class="moon-footer">
-  <div class="container">
-    Standard demo home page designed by Love Crafted Digital to showcase a multi-page restaurant layout.
-  </div>
-</footer>
+            <div class="grid-2" style="margin-top: 14px;">
+              <div class="card">
+                <h3>Hours</h3>
+                <p class="muted">Mon–Thu: 10–7<br/>Fri: 10–8<br/>Sat: 9–6<br/>Sun: Closed</p>
+              </div>
+              <div class="card">
+                <h3>Location</h3>
+                <p class="muted">Burleson, TX • Easy parking • Walk-ins welcome</p>
+              </div>
+            </div>
+
+            <div class="mini-cta">
+              <a class="btn btn-solid" href="#bookingForm">Start booking</a>
+              <a class="btn btn-ghost" href="tel:+18175551234">Call the shop</a>
+            </div>
+          </div>
+
+          <div class="split-card" aria-label="Booking form">
+            <h3>Request a slot</h3>
+            <p class="muted">Demo form—wire to Square/Booksy/etc. on a real build.</p>
+
+            <form id="bookingForm" class="form" action="#" method="post">
+              <div class="field">
+                <label for="bname">Name</label>
+                <input id="bname" name="name" required />
+              </div>
+              <div class="field">
+                <label for="bservice">Service</label>
+                <select id="bservice" name="service">
+                  <option>Classic cut</option>
+                  <option>Fade + lineup</option>
+                  <option>Beard + hot towel</option>
+                  <option>Kid cut</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="btime">Preferred day/time</label>
+                <input id="btime" name="time" placeholder="Friday after 5pm" />
+              </div>
+              <button class="btn btn-solid full" type="submit">Send request</button>
+            </form>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p class="micro">© <span id="year"></span> Mason’s Barbershop</p>
+          <div class="footer-links">
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#book">Book</a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const root = document.documentElement;
+    const btn = document.getElementById("modeBtn");
+    const modeText = document.getElementById("modeText");
+
+    function applyTheme(mode) {
+      if (mode === "dark") { root.setAttribute("data-theme", "dark"); modeText.textContent = "Light"; }
+      else { root.removeAttribute("data-theme"); modeText.textContent = "Dark"; }
+    }
+
+    const saved = localStorage.getItem("lcd-theme");
+    applyTheme(saved === "dark" ? "dark" : "light");
+
+    btn.addEventListener("click", () => {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      const next = isDark ? "light" : "dark";
+      localStorage.setItem("lcd-theme", next);
+      applyTheme(next);
+    });
+  </script>
 </body>
 </html>
