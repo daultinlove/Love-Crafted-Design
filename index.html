@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Love Crafted Digital — Small Business Web Design & Branding</title>
+  <title>Love Crafted Digital — Websites & Branding for Small Businesses</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- SEO META -->
+  <!-- SEO -->
   <meta name="description"
-        content="Love Crafted Digital builds fast, clean websites and branding for small businesses—service pros, shops, restaurants, barbers, coaches, and more—so you look legit and get more customers." />
+        content="Love Crafted Digital builds fast, clean websites and branding for small businesses—contractors, shops, barbers, restaurants, and service pros. Clear pricing. No templates. No agency markup." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Love Crafted Digital — Small Business Web Design & Branding" />
-  <meta property="og:description" content="Fast, clean websites and branding for small businesses." />
+  <meta property="og:title" content="Love Crafted Digital — Websites & Branding for Small Businesses" />
+  <meta property="og:description" content="Fast, clean websites and branding for small businesses. Clear pricing. No templates." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://daultinlove.github.io/Love-Crafted-Design/" />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
 
   <!-- Google Analytics (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C2S3JEJS5"></script>
@@ -23,242 +26,374 @@
     gtag('js', new Date());
     gtag('config', 'G-4C2S3JEJS5');
   </script>
-
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
-<header>
-  <div class="container nav">
-    <div class="nav-logo">
-      <a href="index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav-brand" href="index.html" aria-label="Love Crafted Digital Home">
         <img src="favicon.png" alt="Love Crafted Digital Logo" class="nav-logo-img" />
-        <span>Love Crafted Digital</span>
+        <span class="nav-brand-text">Love Crafted Digital</span>
       </a>
-    </div>
 
-    <nav class="nav-links">
-      <a href="pricing.html">Packages</a>
-      <a href="package-details.html">What’s included</a>
-      <a href="samples.html">Samples</a>
-      <a href="about.html">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="pricing.html">Packages</a>
+        <a href="package-details.html">What’s Included</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-<main>
+      <div class="nav-actions">
+        <a class="btn btn-outline btn-sm hide-mobile" href="pricing.html">View packages</a>
+        <a class="btn btn-primary btn-sm hide-mobile" href="#contact">Start</a>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-kicker">Websites & branding for small businesses</div>
-        <h1 class="hero-title">
-          Professional websites for <span>any small business.</span>
-        </h1>
-        <p class="hero-subtitle">
-          I design and build fast, clean websites that help small businesses look professional and get more customers—
-          service companies, shops, restaurants, barbers, coaches, contractors, and more.
-          No templates. No agency pricing.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Start your project</a>
-          <a href="pricing.html" class="btn btn-outline">View packages</a>
-        </div>
-
-        <p class="hero-tagline">
-          Serving all small businesses • Fast turnaround • Clear pricing
-        </p>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        </button>
       </div>
 
-      <aside class="hero-card hero-card--framed">
-        <div class="hero-card-tag">Example project</div>
-        <h2 class="hero-card-title">Jay’s KickAsh BBQ</h2>
-        <p>
-          Full website + branding for a local BBQ truck—menu, schedule, and a bold visual identity built to attract customers and events.
-        </p>
-        <p style="margin-top:.75rem;font-size:.9rem;color:#cbd0df;">
-          Also built for contractors, shops, barbers, coaches, and local service businesses.
-        </p>
-      </aside>
+      <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile" hidden>
+        <a href="pricing.html">Packages</a>
+        <a href="package-details.html">What’s Included</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+        <div class="nav-mobile-cta">
+          <a class="btn btn-outline" href="pricing.html">View packages</a>
+          <a class="btn btn-primary" href="#contact">Start your project</a>
+        </div>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- WHO THIS IS FOR -->
-  <section class="section">
-    <div class="container">
-      <div class="section-kicker">Who this is for</div>
-      <h2 class="section-heading">If you run a small business, this is for you.</h2>
-      <p class="section-subtitle">
-        No matter your industry, the goal is the same: look professional, earn trust, and turn visitors into customers.
-      </p>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">Websites & branding for small businesses</div>
 
-      <div class="portfolio-grid">
-        <article class="portfolio-card">
-          <h3>Service businesses</h3>
-          <p>Contractors, pressure washing, HVAC, landscaping, mobile services.</p>
-        </article>
+          <h1 class="hero-title">
+            A website that makes your business look <span>legit</span> — and gets you more leads.
+          </h1>
 
-        <article class="portfolio-card">
-          <h3>Food & hospitality</h3>
-          <p>Restaurants, food trucks, cafés, catering, pop-ups.</p>
-        </article>
+          <p class="hero-subtitle">
+            Fast, clean, mobile-first sites built for contractors, service pros, shops, barbers, restaurants, and local brands.
+            Clear pricing. No templates. No agency markup.
+          </p>
 
-        <article class="portfolio-card">
-          <h3>Personal brands</h3>
-          <p>Coaches, consultants, trainers, freelancers, creators.</p>
-        </article>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Start your project</a>
+            <a class="btn btn-outline" href="samples.html">See samples</a>
+          </div>
 
-        <article class="portfolio-card">
-          <h3>Local shops</h3>
-          <p>Barbershops, salons, gyms, retail, brick-and-mortar businesses.</p>
-        </article>
+          <div class="trust-row">
+            <div class="trust-item">
+              <div class="trust-top">Fast turnaround</div>
+              <div class="trust-sub">Most sites shipped in days, not months</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-top">Clear pricing</div>
+              <div class="trust-sub">Pick a package. No surprises</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-top">Built to convert</div>
+              <div class="trust-sub">Calls, forms, booking, and trust signals</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="card-badge">Featured build</div>
+          <h2 class="card-title">Jay’s KickAsh BBQ</h2>
+          <p class="card-text">
+            Website + branding for a local BBQ truck: bold visuals, clear menu layout, and strong CTA flow for events and customers.
+          </p>
+
+          <div class="card-divider"></div>
+
+          <div class="card-meta">
+            <div class="meta-row">
+              <span class="meta-label">Good for</span>
+              <span class="meta-value">Food trucks, shops, contractors, barbers, service pros</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Includes</span>
+              <span class="meta-value">Design, build, mobile, SEO basics</span>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="btn btn-outline btn-sm" href="samples.html">View samples</a>
+            <a class="btn btn-primary btn-sm" href="pricing.html">See packages</a>
+          </div>
+        </aside>
       </div>
+    </section>
 
-      <p style="margin-top: 1.25rem;">
-        <a href="samples.html" class="btn btn-outline">See sample sites</a>
-        <a href="pricing.html" class="btn btn-outline">View packages</a>
-      </p>
-    </div>
-  </section>
+    <!-- WHO IT'S FOR -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Who this is for</div>
+          <h2 class="h2">If you run a small business, this is for you.</h2>
+          <p class="muted">
+            The goal is always the same: look professional, earn trust fast, and turn visitors into customers.
+          </p>
+        </div>
 
-  <!-- HOW IT WORKS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-kicker">How it works</div>
-      <h2 class="section-heading">Simple. Fast. No guesswork.</h2>
+        <div class="grid-4">
+          <article class="tile">
+            <h3 class="tile-title">Service businesses</h3>
+            <p class="tile-text">Contractors, HVAC, pressure washing, landscaping, mobile services.</p>
+          </article>
 
-      <div class="portfolio-grid">
-        <article class="portfolio-card">
-          <h3>1. Pick a package</h3>
-          <p>Choose the package that fits your business.</p>
-        </article>
+          <article class="tile">
+            <h3 class="tile-title">Food & hospitality</h3>
+            <p class="tile-text">Restaurants, food trucks, cafés, catering, pop-ups.</p>
+          </article>
 
-        <article class="portfolio-card">
-          <h3>2. Send your info</h3>
-          <p>I’ll collect everything I need with a short form.</p>
-        </article>
+          <article class="tile">
+            <h3 class="tile-title">Local shops</h3>
+            <p class="tile-text">Barbershops, salons, gyms, retail, brick-and-mortar brands.</p>
+          </article>
 
-        <article class="portfolio-card">
-          <h3>3. I build everything</h3>
-          <p>You review and request revisions based on your package.</p>
-        </article>
+          <article class="tile">
+            <h3 class="tile-title">Personal brands</h3>
+            <p class="tile-text">Coaches, consultants, freelancers, creators.</p>
+          </article>
+        </div>
 
-        <article class="portfolio-card">
-          <h3>4. Launch</h3>
-          <p>Your site goes live. Optional monthly support available.</p>
-        </article>
+        <div class="row-actions">
+          <a class="btn btn-outline" href="samples.html">See sample sites</a>
+          <a class="btn btn-outline" href="pricing.html">View packages</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">How it works</div>
+          <h2 class="h2">Simple. Fast. No guesswork.</h2>
+          <p class="muted">A clean process that gets your site live without endless back-and-forth.</p>
+        </div>
+
+        <div class="grid-4">
+          <article class="step">
+            <div class="step-num">1</div>
+            <h3 class="step-title">Pick a package</h3>
+            <p class="step-text">Choose a package that matches what you need today.</p>
+          </article>
+
+          <article class="step">
+            <div class="step-num">2</div>
+            <h3 class="step-title">Send your info</h3>
+            <p class="step-text">Quick intake form: services, photos, details, and goals.</p>
+          </article>
+
+          <article class="step">
+            <div class="step-num">3</div>
+            <h3 class="step-title">Review & revise</h3>
+            <p class="step-text">You get a preview link, request edits based on your package.</p>
+          </article>
+
+          <article class="step">
+            <div class="step-num">4</div>
+            <h3 class="step-title">Launch</h3>
+            <p class="step-text">Go live + optional monthly support for updates and growth.</p>
+          </article>
+        </div>
+
+        <div class="row-actions">
+          <a class="btn btn-primary" href="pricing.html">See packages</a>
+          <a class="btn btn-outline" href="package-details.html">What’s included</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES TEASER -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Packages</div>
+          <h2 class="h2">Clear options. Built to scale.</h2>
+          <p class="muted">Start lean, then add pages, features, and support when you’re ready.</p>
+        </div>
+
+        <div class="pricing-tease">
+          <article class="pricing-mini">
+            <div class="mini-top">Starter</div>
+            <div class="mini-mid">Fast, clean, single-page presence</div>
+            <div class="mini-bottom">Best for: new or simple businesses</div>
+          </article>
+
+          <article class="pricing-mini pricing-mini--highlight">
+            <div class="mini-badge">Most picked</div>
+            <div class="mini-top">Standard</div>
+            <div class="mini-mid">Multi-page site + stronger conversion flow</div>
+            <div class="mini-bottom">Best for: service pros & local businesses</div>
+          </article>
+
+          <article class="pricing-mini">
+            <div class="mini-top">Premium</div>
+            <div class="mini-mid">Full build + advanced sections + polish</div>
+            <div class="mini-bottom">Best for: brands ready to grow</div>
+          </article>
+        </div>
+
+        <div class="row-actions">
+          <a class="btn btn-primary" href="pricing.html">View pricing</a>
+          <a class="btn btn-outline" href="samples.html">See examples</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-grid">
+        <div>
+          <div class="kicker">Contact</div>
+          <h2 class="h2">Start your project</h2>
+          <p class="muted">
+            Tell me what you do and what you want your site to accomplish.
+            I usually reply within <strong>24 hours</strong> with a quick game plan.
+          </p>
+
+          <div class="contact-points">
+            <div class="contact-point">
+              <div class="point-title">What I’ll ask</div>
+              <div class="point-text">Your services, service area, goals, and any photos/logos you have.</div>
+            </div>
+            <div class="contact-point">
+              <div class="point-title">What you’ll get</div>
+              <div class="point-text">A plan + package recommendation and next steps.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <form id="contact-form" class="lcd-form">
+            <input type="hidden" name="_subject" value="New lead — Love Crafted Digital" />
+            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
+
+            <div class="field">
+              <label for="c-name">Name</label>
+              <input id="c-name" name="name" type="text" required />
+            </div>
+
+            <div class="field">
+              <label for="c-email">Email</label>
+              <input id="c-email" name="email" type="email" required />
+            </div>
+
+            <div class="field">
+              <label for="c-business">Business name (optional)</label>
+              <input id="c-business" name="business" type="text" />
+            </div>
+
+            <div class="field">
+              <label for="c-message">What do you need your website to do?</label>
+              <textarea id="c-message" name="message" required></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Send message</button>
+
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Love Crafted Digital</div>
+      <div class="footer-links">
+        <a href="pricing.html">Packages</a>
+        <a href="samples.html">Samples</a>
+        <a href="about.html">About</a>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-kicker">Contact</div>
-      <h2 class="section-heading">Start your project</h2>
-      <p class="section-subtitle">
-        Tell me what you do and what you want your site to accomplish.
-        I usually reply within <strong>24 hours</strong> with a quick game plan.
-      </p>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-      <!-- NOTE: This form submits via JS (fetch) to avoid Formspree redirect page -->
-      <form id="contact-form">
-        <input type="hidden" name="_subject" value="New lead — Love Crafted Digital" />
-        <input type="text" name="_gotcha" style="display:none" />
+    // Mobile nav
+    (function () {
+      const btn = document.querySelector('.nav-toggle');
+      const mobile = document.getElementById('mobile-nav');
+      if (!btn || !mobile) return;
 
-        <div>
-          <label for="c-name">Name</label>
-          <input id="c-name" name="name" type="text" required />
-        </div>
+      const close = () => {
+        btn.setAttribute('aria-expanded', 'false');
+        mobile.hidden = true;
+      };
 
-        <div>
-          <label for="c-email">Email</label>
-          <input id="c-email" name="email" type="email" required />
-        </div>
+      btn.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        mobile.hidden = isOpen;
+      });
 
-        <div>
-          <label for="c-business">Business name (optional)</label>
-          <input id="c-business" name="business" type="text" />
-        </div>
+      // Close when clicking a link
+      mobile.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => close());
+      });
 
-        <div>
-          <label for="c-message">What do you need your website to do?</label>
-          <textarea id="c-message" name="message" required></textarea>
-        </div>
+      // default closed
+      close();
+    })();
 
-        <button class="btn btn-primary" type="submit">Send message</button>
+    // Contact form handler (Formspree + GA4 + reliable redirect)
+    (function () {
+      const form = document.getElementById('contact-form');
+      const statusEl = document.getElementById('form-status');
+      if (!form) return;
 
-        <!-- Optional tiny status text (won't break styling if you ignore it) -->
-        <p id="form-status" style="margin-top:.75rem;display:none;"></p>
-      </form>
-    </div>
-  </section>
+      const setStatus = (msg, kind) => {
+        if (!statusEl) return;
+        statusEl.textContent = msg;
+        statusEl.dataset.kind = kind || '';
+      };
 
-</main>
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        setStatus('Sending…', 'loading');
 
-<footer>
-  <div class="container">
-    © <span id="year"></span> Love Crafted Digital
-  </div>
-</footer>
+        try {
+          if (typeof gtag === 'function') {
+            gtag('event', 'lead_submit', {
+              event_category: 'Contact',
+              event_label: 'Main Contact Form'
+            });
+          }
+        } catch (err) {}
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Contact form handler (Formspree + GA4 + reliable redirect)
-  (function () {
-    const form = document.getElementById('contact-form');
-    const statusEl = document.getElementById('form-status');
-
-    if (!form) return;
-
-    form.addEventListener('submit', async function (e) {
-      e.preventDefault();
-
-      // optional UI feedback
-      if (statusEl) {
-        statusEl.style.display = 'block';
-        statusEl.textContent = 'Sending...';
-      }
-
-      // Fire GA event (lead)
-      try {
-        if (typeof gtag === 'function') {
-          gtag('event', 'lead_submit', {
-            event_category: 'Contact',
-            event_label: 'Main Contact Form'
+        try {
+          const res = await fetch('https://formspree.io/f/xnjjnqea', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form)
           });
+
+          if (!res.ok) {
+            setStatus('Something went wrong. Please try again.', 'error');
+            return;
+          }
+
+          setStatus('Sent. Redirecting…', 'success');
+          window.location.href = 'https://daultinlove.github.io/Love-Crafted-Design/thank-you.html';
+        } catch (err) {
+          setStatus('Network error. Please try again.', 'error');
         }
-      } catch (err) {
-        // ignore GA errors to not block form
-      }
-
-      try {
-        const res = await fetch('https://formspree.io/f/xnjjnqea', {
-          method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: new FormData(form)
-        });
-
-        // If Formspree returns an error, show message but still keep user on page
-        if (!res.ok) {
-          if (statusEl) statusEl.textContent = 'Something went wrong. Please try again.';
-          return;
-        }
-
-        // Success → redirect to your thank-you page
-        window.location.href = 'https://daultinlove.github.io/Love-Crafted-Design/thank-you.html';
-      } catch (err) {
-        if (statusEl) statusEl.textContent = 'Network error. Please try again.';
-      }
-    });
-  })();
-</script>
-
+      });
+    })();
+  </script>
 </body>
 </html>
